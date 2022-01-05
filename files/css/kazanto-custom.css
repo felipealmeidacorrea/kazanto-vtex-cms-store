@@ -54,17 +54,12 @@
     margin-right: 20px;
   }
 
-  .section header.section__head h2 {
+  /* Aplicado ao principal .section header.section__head h2 {
     color: #e41021;
     font-weight: 600;
-  }
+  }*/
 
   @media (max-width: 1023px) {
-    .header .header__body-inner {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        padding: 0 0;
-      }
 
       .slider-intro-mobile .slider__dots {
         margin-bottom: -35px;

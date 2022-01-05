@@ -3969,10 +3969,10 @@ section.section.section--insta {
   z-index: 6;
   top: 50%;
   left: 50%;
-  margin-top: 1px;
+  /*margin-top: 1px;*/
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 7px;
+  height: 7px;
   border-right: 2px solid #e61821;
   border-top: 2px solid #e61821;
   -ms-transform: translate(-50%, -50%) rotate(-135deg);
@@ -3983,14 +3983,15 @@ section.section.section--insta {
 .slider-intro-mobile .slick-arrow {
   position: relative;
   top: 0px;
-  left: 20px;
+  /*left: 20px;*/
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 0;
-  border-radius: 0;
+  border: solid 1px #E41021;
+  border-radius: 5px;
   outline: 0;
-  background-color: transparent;
+  background-color: #FFFFFF;
+  opacity: 0.7;
   font-size: 0;
   text-align: center;
   cursor: pointer;
@@ -4001,7 +4002,7 @@ section.section.section--insta {
 .slider-intro .slick-next,
 .slider-intro-mobile .slick-next {
   left: auto;
-  right: 20px;
+  /*right: 20px;*/
 }
 
 .slider-intro .slick-next:before,
@@ -4009,11 +4010,6 @@ section.section.section--insta {
   border-color: #d52b1e;
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.slider-intro .slick-arrow:hover,
-.slider-intro-mobile .slick-arrow:hover {
-  opacity: 0.8;
 }
 
 .slider-intro .slider__dots,
