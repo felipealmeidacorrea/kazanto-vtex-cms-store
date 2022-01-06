@@ -4973,7 +4973,6 @@ section.section-ads {
   transition: 0.3s;
   display: grid;
   align-content: end;
-  margin-bottom: 25px;
   height: 100%;
 }
 
