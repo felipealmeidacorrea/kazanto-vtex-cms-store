@@ -146,43 +146,7 @@ var codeFunctionsStore = {
     }
   },
   sliderProductsHome: function () {
-    var $sliderSection = $(".section--sales .slider-products");
-    var $sliderSlides = $sliderSection.find(".slider__slides .vitrine > ul");
-    var $sliderArrows = $sliderSection.find(".slider__arrows");
-    $sliderSlides.slick({
-      waitForAnimate: false,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots: false,
-      arrows: true,
-      appendDots: $sliderSection.find(".slider__dots"),
-      appendArrows: $sliderArrows,
-      responsive: [
-        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-      ],
-    });
-    var $sliderSectionTwo = $(".section--sales--featured");
-    var $sliderSlidesTwo = $sliderSectionTwo.find(
-      ".slider__slides .vitrine > ul"
-    );
-    var $sliderArrowsTwo = $sliderSectionTwo.find(".slider__arrows");
-    $sliderSlidesTwo.slick({
-      waitForAnimate: false,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots: false,
-      arrows: true,
-      appendDots: $sliderSectionTwo.find(".slider__dots"),
-      appendArrows: $sliderArrowsTwo,
-      responsive: [
-        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-      ],
-    });
-    var $sliderSectionTree = $(".section--sales--ofertas");
+    var $sliderSectionTree = $(".fir st-shelf");
     var $sliderSlidesTree = $sliderSectionTree.find(
       ".slider__slides .vitrine > ul"
     );
@@ -196,25 +160,6 @@ var codeFunctionsStore = {
       arrows: true,
       appendDots: $sliderSectionTree.find(".slider__dots"),
       appendArrows: $sliderArrowsTree,
-      responsive: [
-        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-      ],
-    });
-    var $sliderSectionFour = $(".section--sales--vistos");
-    var $sliderSlidesFour = $sliderSectionFour.find(
-      ".slider__slides .vitrine > ul"
-    );
-    var $sliderArrowsFour = $sliderSectionFour.find(".slider__arrows");
-    $sliderSlidesFour.slick({
-      waitForAnimate: false,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots: false,
-      arrows: true,
-      appendDots: $sliderSectionFour.find(".slider__dots"),
-      appendArrows: $sliderArrowsFour,
       responsive: [
         { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
         { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },

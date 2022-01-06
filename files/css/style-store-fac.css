@@ -1,5 +1,5 @@
 .fac-menu-mobile {
-  background-color: white;
+  background-color: transparent;
   position: relative;
   margin: 0 0 15px;
 }
@@ -18,7 +18,6 @@
   justify-content: space-between;
   overflow-x: auto;
   padding: 16px 0;
-  background-color: white;
   scrollbar-color: #e41021 #e5e5e5;
   scrollbar-width: thin;
 }
@@ -39,7 +38,7 @@
 }
 
 .fac-menu-mobile > div .box-banner {
-  min-width: 114px;
+  min-width: 100px;
 }
 
 .fac-menu-mobile > div .box-banner:not(:last-child) {
@@ -1094,7 +1093,7 @@ nav ol {
 }
 
 body {
-  background: #fff;
+  background: #F4F6F7;
   font-family: "hind_madurailight";
   font-size: 16px;
   line-height: 1.56;
@@ -3750,7 +3749,7 @@ ul.list-nav-secundary > li.featured > a {
 }
 
 .section header.section__head {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .section header.section__head h2 {
@@ -3838,31 +3837,6 @@ section.section.section--insta {
   .section.section--sales--vistos {
     margin-top: 0px;
   }
-}
-
-.section--sales--ofertas h2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section--sales--ofertas .ver-todas {
-  font-weight: 600;
-  font-size: 17px;
-  color: #c11326;
-  text-transform: none;
-  letter-spacing: normal;
-}
-
-.section--sales--ofertas .ver-todas:after {
-  border-right: 0.1em solid #c11326;
-  border-bottom: 0.1em solid #c11326;
-  content: "";
-  display: inline-block;
-  height: 0.7em;
-  width: 0.7em;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 .slider .slides {
@@ -4831,6 +4805,8 @@ section.section-ads {
   border: 1px solid transparent;
   margin-bottom: 20px;
   height: calc(100% - 25px);
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 
 .product .product__inner {
@@ -4928,7 +4904,7 @@ section.section-ads {
 }
 
 .product .product__price span.valor-por {
-  color: #e61821;
+  color: #058F49;
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
   font-weight: 500;
@@ -5009,7 +4985,7 @@ section.section-ads {
 .product__actions a.btn.btn--small {
   display: inline-block;
   width: 100%;
-  background: #e61821;
+  background: #058F49;
   color: #fff;
   padding: 3px 0;
   border-radius: 5px;
@@ -5138,6 +5114,9 @@ section.section-ads {
   z-index: 3;
 }
 
+
+/*FLAAAAAAAAAAAAAAAAAAAAAAAAAAAG FLAG NATAL LABEL AQUIIIIIIIIIIIIII*/
+
 .product .flag-entrega-natal .entrega-text {
   color: #fff;
   background-color: #2a8500;
@@ -5195,6 +5174,7 @@ section.section-ads {
   .product .product__actions {
     opacity: 1;
     visibility: visible;
+    padding: 0 10px;
   }
   .product .product__actions-inner {
     margin-bottom: 21px;
