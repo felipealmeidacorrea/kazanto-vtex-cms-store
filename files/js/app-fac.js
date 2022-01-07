@@ -146,7 +146,7 @@ var codeFunctionsStore = {
     }
   },
   sliderProductsHome: function () {
-    var $sliderSectionTree = $(".fir st-shelf");
+    var $sliderSectionTree = $(".first-shelf");
     var $sliderSlidesTree = $sliderSectionTree.find(
       ".slider__slides .vitrine > ul"
     );
@@ -160,6 +160,158 @@ var codeFunctionsStore = {
       arrows: true,
       appendDots: $sliderSectionTree.find(".slider__dots"),
       appendArrows: $sliderArrowsTree,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionFour = $(".second-shelf");
+    var $sliderSlidesFour = $sliderSectionFour.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsFour = $sliderSectionFour.find(".slider__arrows");
+    $sliderSlidesFour.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionFour.find(".slider__dots"),
+      appendArrows: $sliderArrowsFour,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionFive = $(".third-shelf");
+    var $sliderSlidesFive = $sliderSectionFive.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsFive = $sliderSectionFive.find(".slider__arrows");
+    $sliderSlidesFive.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionFive.find(".slider__dots"),
+      appendArrows: $sliderArrowsFive,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionSix = $(".fourth-shelf");
+    var $sliderSlidesSix = $sliderSectionSix.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsSix = $sliderSectionSix.find(".slider__arrows");
+    $sliderSlidesSix.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionSix.find(".slider__dots"),
+      appendArrows: $sliderArrowsSix,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionSeven = $(".fifth-shelf");
+    var $sliderSlidesSeven = $sliderSectionSeven.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsSeven = $sliderSectionSeven.find(".slider__arrows");
+    $sliderSlidesSeven.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionSeven.find(".slider__dots"),
+      appendArrows: $sliderArrowsSeven,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionEight = $(".sixth-shelf");
+    var $sliderSlidesEight = $sliderSectionEight.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsEight = $sliderSectionEight.find(".slider__arrows");
+    $sliderSlidesEight.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionEight.find(".slider__dots"),
+      appendArrows: $sliderArrowsEight,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionNine = $(".seventh-shelf");
+    var $sliderSlidesNine = $sliderSectionNine.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsNine = $sliderSectionNine.find(".slider__arrows");
+    $sliderSlidesNine.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionNine.find(".slider__dots"),
+      appendArrows: $sliderArrowsNine,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionTen = $(".eighth-shelf");
+    var $sliderSlidesTen = $sliderSectionTen.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsTen = $sliderSectionTen.find(".slider__arrows");
+    $sliderSlidesTen.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionTen.find(".slider__dots"),
+      appendArrows: $sliderArrowsTen,
+      responsive: [
+        { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+        { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+      ],
+    });
+    var $sliderSectionEleven = $(".nineth-shelf");
+    var $sliderSlidesEleven = $sliderSectionEleven.find(
+      ".slider__slides .vitrine > ul"
+    );
+    var $sliderArrowsEleven = $sliderSectionEleven.find(".slider__arrows");
+    $sliderSlidesEleven.slick({
+      waitForAnimate: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      appendDots: $sliderSectionEleven.find(".slider__dots"),
+      appendArrows: $sliderArrowsEleven,
       responsive: [
         { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
         { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },

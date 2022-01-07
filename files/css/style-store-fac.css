@@ -1,3 +1,37 @@
+.single-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.banner-set img,
+.single-banner img {
+  border-radius: 10px;
+}
+
+.banner-set {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.flag {
+  position: absolute;
+  z-index: 99;
+  background-color: #e41021;
+  padding: 0 10px;
+  font-family: "hind_maduraisemibold";
+  font-size: 14px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: #ffffff;
+}
+
 .fac-menu-mobile {
   background-color: transparent;
   position: relative;
@@ -198,8 +232,8 @@
   display: inline-block;
   width: 17px;
   height: 17px;
-  border-right: 2px solid #e61821;
-  border-top: 2px solid #e61821;
+  border-right: 2px solid #e41021;
+  border-top: 2px solid #e41021;
 }
 
 .mz-bf-best-discounts-collection .prateleira ul .slick-prev.slick-arrow,
@@ -270,7 +304,7 @@
   outline: 0;
   border: none;
   border-radius: 3px;
-  background: #e61821;
+  background: #e41021;
   font-size: 0;
   line-height: 0;
   text-decoration: none;
@@ -358,7 +392,7 @@
 }
 
 .mz-bf-countdown-item span {
-  color: #e61821;
+  color: #e41021;
   font-size: 32px;
 }
 
@@ -455,7 +489,7 @@
 .mz-bf-collection-container .prateleira ul .product {
   background-color: #fff;
   max-width: 291px;
-  border: 1px solid #e61821 !important;
+  border: 1px solid #e41021 !important;
   border-radius: 10px;
 }
 
@@ -615,7 +649,7 @@
 .mz-bf-best-discounts-collection .prateleira ul .product {
   background-color: #fff;
   max-width: 291px;
-  border: 1px solid #e61821 !important;
+  border: 1px solid #e41021 !important;
   border-radius: 10px;
 }
 
@@ -803,7 +837,7 @@
 }
 
 .mz-bf-newsletter-form form button {
-  background: #e61821;
+  background: #e41021;
   border-radius: 4px;
   height: 36px;
   border: none;
@@ -1093,7 +1127,7 @@ nav ol {
 }
 
 body {
-  background: #F4F6F7;
+  background: #f4f6f7;
   font-family: "hind_madurailight";
   font-size: 16px;
   line-height: 1.56;
@@ -1431,7 +1465,7 @@ fieldset {
 }
 
 .top-header .contato-top {
-  color: #e61821;
+  color: #e41021;
   font-size: 13px;
   font-weight: bold;
 }
@@ -1596,7 +1630,7 @@ a.btn-menu.js-btn-menu {
   position: absolute;
   bottom: 7px;
   right: 0px;
-  background: #e61821;
+  background: #e41021;
   border-radius: 100%;
   width: 16px;
   height: 16px;
@@ -1838,7 +1872,7 @@ a.btn-menu.js-btn-menu {
   .product__content
   h3.product__price {
   text-align: left;
-  color: #e61821;
+  color: #e41021;
   font-weight: bold;
   font-size: 15px;
 }
@@ -1947,7 +1981,7 @@ a.btn-menu.js-btn-menu {
 }
 
 .cart__foot > h4 {
-  color: #e61821;
+  color: #e41021;
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 1.36px;
@@ -2096,7 +2130,7 @@ a.btn-menu.js-btn-menu {
 }
 
 .section__content .product__price .quant-produto {
-  color: #e61821;
+  color: #e41021;
   font-family: "Hind Madurai" sans-serif;
   font-size: 14px;
 }
@@ -2250,7 +2284,7 @@ a.btn-menu.js-btn-menu {
 }
 
 .user-logged .identificacao-cliente p.user__logged > a {
-  color: #e61821;
+  color: #e41021;
 }
 
 section.fale-conosco .section__content {
@@ -2315,7 +2349,7 @@ section.fale-conosco
   button.btn_submit {
   width: 100%;
   height: 40px;
-  background: #e61821;
+  background: #e41021;
   color: #fff;
   font-size: 22px;
   display: flex;
@@ -2343,7 +2377,7 @@ p.msg-register-success {
 .address_stores .location_store {
   flex: 0 0 100%;
   padding: 20px;
-  background: #e61821;
+  background: #e41021;
   max-width: 240px;
   margin: 0 15px;
   border-radius: 10px;
@@ -2725,7 +2759,7 @@ ul.ui-autocomplete li a:hover {
   display: inline-block;
   width: 150px;
   height: 2px;
-  background: #e61821;
+  background: #e41021;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   transition: 0.3s;
@@ -2741,7 +2775,7 @@ ul.ui-autocomplete li a:hover {
 @media (min-width: 1024) {
   .nav > ul > li:not(.btn-dropdown):hover > a {
     background: #fff;
-    color: #e61821;
+    color: #e41021;
   }
   .nav > ul > li:not(.btn-dropdown):hover > a:after {
     opacity: 1;
@@ -2801,7 +2835,7 @@ ul.ui-autocomplete li a:hover {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    background: #e61821;
+    background: #e41021;
     opacity: 1;
     visibility: visible;
     -webkit-transition: 0.3s;
@@ -2887,7 +2921,7 @@ ul.ui-autocomplete li a:hover {
     padding: 0;
     border-top: 1px solid #d5d6d2;
     background: #fff;
-    color: #e61821;
+    color: #e41021;
     font-size: 16px;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -3682,7 +3716,7 @@ ul.ui-autocomplete li a:hover {
   .dropdown-menu::-webkit-scrollbar-thumb {
     width: 5px;
     height: 124px;
-    background: #e61821;
+    background: #e41021;
     border-radius: 4px;
   }
   .dropdown-menu.dropdown--visible {
@@ -3716,7 +3750,7 @@ ul.list-nav-secundary {
 }
 
 ul.list-nav-secundary > li.featured {
-  background: #e61821;
+  background: #e41021;
   padding: 5px 20px;
   border-radius: 5px;
 }
@@ -3947,8 +3981,8 @@ section.section.section--insta {
   display: inline-block;
   width: 7px;
   height: 7px;
-  border-right: 2px solid #e61821;
-  border-top: 2px solid #e61821;
+  border-right: 2px solid #e41021;
+  border-top: 2px solid #e41021;
   -ms-transform: translate(-50%, -50%) rotate(-135deg);
   transform: translate(-50%, -50%) rotate(-135deg);
 }
@@ -3961,10 +3995,10 @@ section.section.section--insta {
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: solid 1px #E41021;
+  border: solid 1px #e41021;
   border-radius: 5px;
   outline: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   opacity: 0.7;
   font-size: 0;
   text-align: center;
@@ -4249,7 +4283,7 @@ section.section.section--insta {
   li
   svg:hover
   .st0 {
-  fill: #e61821;
+  fill: #e41021;
 }
 
 .section-subscribe
@@ -4308,7 +4342,7 @@ form.subscribe--news {
 .subscribe .subscribe__btn {
   height: 36px;
   border: 0;
-  background: #e61821;
+  background: #e41021;
   line-height: 36px;
   text-transform: uppercase;
   font-size: 14px;
@@ -4375,7 +4409,7 @@ section.section-info-store .info--store--item h5 {
 
 section.section-subscribe .info__desc__news h3 {
   line-height: initial;
-  color: #e61821;
+  color: #e41021;
   font-size: 32px;
   display: none;
 }
@@ -4411,7 +4445,7 @@ section.section-subscribe .info__desc__news p {
 }
 
 section.section-info-store .info--store--item h5 span {
-  color: #e61821;
+  color: #e41021;
 }
 
 section.section-info-store .info--store--item p {
@@ -4564,10 +4598,10 @@ section.section-ads {
   left: 50%;
   margin-top: 1px;
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  border-right: 2px solid #e61821;
-  border-top: 2px solid #e61821;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #e41021;
+  border-top: 2px solid #e41021;
   -ms-transform: translate(-50%, -50%) rotate(-135deg);
   transform: translate(-50%, -50%) rotate(-135deg);
 }
@@ -4578,15 +4612,16 @@ section.section-ads {
 .slider-products-check .slick-arrow,
 .list-environments-banners .slick-arrow {
   position: relative;
-  top: -1px;
-  left: 0px;
+  top: 0px;
+  /* left: 20px; */
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 0;
-  border-radius: 0;
+  border: solid 1px #e41021;
+  border-radius: 5px;
   outline: 0;
-  background-color: transparent;
+  background-color: #ffffff;
+  opacity: 0.7;
   font-size: 0;
   text-align: center;
   cursor: pointer;
@@ -4608,7 +4643,7 @@ section.section-ads {
 .slider-products--offers .slick-next:before,
 .slider-products-check .slick-next:before,
 .list-environments-banners .slick-next:before {
-  border-color: #e61821;
+  border-color: #e41021;
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -4678,8 +4713,8 @@ section.section-ads {
 .slider-products .slick-active button,
 .section--sales--featured .slick-active button,
 .list-environments-banners .slick-active button {
-  background: #e61821;
-  border: 1px solid #e61821;
+  background: #e41021;
+  border: 1px solid #e41021;
 }
 
 .slider-products .slick-dots button:hover,
@@ -4727,26 +4762,11 @@ section.section-ads {
   .slider-products-check .slider__clip {
     margin: 0 auto;
   }
-  .slider-products .slick-arrow,
-  .slider-products-two .slick-arrow,
-  .slider-products--offers .slick-arrow,
-  .slider-products-check .slick-arrow {
-    top: -2px;
-    opacity: 1;
-    visibility: visible;
-  }
-  .slider-products .slick-arrow,
-  .slider-products-two .slick-arrow,
-  .slider-products--offers .slick-arrow,
-  .slider-products-check .slick-arrow {
-    left: 15px;
-  }
   .slider-products .slick-next,
   .slider-products-two .slick-next,
   .slider-products--offers .slick-next,
   .slider-products-check .slick-next {
     left: auto;
-    right: 15px;
   }
   .slider-products .vitrine > ul li,
   .slider-products-two .vitrine > ul li,
@@ -4804,8 +4824,8 @@ section.section-ads {
   cursor: pointer;
   border: 1px solid transparent;
   margin-bottom: 20px;
-  height: calc(100% - 25px);
-  background-color: #FFFFFF;
+  height: 100%;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
@@ -4816,7 +4836,7 @@ section.section-ads {
 }
 
 .product:hover {
-  border: 1px solid #e61821;
+  border: 1px solid #e41021;
   border-radius: 10px;
 }
 
@@ -4904,7 +4924,7 @@ section.section-ads {
 }
 
 .product .product__price span.valor-por {
-  color: #058F49;
+  color: #058f49;
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
   font-weight: 500;
@@ -4928,7 +4948,7 @@ section.section-ads {
 
 .product .product__price .best-price {
   font-size: 22px;
-  color: #e61821;
+  color: #e41021;
   font-weight: bold;
 }
 
@@ -4951,7 +4971,7 @@ section.section-ads {
 }
 
 .vitrine .product .quant-produto {
-  color: #e61821;
+  color: #e41021;
   font-family: "Hind Madurai" sans-serif;
   font-size: 14px;
   text-align: center;
@@ -4984,7 +5004,7 @@ section.section-ads {
 .product__actions a.btn.btn--small {
   display: inline-block;
   width: 100%;
-  background: #058F49;
+  background: #058f49;
   color: #fff;
   padding: 3px 0;
   border-radius: 5px;
@@ -4993,9 +5013,9 @@ section.section-ads {
 }
 
 .product__actions a.btn.btn--small:hover {
-  border: 2px solid #e61821;
+  border: 2px solid #e41021;
   background: transparent;
-  color: #e61821;
+  color: #e41021;
 }
 
 .product .product__actions a.btn-buy {
@@ -5014,6 +5034,7 @@ section.section-ads {
 
 .product .product__actions-inner {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .product a.btn-like.js-btn-like,
@@ -5025,7 +5046,7 @@ section.section-ads {
 }
 
 .qd-sss-wishlist-delete-button {
-  fill: #e61821;
+  fill: #e41021;
 }
 
 .product a.btn-like.js-btn-like svg path {
@@ -5037,7 +5058,7 @@ section.section-ads {
 }
 
 .wishlist .qd-sss-wishlist-delete-button svg path {
-  fill: #e61821;
+  fill: #e41021;
 }
 
 .product .qd-favorited .qd-sss-wishlist-delete-button {
@@ -5081,7 +5102,7 @@ section.section-ads {
 }
 
 .mz-product .qd-sss-wishlist-delete-button {
-  color: #e61821;
+  color: #e41021;
   margin-right: 0.5rem;
 }
 
@@ -5101,7 +5122,7 @@ section.section-ads {
 }
 
 .product a.btn-like.js-btn-like:hover svg path {
-  fill: #e61821;
+  fill: #e41021;
 }
 
 .prateleira li:not(.natal) .product .flag-entrega-natal .natal-text {
@@ -5112,7 +5133,6 @@ section.section-ads {
   position: absolute;
   z-index: 3;
 }
-
 
 /*FLAAAAAAAAAAAAAAAAAAAAAAAAAAAG FLAG NATAL LABEL AQUIIIIIIIIIIIIII*/
 
@@ -5129,7 +5149,7 @@ section.section-ads {
 
 .product .flag-entrega-natal .natal-text {
   color: #fff;
-  background-color: #e61821;
+  background-color: #e41021;
   width: 37px;
   margin-bottom: 5px;
   font-family: "Hind Madurai" sans-serif;
@@ -5174,9 +5194,6 @@ section.section-ads {
     opacity: 1;
     visibility: visible;
     padding: 0 10px;
-  }
-  .product .product__actions-inner {
-    margin-bottom: 21px;
   }
   .product .product__actions a.btn-buy {
     display: none;
@@ -5269,7 +5286,7 @@ section.section-environments header.section__head h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
-  color: #e61821;
+  color: #e41021;
   letter-spacing: 2px;
 }
 
@@ -5298,12 +5315,12 @@ section.section-environments header.section__head h2 {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  border: 1px solid #e61821;
+  border: 1px solid #e41021;
   margin: 0 auto;
 }
 
 .list-environments-banners .box-banner a:hover {
-  background: #e61821;
+  background: #e41021;
 }
 
 .list-environments-banners .box-banner a img {
@@ -5478,7 +5495,7 @@ section.dd-m-account-wish {
   .selected__itens__whish
   .selected__itens__whish
   h2 {
-  color: #e61821;
+  color: #e41021;
   font-family: "FjallaOne-Regular";
   font-weight: 500;
   margin-bottom: 20px;
@@ -5528,7 +5545,7 @@ section.dd-m-account-wish {
   text-transform: uppercase;
   background-repeat: no-repeat;
   justify-content: center;
-  background: #e61821;
+  background: #e41021;
   border-radius: 5px;
 }
 
@@ -5698,7 +5715,7 @@ button.dd-m-card-products-addwish.x-wishlist-delete.is-wished {
   a.btn__see__more {
   display: inline-block;
   width: 100%;
-  background: #e61821;
+  background: #e41021;
   color: #fff;
   padding: 3px 0;
   border-radius: 5px;
@@ -5711,9 +5728,9 @@ button.dd-m-card-products-addwish.x-wishlist-delete.is-wished {
   .box_brand_selection
   .content_box
   a.btn__see__more:hover {
-  border: 2px solid #e61821;
+  border: 2px solid #e41021;
   background: transparent;
-  color: #e61821;
+  color: #e41021;
 }
 
 @media (max-width: 1023px) {
@@ -5882,7 +5899,7 @@ section.section-institucional p {
 .footer__col.footer__col--1of1 nav.footer__nav li.stores h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: #e61821;
+  color: #e41021;
   margin-bottom: 8px;
 }
 
@@ -6092,6 +6109,7 @@ section.section-institucional p {
   position: fixed;
   bottom: 80px;
   right: 10px;
+  z-index: 100;
 }
 
 .whatsapp-fixed-footer > a {
@@ -6432,7 +6450,7 @@ section.section-institucional p {
     text-decoration: none;
     font-size: 0;
     padding: 0px;
-    background: url("data:image/svg+xml, %3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M26.02%2014.1387C24.9228%2014.1387%2024.83%2014.8636%2024.83%2015.53V27.6H20.01V20.4536C20.01%2018.0025%2018.5%2015.4015%2014.9638%2015.41C11%2015.4015%209.92%2018.0026%209.92%2020.4536V27.6H5.09V15.53C5.09674%2015%205%2014.1387%203.9%2014.1387C2.8%2014.1387%202.71536%2015%202.71536%2015.53V29.0665C2.71536%2029.5574%203.11343%2029.9554%203.60431%2029.9554H11.4076C11.8751%2029.9554%2012.2577%2029.5943%2012.2931%2029.1357C12.2952%2029.1149%2012.2966%2029.0922%2012.2966%2029.0665V20.4536C12.2966%2018.9829%2013.4931%2017.7864%2014.9638%2017.7864C16.4345%2017.7864%2017.631%2018.983%2017.631%2020.4536V29.0665C17.631%2029.0921%2017.6323%2029.1144%2017.6344%2029.1349C17.6695%2029.5938%2018.0521%2029.9554%2018.5199%2029.9554H26.3232C26.8142%2029.9554%2027.2122%2029.5574%2027.2122%2029.0665V15.53C27.2122%2014.8506%2026.9911%2014.1387%2026.02%2014.1387Z%22%20fill%3D%22%23E61821%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M28.3371%2013.698C27.9918%2013.698%2027.6788%2013.559%2027.4512%2013.334L15.0316%202.89988L2.15994%2013.3198C1.93125%2013.5532%201.61253%2013.698%201.26%2013.698C0.564121%2013.698%200%2013.1338%200%2012.438C0%2012.0227%200.200915%2011.6543%200.510846%2011.4248L14.5066%200.182567C14.8192%20-0.04637%2015.2441%20-0.04637%2015.5568%200.182567L29.041%2011.3928C29.3765%2011.6191%2029.5971%2012.0028%2029.5971%2012.438C29.5971%2013.1339%2029.033%2013.698%2028.3371%2013.698Z%22%20fill%3D%22%23E61821%22%2F%3E%0A%3C%2Fsvg%3E%0A")
+    background: url("data:image/svg+xml, %3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M26.02%2014.1387C24.9228%2014.1387%2024.83%2014.8636%2024.83%2015.53V27.6H20.01V20.4536C20.01%2018.0025%2018.5%2015.4015%2014.9638%2015.41C11%2015.4015%209.92%2018.0026%209.92%2020.4536V27.6H5.09V15.53C5.09674%2015%205%2014.1387%203.9%2014.1387C2.8%2014.1387%202.71536%2015%202.71536%2015.53V29.0665C2.71536%2029.5574%203.11343%2029.9554%203.60431%2029.9554H11.4076C11.8751%2029.9554%2012.2577%2029.5943%2012.2931%2029.1357C12.2952%2029.1149%2012.2966%2029.0922%2012.2966%2029.0665V20.4536C12.2966%2018.9829%2013.4931%2017.7864%2014.9638%2017.7864C16.4345%2017.7864%2017.631%2018.983%2017.631%2020.4536V29.0665C17.631%2029.0921%2017.6323%2029.1144%2017.6344%2029.1349C17.6695%2029.5938%2018.0521%2029.9554%2018.5199%2029.9554H26.3232C26.8142%2029.9554%2027.2122%2029.5574%2027.2122%2029.0665V15.53C27.2122%2014.8506%2026.9911%2014.1387%2026.02%2014.1387Z%22%20fill%3D%22%23e41021%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M28.3371%2013.698C27.9918%2013.698%2027.6788%2013.559%2027.4512%2013.334L15.0316%202.89988L2.15994%2013.3198C1.93125%2013.5532%201.61253%2013.698%201.26%2013.698C0.564121%2013.698%200%2013.1338%200%2012.438C0%2012.0227%200.200915%2011.6543%200.510846%2011.4248L14.5066%200.182567C14.8192%20-0.04637%2015.2441%20-0.04637%2015.5568%200.182567L29.041%2011.3928C29.3765%2011.6191%2029.5971%2012.0028%2029.5971%2012.438C29.5971%2013.1339%2029.033%2013.698%2028.3371%2013.698Z%22%20fill%3D%22%23e41021%22%2F%3E%0A%3C%2Fsvg%3E%0A")
       no-repeat;
     background-color: transparent;
     transform: translate(0%, -45%);
@@ -6457,7 +6475,7 @@ section.section-institucional p {
     text-decoration: none;
     font-size: 0;
     padding: 0px;
-    background: url("data:image/svg+xml, %3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M21.1083%2020.3601C18.0509%2023.6915%2013.2473%2025.1751%208.63009%2023.7769C2.20913%2021.8325%20-1.41983%2015.051%200.524591%208.63009C2.46901%202.20913%209.25049%20-1.41983%2015.6714%200.524591C22.0924%202.46901%2025.7214%209.25049%2023.7769%2015.6714C23.7524%2015.7526%2023.727%2015.8332%2023.7009%2015.9135L23.7004%2015.9133C23.621%2016.1488%2023.4553%2016.3558%2023.2189%2016.4823C22.7259%2016.7461%2022.1125%2016.5603%2021.8487%2016.0674C21.7222%2015.831%2021.6991%2015.5668%2021.7637%2015.3268L21.7628%2015.3265L21.7696%2015.3057C21.7752%2015.2867%2021.7813%2015.2679%2021.7879%2015.2493C21.8054%2015.1947%2021.8226%2015.1398%2021.8392%2015.0848C23.4596%209.73395%2020.4355%204.08272%2015.0847%202.46237C9.73386%200.842025%204.08262%203.86616%202.46228%209.21696C0.84193%2014.5678%203.86606%2020.219%209.21686%2021.8393C13.3944%2023.1044%2017.7551%2021.5384%2020.2377%2018.2444L20.2435%2018.2502C20.3289%2018.1378%2020.4393%2018.0415%2020.5719%2017.9705C21.0054%2017.7385%2021.5321%2017.8543%2021.8323%2018.2208L24.5915%2020.9801L24.5915%2020.9801L28.427%2024.8157C29.613%2026.0017%2029.613%2027.9245%2028.427%2029.1105C27.2411%2030.2965%2025.3182%2030.2965%2024.1322%2029.1105L19.4079%2024.3862L19.4169%2024.3773C19.3741%2024.3462%2019.3331%2024.3114%2019.2946%2024.2728C18.8992%2023.8775%2018.8992%2023.2365%2019.2946%2022.8412C19.6899%2022.4459%2020.3308%2022.4459%2020.7262%2022.8412C20.7648%2022.8798%2020.7996%2022.9207%2020.8306%2022.9635L22.2712%2021.523L21.1083%2020.3601ZM22.2712%2021.5231L26.9954%2026.2474C27.3908%2026.6427%2027.3908%2027.2837%2026.9954%2027.679C26.6001%2028.0743%2025.9592%2028.0743%2025.5638%2027.679L20.8395%2022.9547L22.2712%2021.5231Z%22%20fill%3D%22%23E61821%22%2F%3E%0A%3C%2Fsvg%3E%0A  ")
+    background: url("data:image/svg+xml, %3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M21.1083%2020.3601C18.0509%2023.6915%2013.2473%2025.1751%208.63009%2023.7769C2.20913%2021.8325%20-1.41983%2015.051%200.524591%208.63009C2.46901%202.20913%209.25049%20-1.41983%2015.6714%200.524591C22.0924%202.46901%2025.7214%209.25049%2023.7769%2015.6714C23.7524%2015.7526%2023.727%2015.8332%2023.7009%2015.9135L23.7004%2015.9133C23.621%2016.1488%2023.4553%2016.3558%2023.2189%2016.4823C22.7259%2016.7461%2022.1125%2016.5603%2021.8487%2016.0674C21.7222%2015.831%2021.6991%2015.5668%2021.7637%2015.3268L21.7628%2015.3265L21.7696%2015.3057C21.7752%2015.2867%2021.7813%2015.2679%2021.7879%2015.2493C21.8054%2015.1947%2021.8226%2015.1398%2021.8392%2015.0848C23.4596%209.73395%2020.4355%204.08272%2015.0847%202.46237C9.73386%200.842025%204.08262%203.86616%202.46228%209.21696C0.84193%2014.5678%203.86606%2020.219%209.21686%2021.8393C13.3944%2023.1044%2017.7551%2021.5384%2020.2377%2018.2444L20.2435%2018.2502C20.3289%2018.1378%2020.4393%2018.0415%2020.5719%2017.9705C21.0054%2017.7385%2021.5321%2017.8543%2021.8323%2018.2208L24.5915%2020.9801L24.5915%2020.9801L28.427%2024.8157C29.613%2026.0017%2029.613%2027.9245%2028.427%2029.1105C27.2411%2030.2965%2025.3182%2030.2965%2024.1322%2029.1105L19.4079%2024.3862L19.4169%2024.3773C19.3741%2024.3462%2019.3331%2024.3114%2019.2946%2024.2728C18.8992%2023.8775%2018.8992%2023.2365%2019.2946%2022.8412C19.6899%2022.4459%2020.3308%2022.4459%2020.7262%2022.8412C20.7648%2022.8798%2020.7996%2022.9207%2020.8306%2022.9635L22.2712%2021.523L21.1083%2020.3601ZM22.2712%2021.5231L26.9954%2026.2474C27.3908%2026.6427%2027.3908%2027.2837%2026.9954%2027.679C26.6001%2028.0743%2025.9592%2028.0743%2025.5638%2027.679L20.8395%2022.9547L22.2712%2021.5231Z%22%20fill%3D%22%23e41021%22%2F%3E%0A%3C%2Fsvg%3E%0A  ")
       no-repeat;
     background-color: transparent;
     transform: translate(0%, -45%);
