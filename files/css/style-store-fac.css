@@ -1,3 +1,7 @@
+.fac-footer,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .single-banner {
   display: flex;
   flex-wrap: wrap;
