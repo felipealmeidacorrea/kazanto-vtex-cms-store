@@ -259,7 +259,7 @@ body {
 }
 
 @media (max-width: 1023px) {
-    .pre-header {
+    .top-bar {
         position: fixed;
         top: 0;
         left: 0;
@@ -319,7 +319,7 @@ body {
   font-size: 12;
 }
 
-.pre-header {
+.top-bar {
   width: 100%;
   background-color: #e41021;
   color: #ffffff;
