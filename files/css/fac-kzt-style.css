@@ -224,7 +224,7 @@ body {
 }
 
 .fac-header--desktop {
-  color: #E41021;
+  color: #e41021;
   display: none;
 }
 
@@ -242,7 +242,7 @@ body {
   }
 
   main {
-      padding-top: 96px;
+    padding-top: 96px;
   }
 
   .fac-header--desktop {
@@ -259,15 +259,15 @@ body {
 }
 
 @media (max-width: 1023px) {
-    .top-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    
-    .fac-header {
-        padding-top: 36px;
-    }
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .fac-header {
+    padding-top: 36px;
+  }
 }
 
 @media (max-width: 1099px) {
@@ -277,12 +277,74 @@ body {
   }
 }
 
-.fac-header__input--desktop {
+/*Inserir a busca aqui*/
+
+.busca legend,
+.busca label,
+.busca select {
+  display: none;
+}
+
+.busca {
+  display: flex;
+  width: 25%;
+}
+
+.fulltext-search-box {
   padding: 10px;
   border: none;
   background: #cccccc;
-  border-radius: 5px;
-  width: 25%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+}
+
+.busca input.btn-buscar {
+  padding: 10px;
+  border: none;
+  background: #e41021;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 10%;
+  cursor: pointer;
+  color: transparent;
+}
+
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+  background: #ffffff;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  width: 23%;
+  border-radius: initial;
+  list-style: none;
+  padding: 5px 20px;
+}
+
+.ui-autocomplete .ui-menu-item {
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.ui-menu-item:hover {
+  background: #e41021;
+  color: #ffffff;
+}
+
+.ui-corner-all {
+  display: flex;
+  align-items: center;
+}
+
+.ui-corner-all img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .fac-header__menu--desktop {
@@ -308,7 +370,7 @@ body {
 }
 
 .menu__item__svg--desktop {
-  fill: #E42021;
+  fill: #e42021;
 }
 
 .menu__item__svg--desktop:hover {
