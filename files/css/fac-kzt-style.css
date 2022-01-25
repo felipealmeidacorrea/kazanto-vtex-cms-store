@@ -316,7 +316,7 @@ body {
   position: fixed;
   display: flex;
   flex-flow: column;
-  width: 23%;
+  width: 25%;
   border-radius: initial;
   list-style: none;
   padding: 5px 20px;
@@ -342,9 +342,9 @@ body {
 }
 
 .ui-corner-all img {
-  width: 50px;
-  height: auto;
   margin-right: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .fac-header__menu--desktop {
