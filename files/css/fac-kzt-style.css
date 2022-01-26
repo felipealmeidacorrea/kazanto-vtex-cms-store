@@ -2,6 +2,12 @@ body {
   background-color: #f5f6f8;
 }
 
+@media (max-width: 767px) {
+  body {
+      min-width: 360px;
+  }
+}
+
 .fac-footer {
   font-family: "Montserrat";
   text-decoration: none;
@@ -255,6 +261,12 @@ body {
   }
   .fac-header__logo--mobile {
     display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .top-bar {
+      font-size: 11px
   }
 }
 
