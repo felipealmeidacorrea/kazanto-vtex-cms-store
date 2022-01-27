@@ -8,6 +8,12 @@ body {
   }
 }
 
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 .fac-footer {
   font-family: "Montserrat";
   text-decoration: none;
@@ -216,7 +222,7 @@ body {
   }
 }
 
-/*------------------------------- header -----------------------------------------*/
+/*FAC-header*/
 
 .fac-header {
   width: 100%;
@@ -225,71 +231,30 @@ body {
   align-items: center;
   justify-content: center;
   border: none;
-  background-color: #ffffff;
-  font-family: "Montserrat";
+  background-color: #FFFFFF;
+  font-family: 'Montserrat';
 }
 
-.fac-header--desktop {
-  color: #e41021;
-  display: none;
+.fac-header__top-bar {
+  width: 100%;
+  background-color: #e41021;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
 
-.fac-header__logo--mobile {
+.fac-header__logo-mobile {
   width: 100%;
 }
 
-/*--breakpoint min-widht 1024px--*/
+/*fac-header__main-content-desktop*/
 
-@media (min-width: 1024px) {
-  .fac-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  main {
-    padding-top: 96px;
-  }
-
-  .fac-header--desktop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    width: 100%;
-    padding: 10px;
-  }
-  .fac-header__logo--mobile {
-    display: none;
-  }
+.fac-header__main-content-desktop {
+  color: #E41021;
+  display: none;
 }
 
-@media (max-width: 499px) {
-  .top-bar {
-      font-size: 11px
-  }
-}
-
-@media (max-width: 1023px) {
-  .top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .fac-header {
-    padding-top: 36px;
-  }
-}
-
-@media (max-width: 1099px) {
-  .text-fac-header__menu__item--desktop,
-  .menu__item__txt--desktop {
-    font-size: 12;
-  }
-}
-
-/*Inserir a busca aqui*/
+/*-------Caixa de busca-------*/
 
 .busca legend,
 .busca label,
@@ -302,10 +267,10 @@ body {
   width: 25%;
 }
 
-.fulltext-search-box {
+input.fulltext-search-box {
   padding: 10px;
   border: none;
-  background: #cccccc;
+  background: #CAD7E0;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   width: 100%;
@@ -314,87 +279,304 @@ body {
 .busca input.btn-buscar {
   padding: 10px;
   border: none;
-  background: #e41021;
+  background: #E41021;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   width: 10%;
+  min-width: 40px;
   cursor: pointer;
   color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNTAgNTAiIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTIxIDRBMTYgMTYgMCAxIDAgMjEgMzZBMTYgMTYgMCAxIDAgMjEgNFoiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSI0IiBkPSJNMzIuMjI5IDMyLjIyOUw0NS41IDQ1LjUiLz48L3N2Zz4=");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
-  background: #ffffff;
-  box-sizing: border-box;
-  position: fixed;
-  display: flex;
-  flex-flow: column;
-  width: 25%;
-  border-radius: initial;
-  list-style: none;
-  padding: 5px 20px;
+/*Caixa de sugestões*/
+
+.ui-autocomplete {
+font-family: 'Roboto', sans-serif;
+background: #FFFFFF;
+position: fixed;
+display: flex;
+flex-flow: column;
+box-sizing: border-box;
+width: 25%;
+justify-content: flex-start;
+text-align: left;
+border-radius: 5px;
+border: 1px solid #CAD7E0;
+}
+
+.ui-autocomplete:first-child::before {
+content: "";
+width: 0;
+height: 0;
+border-left: 2px solid transparent;
+border-right: 25px solid transparent;
+border-bottom: 25px solid #FFFFFF;
+position: fixed;
+top: 0.1px
+}
+
+.ui-menu-item:first-child::before {
+  content: "Sugestões";
+  position: absolute;
+  top: 13px;
+  text-align: center;
+  color: #E41021;
+  font-weight: 600;
+  cursor: default;
+}
+
+.ui-menu-item:first-child {
+margin-top: 40px;
+border-top: 1px solid #CAD7E0;
 }
 
 .ui-autocomplete .ui-menu-item {
-  padding: 5px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  align-self: flex-start;
-  width: 100%;
+padding: 10px 15px;
+box-sizing: border-box;
+cursor: pointer;
+display: flex;
+flex-flow: column;
+align-self: flex-start;
+width: 100%;
+border-bottom: 1px solid #CAD7E0;
 }
 
 .ui-menu-item:hover {
-  background: #e41021;
-  color: #ffffff;
+background: #E41021;
+color: #FFFFFF;
 }
 
 .ui-corner-all {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .ui-corner-all img {
-  margin-right: 10px;
+margin-right: 10px;
 }
 
-.fac-header__menu--desktop {
+.ui-autocomplete .ui-menu-item:last-child {
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+/*Fim da caixa de sugestões*/
+/*Fim da caixa de busca*/
+
+
+/*Menu do header-desktop*/
+
+.fac-header__main-content__menu-desktop {
   display: flex;
   height: 40px;
   align-items: center;
   gap: 25px;
 }
 
-.fac-header__menu__item--desktop {
+.fac-header__main-content__menu-desktop__item {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
 }
 
-.menu__item__txt--desktop {
+.fac-header__main-content__menu-desktop__item__txt-price {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
 
-.menu__item__svg--desktop {
+.fac-header__main-content__menu-desktop__item__svg {
   fill: #e42021;
 }
 
-.menu__item__svg--desktop:hover {
-  fill: #cccccc;
+.fac-header__main-content__menu-desktop__item__svg:hover {
+  fill: #CCCCCC;
 }
 
-.menu__item__txt__price {
-  font-size: 12;
+.fac-header__main-content__menu-desktop__item__login-box,
+.fac-header__main-content__menu-desktop__item__gift-list-box {
+  display: none;
+  flex-flow: column;
+  position: absolute;
+  top: 70px;
+  width: 180px;
+  padding: 16px 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
-.top-bar {
+.fac-header__main-content__menu-desktop__login-item:hover .fac-header__main-content__menu-desktop__item__login-box {
+  display: flex;
+}
+
+.fac-header__main-content__menu-desktop__gift-list-item:hover .fac-header__main-content__menu-desktop__item__gift-list-box {
+  display: flex;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 120px;
   width: 100%;
-  background-color: #e41021;
-  color: #ffffff;
+  background: #e41021;
+  border-radius: 5px;
+  color: #FFFFFF;
+  box-sizing: border-box;
   padding: 10px;
+  border: 1px solid #DDDDDD;
+  border-top: 0;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content .fac-header__main-content__menu-desktop__item__login-box__content__button:first-child,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content .fac-header__main-content__menu-desktop__item__gift-list-box__content__button:first-child {
+  background-color: #058f49;
+  width: 90%;
+  color: #FFFFFF;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content .fac-header__main-content__menu-desktop__item__login-box__content__button:first-child:hover,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content .fac-header__main-content__menu-desktop__item__gift-list-box__content__button:first-child:hover {
+  background-color: #059C50;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content__button,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content__button {
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: #FFFFFF;
+  width: 90%;
+  color: #000000;
+  padding: 5px;
   text-align: center;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content__button:hover,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content__button:hover {
+  background-color: #CAD7E0;
+  color: #000000;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__up-arrow,
+.fac-header__main-content__menu-desktop__item__gift-list-box__up-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #E41021;
+}
+
+.fac-header__main-content__menu-desktop__item:hover .fac-header__main-content__menu-desktop__item__svg {
+  fill: #CAD7E0;
+}
+
+.fac-header__main-content__menu-desktop__item:hover .fac-header__main-content__menu-desktop__item__txt {
+  color: #CAD7E0;
+}
+
+.fac-header__main-content__menu-desktop__item:hover .fac-header__main-content__menu-desktop__item__txt-price {
+  color: #CAD7E0;
+}
+
+
+.fac-header__main-content__menu-desktop__item__txt-price p:last-child {
+  font-size: 15px;
+}
+
+/*fim do fac-header__main-content-desktop*/
+
+
+/*fac-header__main-content-mobile*/
+
+.fac-header__main-content-mobile {
+  position: fixed;
+  bottom: 0px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  background: #FFFFFF;
+  height: 54px;
+  box-sizing: border-box;
+}
+
+.fac-header__main-content-mobile__item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*FAC-header breakpoints*/
+
+@media (min-width: 1024px) {
+  .fac-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+
+  .fac-header__logo-mobile {
+      display: none;
+  }
+
+  .fac-header__main-content-desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+      padding: 10px;
+  }
+
+  main {
+      padding-top: 96px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .fac-header {
+      padding-top: 36px;
+  }
+
+  .fac-header__top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .fac-header__top-bar__slide {
+      font-size: 11px
+  }
+}
+
+@media (min-width: 1024px) {
+  .fac-header .fac-header__main-content-mobile {
+      display: none;
+  }
+}
+
+@media (max-width: 1099px) {
+
+  .fac-header__main-content__menu-desktop__item__txt,
+  .fac-header__main-content__menu-desktop__item__txt-price {
+      font-size: 12px;
+  }
 }

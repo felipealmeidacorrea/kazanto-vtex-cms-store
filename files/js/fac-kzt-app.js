@@ -1,5 +1,5 @@
 var $ = $;
-$(".top-bar").slick({
+$(".fac-header__top-bar").slick({
     autoplay: true,
     infinite: true,
     speed: 300,
