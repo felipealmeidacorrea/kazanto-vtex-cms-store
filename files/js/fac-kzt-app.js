@@ -1,3 +1,4 @@
+//slick topbar
 var $ = $;
 $(".fac-header__top-bar").slick({
     autoplay: true,
@@ -6,7 +7,10 @@ $(".fac-header__top-bar").slick({
     slidesToShow: 1,
     arrows: false
 });
+//end of slick topbar
 
+
+//dropdown menu
 function openNav() {
     document.getElementById("mySidenav").style.animation = "expand 0.3s forwards";
     //closeBtn
@@ -42,7 +46,7 @@ let firstDropdownOpen = false;
 
 function firstDropDown() {
     firstDropdownOpen = !firstDropdownOpen;
-    if (firstDropdownOpen) {
+    if(firstDropdownOpen) {
         document.querySelector("#firstDropDown i").setAttribute("class", "fas fa-chevron-up");
         document.querySelector("#firstDropDown div").innerHTML = "Ver menos";
         //Handle Container
@@ -50,7 +54,7 @@ function firstDropDown() {
         document.getElementById("firstContainer").style.animation = "expandDropDown 0.3s forwards";
         document.getElementById("firstContainer").style.transition = "height 0.3s";
         document.getElementById("firstContainer").style.height = "410px";
-    } else {
+    }else{
         document.querySelector("#firstDropDown i").setAttribute("class", "fas fa-chevron-down");
         document.querySelector("#firstDropDown div").innerHTML = "Ver mais";
         //Handle Container
@@ -60,7 +64,7 @@ function firstDropDown() {
         setTimeout(() => {
             document.getElementById("firstContainer").style.display = "none";
         }, 200)
-
+        
     }
 }
 
@@ -69,7 +73,7 @@ let secondDropDownOpen = false;
 function secondDropDown() {
     secondDropDownOpen = !secondDropDownOpen;
 
-    if (secondDropDownOpen) {
+    if(secondDropDownOpen) {
         document.querySelector("#secondDropDown i").setAttribute("class", "fas fa-chevron-up");
         document.querySelector("#secondDropDown div").innerHTML = "Ver menos";
         //Handle Container
@@ -77,7 +81,7 @@ function secondDropDown() {
         document.getElementById("secondContainer").style.animation = "expandDropDown 0.3s forwards";
         document.getElementById("secondContainer").style.transition = "height 0.3s";
         document.getElementById("secondContainer").style.height = "260px";
-    } else {
+    }else{
         document.querySelector("#secondDropDown i").setAttribute("class", "fas fa-chevron-down");
         document.querySelector("#secondDropDown div").innerHTML = "Ver mais";
         //Handle Container
@@ -87,7 +91,7 @@ function secondDropDown() {
         setTimeout(() => {
             document.getElementById("secondContainer").style.display = "none";
         }, 200)
-
+        
     }
 }
 
@@ -253,3 +257,24 @@ function openDepJogos() {
     <a href="#"><div class="sidenavContent">Jogos de mesa</div></a>
     <a href="#"><div class="sidenavContent">Jogos diversos</div></a>`;
 }
+//end of dropdown menu
+
+//busca mobile
+function openBuscaMobile() {
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.display = "flex";
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.position = "fixed";
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.width = "calc(100% - 20px)";
+    document.getElementsByClassName("fac-header__main-content-desktop__search")[0].style.width = "100%";
+    document.getElementsByClassName("fulltext-search-box")[0].style.fontSize = "16px";
+    document.getElementsByClassName("fac-header__main-content__menu-desktop")[0].style.display = "none";
+    document.getElementById("fac-header__main-content-desktop__logo").style.display = "none";
+    document.getElementById("busca-mobile__overlay").style.display = "block";
+    document.getElementsByClassName("busca")[0].style.width = "100%";
+    document.getElementsByClassName("busca")[0].style.height = "50px";
+    
+}
+
+function closeBuscaMobile() {
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.display = "none";
+}
+//end of busca mobile
