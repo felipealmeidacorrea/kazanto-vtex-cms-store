@@ -7,8 +7,6 @@ $(".fac-header__top-bar").slick({
     arrows: false
 });
 
-var altura = window.screen.height;
-
 function openNav() {
     document.getElementById("mySidenav").style.animation = "expand 0.3s forwards";
     //closeBtn
@@ -44,7 +42,7 @@ let firstDropdownOpen = false;
 
 function firstDropDown() {
     firstDropdownOpen = !firstDropdownOpen;
-    if(firstDropdownOpen) {
+    if (firstDropdownOpen) {
         document.querySelector("#firstDropDown i").setAttribute("class", "fas fa-chevron-up");
         document.querySelector("#firstDropDown div").innerHTML = "Ver menos";
         //Handle Container
@@ -52,7 +50,7 @@ function firstDropDown() {
         document.getElementById("firstContainer").style.animation = "expandDropDown 0.3s forwards";
         document.getElementById("firstContainer").style.transition = "height 0.3s";
         document.getElementById("firstContainer").style.height = "410px";
-    }else{
+    } else {
         document.querySelector("#firstDropDown i").setAttribute("class", "fas fa-chevron-down");
         document.querySelector("#firstDropDown div").innerHTML = "Ver mais";
         //Handle Container
@@ -62,7 +60,7 @@ function firstDropDown() {
         setTimeout(() => {
             document.getElementById("firstContainer").style.display = "none";
         }, 200)
-        
+
     }
 }
 
@@ -71,7 +69,7 @@ let secondDropDownOpen = false;
 function secondDropDown() {
     secondDropDownOpen = !secondDropDownOpen;
 
-    if(secondDropDownOpen) {
+    if (secondDropDownOpen) {
         document.querySelector("#secondDropDown i").setAttribute("class", "fas fa-chevron-up");
         document.querySelector("#secondDropDown div").innerHTML = "Ver menos";
         //Handle Container
@@ -79,7 +77,7 @@ function secondDropDown() {
         document.getElementById("secondContainer").style.animation = "expandDropDown 0.3s forwards";
         document.getElementById("secondContainer").style.transition = "height 0.3s";
         document.getElementById("secondContainer").style.height = "260px";
-    }else{
+    } else {
         document.querySelector("#secondDropDown i").setAttribute("class", "fas fa-chevron-down");
         document.querySelector("#secondDropDown div").innerHTML = "Ver mais";
         //Handle Container
@@ -89,7 +87,7 @@ function secondDropDown() {
         setTimeout(() => {
             document.getElementById("secondContainer").style.display = "none";
         }, 200)
-        
+
     }
 }
 
@@ -255,5 +253,3 @@ function openDepJogos() {
     <a href="#"><div class="sidenavContent">Jogos de mesa</div></a>
     <a href="#"><div class="sidenavContent">Jogos diversos</div></a>`;
 }
-
-
