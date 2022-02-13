@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
->
-  <head>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
     <vtex:metaTags />
     <vtex:template id="fac-kzt-styles" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="fac-header">
-      <vtex:template id="fac-kzt-header" />
+        <vtex:template id="fac-kzt-header" />
     </header>
 
     <main>
-      <vtex:template id="fac-dropdown-menu" />
-      <vtex:contentPlaceHolder id="Banners Desktop" />
+        <vtex:template id="fac-dropdown-menu" />
+        <div class="fac-desk-banners-home">
+            <div class="fac-desk-banners-home__banners">
+                <vtex:contentPlaceHolder id="Banners Desktop" />
+            </div>
+        </div>
     </main>
 
     <footer class="fac-footer">
-      <vtex:template id="fac-kzt-footer" />
+        <vtex:template id="fac-kzt-footer" />
     </footer>
 
     <vtex:template id="fac-kzt-scripts" />
-  </body>
+</body>
+
 </html>

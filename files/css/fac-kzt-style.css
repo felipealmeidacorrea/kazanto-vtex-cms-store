@@ -15,6 +15,8 @@ body {
 
 main {
     padding-top: 96px;
+    display: none;
+    height: 500px;
 }
 
 textarea:focus,
@@ -247,6 +249,7 @@ input:focus {
     border: none;
     background-color: #ffffff;
     font-family: 'Montserrat';
+    z-index: 99;
 }
 
 .fac-header__top-bar {
@@ -1074,4 +1077,15 @@ a:active {
     width: 25%
 }
 
+
 /*end of fac-dropdown-menu*/
+
+.fac-desk-banners-home .box-banner a img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* .fac-desk-banners-home {
+    display: none;
+} */

@@ -1,14 +1,41 @@
 //slick topbar
-var $ = $;
-$(".fac-header__top-bar").slick({
-    autoplay: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    arrows: false
+$(document).ready(function() {
+    $('.fac-header__top-bar').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        arrows: false
+    });
 });
 //end of slick topbar
 
+// $(document).ready(function() {
+//     $(".fac-desk-banners-home__banners .box-banner").addClass("slick-slide");
+// });
+
+window.addEventListener('DOMContentLoaded', function() {
+    (function($) {
+        $("main").css("display", "block");
+    })(jQuery);
+});
+
+//slick destop banners
+$(document).ready(function() {
+    $('.fac-desk-banners-home .fac-desk-banners-home__banners').slick({
+        lazyLoad: 'ondemand',
+        waitForAnimate: false,
+        autoplay: !0,
+        autoplaySpeed: 4500,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        zIndex: 0,
+    });
+});
+//end of slick destop banners
 
 //dropdown menu
 function openNav() {
@@ -21,7 +48,7 @@ function openNav() {
     document.getElementById("overlay").style.display = "block";
     document.getElementById("overlay").style.animation = "show 0.3s";
 
-}
+};
 
 function closeNav() {
     document.getElementById("mySidenav").style.animation = "collapse 0.3s forwards";
@@ -40,13 +67,13 @@ function closeNav() {
         document.getElementById("sub-container").style.animation = "";
         document.getElementById("sub-container").style.transform = "translateX(380px)";
     }, 300)
-}
+};
 
 let firstDropdownOpen = false;
 
 function firstDropDown() {
     firstDropdownOpen = !firstDropdownOpen;
-    if(firstDropdownOpen) {
+    if (firstDropdownOpen) {
         document.querySelector("#firstDropDown i").setAttribute("class", "fas fa-chevron-up");
         document.querySelector("#firstDropDown div").innerHTML = "Ver menos";
         //Handle Container
@@ -54,7 +81,7 @@ function firstDropDown() {
         document.getElementById("firstContainer").style.animation = "expandDropDown 0.3s forwards";
         document.getElementById("firstContainer").style.transition = "height 0.3s";
         document.getElementById("firstContainer").style.height = "410px";
-    }else{
+    } else {
         document.querySelector("#firstDropDown i").setAttribute("class", "fas fa-chevron-down");
         document.querySelector("#firstDropDown div").innerHTML = "Ver mais";
         //Handle Container
@@ -64,16 +91,16 @@ function firstDropDown() {
         setTimeout(() => {
             document.getElementById("firstContainer").style.display = "none";
         }, 200)
-        
+
     }
-}
+};
 
 let secondDropDownOpen = false;
 
 function secondDropDown() {
     secondDropDownOpen = !secondDropDownOpen;
 
-    if(secondDropDownOpen) {
+    if (secondDropDownOpen) {
         document.querySelector("#secondDropDown i").setAttribute("class", "fas fa-chevron-up");
         document.querySelector("#secondDropDown div").innerHTML = "Ver menos";
         //Handle Container
@@ -81,7 +108,7 @@ function secondDropDown() {
         document.getElementById("secondContainer").style.animation = "expandDropDown 0.3s forwards";
         document.getElementById("secondContainer").style.transition = "height 0.3s";
         document.getElementById("secondContainer").style.height = "260px";
-    }else{
+    } else {
         document.querySelector("#secondDropDown i").setAttribute("class", "fas fa-chevron-down");
         document.querySelector("#secondDropDown div").innerHTML = "Ver mais";
         //Handle Container
@@ -91,9 +118,9 @@ function secondDropDown() {
         setTimeout(() => {
             document.getElementById("secondContainer").style.display = "none";
         }, 200)
-        
+
     }
-}
+};
 
 document.querySelectorAll(".sidenavRow").forEach(row => {
     row.addEventListener("click", () => {
@@ -105,7 +132,7 @@ document.querySelectorAll(".sidenavRow").forEach(row => {
 document.getElementById("mainMenu").addEventListener("click", () => {
     document.getElementById("main-container").style.animation = "mainBack 0.3s forwards";
     document.getElementById("sub-container").style.animation = "subPush 0.3s forwards";
-})
+});
 
 //subNavContent
 
@@ -135,7 +162,7 @@ function openDepCozinha() {
     <a href="#"><div class="sidenavContent">Garrafas de plástico</div></a>
     <a href="#"><div class="sidenavContent">Copos</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de copos e garrafas</div></a>`;
-}
+};
 
 function openDepDecoracao() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Decoração</div>
@@ -149,7 +176,7 @@ function openDepDecoracao() {
     <a href="#"><div class="sidenavContent">Relógios de parede</div></a>
     <a href="#"><div class="sidenavContent">Relógios de mesa</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de relógios</div></a>`;
-}
+};
 
 function openDepUtilidades() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Utilidades e acessórios</div>
@@ -157,7 +184,7 @@ function openDepUtilidades() {
     <a href="#"><div class="sidenavContent">Utilidades e acessórios eletrônicos</div></a>
     <a href="#"><div class="sidenavContent">Utilidades de limpeza</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de utilidades e acessórios</div></a>`;
-}
+};
 
 function openDepOrganizacao() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Organização</div>
@@ -165,7 +192,7 @@ function openDepOrganizacao() {
     <a href="#"><div class="sidenavContent">Caixas e cestas</div></a>
     <a href="#"><div class="sidenavContent">Ganchos e suportes</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de organização</div></a>`;
-}
+};
 
 function openDepInfantil() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Infantil e bebês</div>
@@ -179,7 +206,7 @@ function openDepInfantil() {
     <a href="#"><div class="sidenavContent">Livros infantis</div></a>
     <a href="#"><div class="sidenavContent">Bicicletas, patinetes e triciclos</div></a>
     <a href="#"><div class="sidenavContent">Outros itens infantis</div></a>`;
-}
+};
 
 function openDepCama() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Quarto e sala</div>
@@ -200,7 +227,7 @@ function openDepCama() {
     <a href="#"><div class="sidenavContent">Tapetes de banheiro</div></a>
     <a href="#"><div class="sidenavContent">Utilidades de banho</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de banho</div></a>`;
-}
+};
 
 function openDepFloricultura() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Floricultura e jardim</div>
@@ -208,7 +235,7 @@ function openDepFloricultura() {
     <a href="#"><div class="sidenavContent">Plantas e flores decorativas</div></a>
     <a href="#"><div class="sidenavContent">Ornamentos de floricultura e jardim</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de floricultura e jardim</div></a>`;
-}
+};
 
 function openDepBar() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Bar</div>
@@ -219,7 +246,7 @@ function openDepBar() {
     <a href="#"><div class="sidenavContent">Vinho</div></a>
     <a href="#"><div class="sidenavContent">Decoração de bar</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de bar</div></a>`;
-}
+};
 
 function openDepPapelaria() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Papelaria</div>
@@ -233,7 +260,7 @@ function openDepPapelaria() {
     <a href="#"><div class="sidenavContent">Outros itens de papelaria</div></a>
     <div class="sidenavContentHeader">Livros</div>
     <a href="#"><div class="sidenavContent">Livros</div></a>`;
-}
+};
 
 function openDepMoveis() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Móveis</div>
@@ -242,7 +269,7 @@ function openDepMoveis() {
     <a href="#"><div class="sidenavContent">Armários e cabideiros de chão</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de móveis</div></a>
     <a href="#"><div class="sidenavContent">Mesas de varanda</div></a>`;
-}
+};
 
 function openDepBolsas() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Bolsas e necessaires</div>
@@ -250,13 +277,13 @@ function openDepBolsas() {
     <a href="#"><div class="sidenavContent">Bolsas térmicas</div></a>
     <a href="#"><div class="sidenavContent">Necessaires e porta-moedas</div></a>
     <a href="#"><div class="sidenavContent">Outros itens de bolsas e necessaires</div></a>`;
-}
+};
 
 function openDepJogos() {
     document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Jogos</div>
     <a href="#"><div class="sidenavContent">Jogos de mesa</div></a>
     <a href="#"><div class="sidenavContent">Jogos diversos</div></a>`;
-}
+};
 //end of dropdown menu
 
 //busca mobile
@@ -271,10 +298,10 @@ function openBuscaMobile() {
     document.getElementById("busca-mobile__overlay").style.display = "block";
     document.getElementsByClassName("busca")[0].style.width = "100%";
     document.getElementsByClassName("busca")[0].style.height = "50px";
-    
-}
+
+};
 
 function closeBuscaMobile() {
     document.getElementsByClassName("fac-header__main-content-desktop")[0].style.display = "none";
-}
+};
 //end of busca mobile
