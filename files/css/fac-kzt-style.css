@@ -16,7 +16,6 @@ body {
 main {
     padding-top: 96px;
     display: none;
-    height: 500px;
 }
 
 textarea:focus,
@@ -1151,4 +1150,150 @@ a:active {
 .fac-desk-banners-home__dots-container .slick-active button {
     background-color: #CCCC;
     border: 1px solid #E41021;
+}
+
+/*---*/
+
+.fac-kzt-general-shelf h2 {
+    display: none;
+}
+
+.fac-product {
+    position: relative;
+    margin: 0 auto;
+    max-width: 395px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.fac-product__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.fac-product .fac-product__content__image {
+    margin-bottom: 12px;
+    padding-top: 20px;
+}
+
+.flag {
+    position: absolute;
+    z-index: 99;
+    background-color: #e41021;
+    padding: 3px 10px;
+    font-family: "hind_maduraisemibold";
+    font-size: 14px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: #ffffff;
+}
+
+.fac-product .fac-product__content__image figure {
+    margin: 0 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+.fac-product .fac-product__content__image figure img {
+    margin: 0 auto;
+}
+
+.qd-sss-wishlist-delete-button {
+    fill: #e41021;
+}
+
+.fac-product a.btn-like.js-btn-like, .qd-sss-wishlist-delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9;
+}
+
+.fac-product .fac-product__content__info {
+    padding: 0 20px;
+    min-height: 175px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fac-product .fac-product__content__info__head {
+    padding-bottom: 15px;
+}
+
+.fac-product .fac-product__content__info__head h4 {
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+    color: gray;
+    font-weight: normal;
+    min-height: 38px;
+}
+
+.fac-product .fac-product__content__info__price {
+    padding-bottom: 21px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.fac-product__content__info__price__from {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+}
+
+.fac-product__content__info__price__from__txt {
+    color:#63070f;
+}
+
+.fac-product__content__info__price__from__price {
+    color:#63070f;
+    text-decoration: line-through;
+}
+
+.fac-product__content__info__price__sale-price {
+    color: #058f49;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.fac-product__content__info__price__installment {
+    font-size: 14px;
+    color: gray;
+    font-style: normal;
+}
+
+.fac-product .fac-product__actions {
+    text-align: center;
+    transition: 0.3s;
+    display: grid;
+    align-content: end;
+    height: 100%;
+}
+
+.fac-product .fac-product__actions__content {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+a.fac-product__actions__content__btn {
+    display: inline-block;
+    width: 100%;
+    background: #058f49;
+    color: #fff;
+    padding: 3px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid transparent;
 }
