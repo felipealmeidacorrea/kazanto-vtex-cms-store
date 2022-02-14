@@ -545,6 +545,9 @@ input.fulltext-search-box {
 }
 
 @media (max-width: 1023px) {
+    main {
+        padding-top: 0;
+    }
     .fac-header {
         padding-top: 36px;
     }
@@ -1089,3 +1092,63 @@ a:active {
 /* .fac-desk-banners-home {
     display: none;
 } */
+
+.fac-desk-banners-home__prev-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    background-color: #CCCC;
+    border: 1px solid #E41021;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fac-desk-banners-home__next-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #CCCC;
+    border: 1px solid #E41021;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fac-desk-banners-home__dots-container {
+    display: inline-flex;
+    gap: 5px;
+    justify-content: center;
+    height: 10px;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+}
+
+.fac-desk-banners-home__dots-container li {
+    height: 60%;
+}
+
+.fac-desk-banners-home__dots-container li button {
+    color: transparent;
+    height: 100%;
+    border: 1px solid #E41021;
+    background: #E41021;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1px;
+    position: relative;
+    bottom: 10px;
+    width: 25px;
+}
+
+.fac-desk-banners-home__dots-container .slick-active button {
+    background-color: #CCCC;
+    border: 1px solid #E41021;
+}
