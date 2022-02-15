@@ -1,7 +1,8 @@
-var $ = $;
-
 //slick topbar
 $(document).ready(function() {
+    $(".shelf ul li.helperComplement, .vitrine-produtos-relacionados ul li.helperComplement").each(function() {
+        $(this).remove();
+    });
     $('.fac-header__top-bar').slick({
         waitForAnimate: false,
         autoplay: true,
@@ -10,21 +11,6 @@ $(document).ready(function() {
         slidesToShow: 1,
         arrows: false
     });
-});
-//end of slick topbar
-
-// $(document).ready(function() {
-//     $(".fac-desk-banners-home__banners .box-banner").addClass("slick-slide");
-// });
-
-window.addEventListener('DOMContentLoaded', function() {
-    (function($) {
-        $("main").css("display", "block");
-    })(jQuery);
-});
-
-//slick destop bannerss
-$(document).ready(function() {
     $('.fac-desk-banners-home .fac-desk-banners-home__banners').slick({
         lazyLoad: 'ondemand',
         waitForAnimate: false,
@@ -40,7 +26,51 @@ $(document).ready(function() {
         dots: true,
         dotsClass: 'fac-desk-banners-home__dots-container',
     });
+    $('.fac-first-shelf ul').slick({
+        waitForAnimate: false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: '<button type = "button" class = "slick-prev fac-desk-banners-home__prev-arrow" style="display: inline-flex;"><svg class="fac-desk-banners-home__prev-arrow__svg" width="13.287" height="23.436" viewBox="0 0 13.287 23.436" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><path fill="#E41021" data-name="Path 5181" d="m 11.972113,23.426 a -4.172,4.172 0 0 0 0.757,-0.388 -1.5,1.5 0 0 0 0.209,-2.131 c -0.637,-0.692 -1.3,-1.338 -1.966,-2 L 3.9131134,11.848 c -0.037,-0.037 -0.074,-0.083 -0.148,-0.166 0.12,-0.1 0.24,-0.2 0.351,-0.3 q 4.318,-4.315 8.6279996,-8.626 a -1.585,1.585 0 0 0 0.314,-1.989 -1.537,1.537 0 0 0 -2.27,-0.438 c -0.508,0.452 -0.9779996,0.941 -1.4579996,1.421 -0.729,0.72 -1.449,1.44 -2.169,2.169 l -2.353,2.348 -2.381,2.381 c -0.692,0.692 -1.393,1.375 -2.05799998,2.085 a -1.512,1.512 0 0 0 0,1.975 c 0.535,0.572 1.09999998,1.126 1.65199998,1.679 0.784,0.794 1.578,1.578 2.362,2.362 0.72,0.72 1.449,1.44 2.169,2.169 l 2.353,2.358 1.6889996,1.691 a -2.133,2.133 0 0 0 0.877,0.471 c 0.175,-0.012 0.332,-0.012 0.501,-0.012 z" /></svg></button>',
+        nextArrow: '<button type = "button" class = "slick-next fac-desk-banners-home__next-arrow" style="display: inline-flex;"><svg class="fac-desk-banners-home__next-arrow__svg" width="13.287" height="23.436" version="1.1" viewBox="0 0 13.287 23.436" xmlns="http://www.w3.org/2000/svg"><path fill="#E41021" transform="translate(.018 -.033)" d="M1.3,23.459a4.172,4.172,0,0,1-.757-.388A1.5,1.5,0,0,1,.334,20.94c.637-.692,1.3-1.338,1.966-2l7.059-7.059c.037-.037.074-.083.148-.166-.12-.1-.24-.2-.351-.3Q4.838,7.1.528,2.789A1.585,1.585,0,0,1,.214.8,1.537,1.537,0,0,1,2.484.362c.508.452.978.941,1.458,1.421.729.72,1.449,1.44,2.169,2.169L8.464,6.3l2.381,2.381c.692.692,1.393,1.375,2.058,2.085a1.512,1.512,0,0,1,0,1.975c-.535.572-1.1,1.126-1.652,1.679-.784.794-1.578,1.578-2.362,2.362-.72.72-1.449,1.44-2.169,2.169L4.367,21.309,2.678,23a2.133,2.133,0,0,1-.877.471C1.626,23.459,1.469,23.459,1.3,23.459Z" data-name="Path 5181"/></svg></button>',
+        responsive: [
+            { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
+            { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
+        ],
+    });
 });
+//end of slick topbar
+
+// $(document).ready(function() {
+//     $(".fac-desk-banners-home__banners .box-banner").addClass("slick-slide");
+// });
+
+window.addEventListener('DOMContentLoaded', function() {
+    (function($) {
+        $("main").css("display", "block");
+    })(jQuery);
+});
+
+//slick destop bannerss
+// $(document).ready(function() {
+//     $('.fac-desk-banners-home .fac-desk-banners-home__banners').slick({
+//         lazyLoad: 'ondemand',
+//         waitForAnimate: false,
+//         autoplay: !0,
+//         autoplaySpeed: 4500,
+//         infinite: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         arrows: true,
+//         zIndex: 0,
+//         prevArrow: '<button type = "button" class = "slick-prev fac-desk-banners-home__prev-arrow" style="display: inline-flex;"><svg class="fac-desk-banners-home__prev-arrow__svg" width="13.287" height="23.436" viewBox="0 0 13.287 23.436" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><path fill="#E41021" data-name="Path 5181" d="m 11.972113,23.426 a -4.172,4.172 0 0 0 0.757,-0.388 -1.5,1.5 0 0 0 0.209,-2.131 c -0.637,-0.692 -1.3,-1.338 -1.966,-2 L 3.9131134,11.848 c -0.037,-0.037 -0.074,-0.083 -0.148,-0.166 0.12,-0.1 0.24,-0.2 0.351,-0.3 q 4.318,-4.315 8.6279996,-8.626 a -1.585,1.585 0 0 0 0.314,-1.989 -1.537,1.537 0 0 0 -2.27,-0.438 c -0.508,0.452 -0.9779996,0.941 -1.4579996,1.421 -0.729,0.72 -1.449,1.44 -2.169,2.169 l -2.353,2.348 -2.381,2.381 c -0.692,0.692 -1.393,1.375 -2.05799998,2.085 a -1.512,1.512 0 0 0 0,1.975 c 0.535,0.572 1.09999998,1.126 1.65199998,1.679 0.784,0.794 1.578,1.578 2.362,2.362 0.72,0.72 1.449,1.44 2.169,2.169 l 2.353,2.358 1.6889996,1.691 a -2.133,2.133 0 0 0 0.877,0.471 c 0.175,-0.012 0.332,-0.012 0.501,-0.012 z" /></svg></button>',
+//         nextArrow: '<button type = "button" class = "slick-next fac-desk-banners-home__next-arrow" style="display: inline-flex;"><svg class="fac-desk-banners-home__next-arrow__svg" width="13.287" height="23.436" version="1.1" viewBox="0 0 13.287 23.436" xmlns="http://www.w3.org/2000/svg"><path fill="#E41021" transform="translate(.018 -.033)" d="M1.3,23.459a4.172,4.172,0,0,1-.757-.388A1.5,1.5,0,0,1,.334,20.94c.637-.692,1.3-1.338,1.966-2l7.059-7.059c.037-.037.074-.083.148-.166-.12-.1-.24-.2-.351-.3Q4.838,7.1.528,2.789A1.585,1.585,0,0,1,.214.8,1.537,1.537,0,0,1,2.484.362c.508.452.978.941,1.458,1.421.729.72,1.449,1.44,2.169,2.169L8.464,6.3l2.381,2.381c.692.692,1.393,1.375,2.058,2.085a1.512,1.512,0,0,1,0,1.975c-.535.572-1.1,1.126-1.652,1.679-.784.794-1.578,1.578-2.362,2.362-.72.72-1.449,1.44-2.169,2.169L4.367,21.309,2.678,23a2.133,2.133,0,0,1-.877.471C1.626,23.459,1.469,23.459,1.3,23.459Z" data-name="Path 5181"/></svg></button>',
+//         dots: true,
+//         dotsClass: 'fac-desk-banners-home__dots-container',
+//     });
+// });
 //end of slick destop banners
 
 //dropdown menu
@@ -311,191 +341,3 @@ function closeBuscaMobile() {
     document.getElementsByClassName("fac-header__main-content-desktop")[0].style.display = "none";
 };
 //end of busca mobile
-
-var codeFunctionsStore = {
-    initStore: function() {
-        $(
-            ".shelf ul li.helperComplement, .vitrine-produtos-relacionados ul li.helperComplement"
-        ).each(function() {
-            $(this).remove();
-        });
-    },
-    facKztGeneralShelvesHome: function() {
-        var $sliderSectionOne = $(".fac-first-shelf");
-        var $sliderSlidesOne = $sliderSectionOne.find(
-            ".fac-slides .shelf > ul"
-        );
-        $sliderSlidesOne.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionFour = $(".second-shelf");
-        var $sliderSlidesFour = $sliderSectionFour.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsFour = $sliderSectionFour.find(".slider__arrows");
-        $sliderSlidesFour.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionFour.find(".slider__dots"),
-            appendArrows: $sliderArrowsFour,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionFive = $(".third-shelf");
-        var $sliderSlidesFive = $sliderSectionFive.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsFive = $sliderSectionFive.find(".slider__arrows");
-        $sliderSlidesFive.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionFive.find(".slider__dots"),
-            appendArrows: $sliderArrowsFive,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionSix = $(".fourth-shelf");
-        var $sliderSlidesSix = $sliderSectionSix.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsSix = $sliderSectionSix.find(".slider__arrows");
-        $sliderSlidesSix.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionSix.find(".slider__dots"),
-            appendArrows: $sliderArrowsSix,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionSeven = $(".fifth-shelf");
-        var $sliderSlidesSeven = $sliderSectionSeven.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsSeven = $sliderSectionSeven.find(".slider__arrows");
-        $sliderSlidesSeven.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionSeven.find(".slider__dots"),
-            appendArrows: $sliderArrowsSeven,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionEight = $(".sixth-shelf");
-        var $sliderSlidesEight = $sliderSectionEight.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsEight = $sliderSectionEight.find(".slider__arrows");
-        $sliderSlidesEight.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionEight.find(".slider__dots"),
-            appendArrows: $sliderArrowsEight,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionNine = $(".seventh-shelf");
-        var $sliderSlidesNine = $sliderSectionNine.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsNine = $sliderSectionNine.find(".slider__arrows");
-        $sliderSlidesNine.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionNine.find(".slider__dots"),
-            appendArrows: $sliderArrowsNine,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionTen = $(".eighth-shelf");
-        var $sliderSlidesTen = $sliderSectionTen.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsTen = $sliderSectionTen.find(".slider__arrows");
-        $sliderSlidesTen.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionTen.find(".slider__dots"),
-            appendArrows: $sliderArrowsTen,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-        var $sliderSectionEleven = $(".nineth-shelf");
-        var $sliderSlidesEleven = $sliderSectionEleven.find(
-            ".slider__slides .vitrine > ul"
-        );
-        var $sliderArrowsEleven = $sliderSectionEleven.find(".slider__arrows");
-        $sliderSlidesEleven.slick({
-            waitForAnimate: false,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            appendDots: $sliderSectionEleven.find(".slider__dots"),
-            appendArrows: $sliderArrowsEleven,
-            responsive: [
-                { breakpoint: 1023, settings: { slidesToShow: 2, dots: false } },
-                { breakpoint: 374, settings: { slidesToShow: 2, dots: false } },
-            ],
-        });
-    },
-    init: function() {
-        codeFunctionsStore.initStore();
-        if ($("body").hasClass("home")) {
-            codeFunctionsStore.facKztGeneralShelvesHome();
-        }
-    },
-};
-$(document).ready(function() { codeFunctionsStore.init(); });
-$(document).ready(function() { codeFunctionsStore.init() });

@@ -1199,9 +1199,30 @@ a:active {
     text-align: center;
 }
 
-
+/* 
 .fac-product .fac-product__content__image figure img {
     margin: 0 auto;
+} */
+
+.fac-first-shelf {
+    margin: 0 10px;
+}
+
+.fac-kzt-general-shelf .slick-track {
+    display: flex;
+    gap: 20px;
+}
+
+.shelf a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.shelf img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 .qd-sss-wishlist-delete-button {
@@ -1231,9 +1252,10 @@ a:active {
     text-align: center;
     font-size: 15px;
     line-height: 18px;
-    color: gray;
-    font-weight: normal;
+    color: #E41021;
+    font-weight: 600;
     min-height: 38px;
+    font-family: 'Montserrat';
 }
 
 .fac-product .fac-product__content__info__price {
@@ -1241,7 +1263,8 @@ a:active {
     text-align: center;
     display: flex;
     flex-flow: column;
-    gap: 5px;
+    gap: 6px;
+    min-height: 70px;
 }
 
 .fac-product__content__info__price__from {
@@ -1252,26 +1275,33 @@ a:active {
 }
 
 .fac-product__content__info__price__from__txt {
-    color:#63070f;
+    color:#3B0409;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .fac-product__content__info__price__from__price {
-    color:#63070f;
+    color:#3B0409;
     text-decoration: line-through;
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 .fac-product__content__info__price__sale-price {
     color: #058f49;
     font-family: "Montserrat", sans-serif;
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 19px;
 }
 
 .fac-product__content__info__price__installment {
     font-size: 14px;
-    color: gray;
-    font-style: normal;
+    color: #3B0409;
+    font-weight: 600;
+    font-family: 'Montserrat';
 }
 
 .fac-product .fac-product__actions {
