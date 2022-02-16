@@ -1,5 +1,6 @@
 body {
     background-color: #f5f6f8;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -25,7 +26,6 @@ input:focus {
 }
 
 .fac-footer {
-    font-family: 'Montserrat';
     text-decoration: none;
     display: flex;
     flex-flow: wrap;
@@ -54,7 +54,6 @@ input:focus {
 }
 
 .fac-footer__text__title {
-    font-weight: bolder;
     margin: 0;
 }
 
@@ -70,7 +69,6 @@ input:focus {
     padding: 10px 10px;
     width: 100%;
     border-radius: 5px;
-    font-size: 20px;
     box-sizing: border-box;
 }
 
@@ -198,7 +196,6 @@ input:focus {
         gap: 20px;
     }
     .fac-footer__text__title {
-        font-weight: bold;
     }
 }
 
@@ -247,7 +244,6 @@ input:focus {
     justify-content: center;
     border: none;
     background-color: #ffffff;
-    font-family: 'Montserrat';
     z-index: 99;
 }
 
@@ -315,7 +311,6 @@ input.fulltext-search-box {
 /*Caixa de sugestões*/
 
 .ui-autocomplete {
-    font-family: 'Roboto', sans-serif;
     background: #ffffff;
     position: fixed;
     display: flex;
@@ -345,7 +340,6 @@ input.fulltext-search-box {
     top: 13px;
     text-align: center;
     color: #e41021;
-    font-weight: 600;
     cursor: default;
 }
 
@@ -479,7 +473,6 @@ input.fulltext-search-box {
 .fac-header__main-content__menu-desktop__item__gift-list-box__content__button {
     box-sizing: border-box;
     border-radius: 5px;
-    font-size: 13px;
     background-color: #ffffff;
     width: 90%;
     color: #000000;
@@ -515,9 +508,15 @@ input.fulltext-search-box {
 }
 
 .fac-header__main-content__menu-desktop__item__txt-price p:last-child {
-    font-size: 15px;
 }
 
+.smart-cart-qd-v2-wrapper, .smart-cart-qd-v2-wrapper h3, .smart-cart-qd-v2-wrapper .qd-ddc-prodPrice, .smart-cart-qd-v2-wrapper .qd-ddc-infoTotalItems,  .smart-cart-qd-v2-wrapper .qd-ddc-infoTotalValue,  .smart-cart-qd-v2-wrapper .qd-ddc-viewCart {
+    font-family: "montserrat", sans-serif !important;
+  }
+
+  .smart-cart-qd-v2-wrapper .progress-bar-text span {
+      font-weight: 700 !important;
+  }
 
 /*end of fac-header__main-content__menu-desktop*/
 
@@ -562,7 +561,6 @@ input.fulltext-search-box {
 
 @media (max-width: 499px) {
     .fac-header__top-bar__slide {
-        font-size: 11px;
     }
 }
 
@@ -575,7 +573,6 @@ input.fulltext-search-box {
 @media (max-width: 1099px) {
     .fac-header__main-content__menu-desktop__item__txt,
     .fac-header__main-content__menu-desktop__item__txt-price {
-        font-size: 12px;
     }
 }
 
@@ -597,7 +594,6 @@ input.fulltext-search-box {
 
 .fac-dropdown-menu * {
     box-sizing: border-box;
-    font-family: 'Montserrat';
 }
 
 .fac-center {
@@ -674,18 +670,16 @@ input.fulltext-search-box {
 
 .sidenavHeader {
     color: white;
-    font-weight: bold;
     background-color: #e41021;
     padding: 19px 0px 19px 30px;
-    font-size: 16px;
+    font-weight: 700;
 }
 
 .sidenavContentHeader {
     margin-top: 5px;
     padding: 15px 0px 15px 25px;
-    font-size: 20px;
-    font-weight: bold;
     color: #e41021;
+    font-weight: 700;
 }
 
 .sidenavContent {
@@ -726,7 +720,6 @@ hr {
     left: 0;
     margin-left: 390px;
     color: white;
-    font-size: 50px;
     cursor: pointer;
     z-index: 75;
     transform: translateY(-5px);
@@ -910,7 +903,8 @@ a:active {
 #mainMenu {
     margin-top: 5px;
     padding: 15px 0px 15px 25px;
-    font-weight: bold;
+    color: #E41021;
+    font-weight: 700;
 }
 
 #mainMenu:hover {
@@ -979,8 +973,6 @@ a:active {
 }
 
 .fac-dropdown-menu__desktop-nav__sub-menu__item-dept {
-    font-size: 18px;
-    font-weight: 600;
     color: #e41021;
     display: flex;
     flex-flow: column;
@@ -1002,7 +994,6 @@ a:active {
 }
 
 .fac-dropdown-menu__desktop-nav__sub-menu__dept__sec__cat {
-    font-size: 14px;
     color: #63070f;
 }
 
@@ -1094,30 +1085,42 @@ a:active {
 
 .fac-desk-banners-home__prev-arrow {
     position: absolute;
-    top: 50%;
+    top: 46.5%;
     z-index: 2;
-    background-color: #CCCC;
+    background: rgba(255,255,255, .45);
     border: 1px solid #E41021;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    padding: 5px 10px;
     box-sizing: border-box;
     cursor: pointer;
+    height: 2em;
+    width: 2em;
+}
+
+.fac-desk-banners-home__prev-arrow__svg {
+    width: 70%;
+    height: 70%;
 }
 
 .fac-desk-banners-home__next-arrow {
     position: absolute;
-    top: 50%;
+    top: 46.5%;
     right: 0;
-    background-color: #CCCC;
+    background: rgba(255,255,255, .45);
     border: 1px solid #E41021;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    padding: 5px 10px;
     box-sizing: border-box;
     cursor: pointer;
+    height: 2em;
+    width: 2em;
+}
+
+.fac-desk-banners-home__next-arrow__svg {
+    width: 70%;
+    height: 70%;
 }
 
 .fac-desk-banners-home__dots-container {
@@ -1141,7 +1144,6 @@ a:active {
     background: #E41021;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1px;
     position: relative;
     bottom: 10px;
     width: 25px;
@@ -1165,7 +1167,7 @@ a:active {
     cursor: pointer;
     border: 1px solid transparent;
     margin-bottom: 20px;
-    height: 100%;
+    min-height: 400px;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -1186,11 +1188,13 @@ a:active {
     z-index: 99;
     background-color: #e41021;
     padding: 3px 10px;
-    font-family: "hind_maduraisemibold";
-    font-size: 14px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     color: #ffffff;
+}
+
+.qd-sss-wishlist-button__svg__path {
+    fill: #CCCCCC;
 }
 
 .fac-product .fac-product__content__image figure {
@@ -1213,7 +1217,7 @@ a:active {
     gap: 20px;
 }
 
-.shelf a {
+.shelf figure a {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1238,33 +1242,30 @@ a:active {
 
 .fac-product .fac-product__content__info {
     padding: 0 20px;
-    min-height: 175px;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .fac-product .fac-product__content__info__head {
     padding-bottom: 15px;
+    min-height: 54px;
 }
 
 .fac-product .fac-product__content__info__head h4 {
     text-align: center;
-    font-size: 15px;
     line-height: 18px;
     color: #E41021;
-    font-weight: 600;
     min-height: 38px;
-    font-family: 'Montserrat';
 }
 
 .fac-product .fac-product__content__info__price {
-    padding-bottom: 21px;
+    padding-bottom: 20px;
     text-align: center;
     display: flex;
     flex-flow: column;
     gap: 6px;
     min-height: 70px;
+    justify-content: flex-end;
 }
 
 .fac-product__content__info__price__from {
@@ -1276,32 +1277,19 @@ a:active {
 
 .fac-product__content__info__price__from__txt {
     color:#3B0409;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
 }
 
 .fac-product__content__info__price__from__price {
     color:#3B0409;
     text-decoration: line-through;
-    text-decoration: line-through;
-    font-family: 'Montserrat';
-    font-weight: 600;
 }
 
 .fac-product__content__info__price__sale-price {
     color: #058f49;
-    font-family: "Montserrat", sans-serif;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 19px;
 }
 
 .fac-product__content__info__price__installment {
-    font-size: 14px;
     color: #3B0409;
-    font-weight: 600;
-    font-family: 'Montserrat';
 }
 
 .fac-product .fac-product__actions {

@@ -102,7 +102,7 @@ var codeFunctionsStore = {
             qtsChars[0] = 60;
         }
         qtsChars[1] = qtsChars[0] - 3;
-        $(".vitrine ul li .product__head h4")
+        $(".shelf ul li .product__head h4")
             .find("a")
             .not(".complete")
             .each(function(i) {
