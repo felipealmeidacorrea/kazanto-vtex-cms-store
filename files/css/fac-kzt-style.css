@@ -256,6 +256,10 @@ input:focus {
     min-height: 26px;
 }
 
+.fac-header__top-bar__slide {
+    font-weight: 700;
+}
+
 .fac-header__logo-mobile {
     width: 100%;
 }
@@ -407,7 +411,7 @@ input.fulltext-search-box {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .fac-header__main-content__menu-desktop__item__svg {
@@ -507,9 +511,6 @@ input.fulltext-search-box {
     color: #63070f;
 }
 
-.fac-header__main-content__menu-desktop__item__txt-price p:last-child {
-}
-
 .smart-cart-qd-v2-wrapper, .smart-cart-qd-v2-wrapper h3, .smart-cart-qd-v2-wrapper .qd-ddc-prodPrice, .smart-cart-qd-v2-wrapper .qd-ddc-infoTotalItems,  .smart-cart-qd-v2-wrapper .qd-ddc-infoTotalValue,  .smart-cart-qd-v2-wrapper .qd-ddc-viewCart {
     font-family: "montserrat", sans-serif !important;
   }
@@ -559,8 +560,16 @@ input.fulltext-search-box {
     }
 }
 
+@media (min-width: 500px) and (max-width: 599px) {
+    .fac-header__top-bar__slide {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 499px) {
     .fac-header__top-bar__slide {
+        font-size: 12px;
+        font-weight: 600;
     }
 }
 
@@ -570,9 +579,17 @@ input.fulltext-search-box {
     }
 }
 
+@media (max-width: 1300px) {
+    .fac-header__main-content__menu-desktop__item__txt p,
+    .fac-header__main-content__menu-desktop__item__txt-price p {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1099px) {
-    .fac-header__main-content__menu-desktop__item__txt,
-    .fac-header__main-content__menu-desktop__item__txt-price {
+    .fac-header__main-content__menu-desktop__item__txt p,
+    .fac-header__main-content__menu-desktop__item__txt-price p {
+        font-size: 13px;
     }
 }
 
@@ -1085,7 +1102,7 @@ a:active {
 
 .fac-desk-banners-home__prev-arrow {
     position: absolute;
-    top: 46.5%;
+    top: calc(50% - 30px);
     z-index: 2;
     background: rgba(255,255,255, .45);
     border: 1px solid #E41021;
@@ -1094,8 +1111,8 @@ a:active {
     align-items: center;
     box-sizing: border-box;
     cursor: pointer;
-    height: 2em;
-    width: 2em;
+    height: 30px;
+    width: 30px;
 }
 
 .fac-desk-banners-home__prev-arrow__svg {
@@ -1105,7 +1122,7 @@ a:active {
 
 .fac-desk-banners-home__next-arrow {
     position: absolute;
-    top: 46.5%;
+    top: calc(50% - 30px);
     right: 0;
     background: rgba(255,255,255, .45);
     border: 1px solid #E41021;
@@ -1114,8 +1131,8 @@ a:active {
     align-items: center;
     box-sizing: border-box;
     cursor: pointer;
-    height: 2em;
-    width: 2em;
+    height: 30px;
+    width: 30px;
 }
 
 .fac-desk-banners-home__next-arrow__svg {
@@ -1162,11 +1179,10 @@ a:active {
 
 .fac-product {
     position: relative;
-    margin: 0 auto;
+    margin: 0 10px 20px;
     max-width: 395px;
     cursor: pointer;
     border: 1px solid transparent;
-    margin-bottom: 20px;
     min-height: 400px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -1191,6 +1207,8 @@ a:active {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .qd-sss-wishlist-button__svg__path {
@@ -1203,18 +1221,18 @@ a:active {
     text-align: center;
 }
 
-/* 
+/*
 .fac-product .fac-product__content__image figure img {
     margin: 0 auto;
 } */
 
 .fac-first-shelf {
-    margin: 0 10px;
+    margin: 0;
 }
 
 .fac-kzt-general-shelf .slick-track {
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .shelf figure a {
@@ -1253,10 +1271,20 @@ a:active {
 
 .fac-product .fac-product__content__info__head h4 {
     text-align: center;
-    line-height: 18px;
-    color: #E41021;
     min-height: 38px;
 }
+
+.fac-product__content__info__head h4 a {
+    color: #E41021;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 64px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+  }
 
 .fac-product .fac-product__content__info__price {
     padding-bottom: 20px;
@@ -1273,6 +1301,8 @@ a:active {
     width: 100%;
     justify-content: center;
     gap: 5px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .fac-product__content__info__price__from__txt {
@@ -1280,28 +1310,31 @@ a:active {
 }
 
 .fac-product__content__info__price__from__price {
-    color:#3B0409;
-    text-decoration: line-through;
+    color:#E41021;
 }
 
 .fac-product__content__info__price__sale-price {
     color: #058f49;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .fac-product__content__info__price__installment {
     color: #3B0409;
+    font-weight: 500;
+    font-size: 13px;
 }
 
 .fac-product .fac-product__actions {
     text-align: center;
-    transition: 0.3s;
+    /* transition: 0.3s;
     display: grid;
     align-content: end;
-    height: 100%;
+    height: 100%; */
 }
 
 .fac-product .fac-product__actions__content {
-    position: relative;
+    /* position: relative; */
     margin-bottom: 20px;
 }
 
@@ -1314,4 +1347,68 @@ a.fac-product__actions__content__btn {
     border-radius: 5px;
     text-decoration: none;
     border: 2px solid transparent;
+}
+
+.fac-product__actions__content__btn span {
+    font-weight: 500;
+}
+
+
+@media (max-width: 1749px) {
+    .fac-product .flag {
+        font-size: 13px;
+    }
+
+    .fac-product .fac-product__content__info__head h4 a {
+        font-size: 15px;
+        -webkit-line-clamp: 3
+    }
+
+    .fac-product .fac-product__content__info__price__from {
+        font-size: 13px;
+    }
+
+    .fac-product .fac-product__content__info__price__sale-price {
+        font-size: 16px;
+    }
+
+    .fac-product .fac-product__content__info__price__installment {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .fac-product .fac-product__content__info__head {
+        min-height: 65px;
+    }
+
+    .fac-product .fac-product__content__info__head h4 a {
+        -webkit-line-clamp: 4
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    /* .fac-first-shelf {
+        margin: 0;
+    } */
+
+    .fac-product {
+        min-height: 0;
+    }
+
+    .fac-product .fac-product__content__info__head h4 a {
+        font-size: 13px;
+    }
+
+    .fac-product .fac-product__content__info__price__from {
+        font-size: 12px;
+    }
+
+    .fac-product__actions__content__btn span {
+        font-size: 14px;
+    }
+
 }
