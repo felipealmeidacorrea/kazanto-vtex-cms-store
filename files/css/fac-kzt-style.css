@@ -16,7 +16,6 @@ body {
 
 main {
     padding-top: 96px;
-    display: none;
 }
 
 textarea:focus,
@@ -601,7 +600,7 @@ input.fulltext-search-box {
     flex-flow: row;
     align-items: center;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 10px;
     background: #ffffff;
     box-sizing: border-box;
     min-height: 46px;
@@ -1179,7 +1178,7 @@ a:active {
 
 .fac-product {
     position: relative;
-    margin: 0 10px 20px;
+    margin: 0 10px;
     max-width: 395px;
     cursor: pointer;
     border: 1px solid transparent;
@@ -1225,10 +1224,6 @@ a:active {
 .fac-product .fac-product__content__image figure img {
     margin: 0 auto;
 } */
-
-.fac-first-shelf {
-    margin: 0;
-}
 
 .fac-kzt-general-shelf .slick-track {
     display: flex;
@@ -1411,4 +1406,39 @@ a.fac-product__actions__content__btn {
         font-size: 14px;
     }
 
+}
+
+.fac-shell {
+    max-width: 100%;
+    margin: 0 10px 20px;
+}
+
+.shelf-title {
+    border-bottom: 2px solid #CCCCCC;
+    padding: 8px 0;
+    margin: 0 0 10px;
+    color: #E41021;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.123em;
+}
+
+.fac-shell--video-and-banner-group {
+    display: flex;
+    height: 338px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.fac-shell--video-and-banner-group img {
+    border-radius: 5px;
 }
