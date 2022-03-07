@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+>
+  <head>
+    <title><vtex.cmc:searchTitle /></title>
+    <link rel="shortcut icon" href="/arquivos/favicon.png" />
+    <vtex:metaTags />
+    <vtex:template id="fac-kzt-styles" />
+    <vtex:template id="fac-kzt-font-family" />
+    <vtex:template id="fac-kzt-scripts" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body id="category-page">
+    <header class="fac-header">
+      <vtex:template id="fac-kzt-header" />
+    </header>
+
+    <main>
+      <div class="main">
+        <div class="breadcrumbs">
+          <div class="shell">
+            <vtex.cmc:breadCrumb />
+          </div>
+        </div>
+
+        <div class="section__inner">
+          <aside class="section__aside">
+            <vtex.cmc:searchNavigator />
+          </aside>
+
+          <div class="section__content">
+            <div class="section__body">
+              <div class="items items--alt">
+                <vtex.cmc:searchResult
+                  layout="2f03c7d8-36c5-4577-bc7a-1ddf4330e11b"
+                  itemCount="24"
+                  columnCount="4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="fac-footer">
+      <vtex:template id="fac-kzt-footer" />
+    </footer>
+  </body>
+  <script src="/arquivos/infinityScroll.min.js?v=2"></script>
+  <script src="/arquivos/more-products-category.js"></script>
+</html>
