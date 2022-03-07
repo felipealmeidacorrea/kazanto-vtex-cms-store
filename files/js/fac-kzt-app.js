@@ -30,6 +30,23 @@ $(document).ready(function () {
     dots: true,
     dotsClass: "fac-full-width-slick-banners__dots-container",
   });
+  $(".fac-full-width-slick-banners .fac-full-width-slick-banners__two").slick({
+    lazyLoad: "ondemand",
+    waitForAnimate: false,
+    autoplay: !0,
+    autoplaySpeed: 4500,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    zIndex: 0,
+    prevArrow:
+      '<button type = "button" class = "slick-prev fac-full-width-slick-banners__prev-arrow" style="display: inline-flex;"><svg class="fac-full-width-slick-banners__prev-arrow__svg" width="13.287" height="23.436" viewBox="0 0 13.287 23.436" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><path fill="#E41021" data-name="Path 5181" d="m 11.972113,23.426 a -4.172,4.172 0 0 0 0.757,-0.388 -1.5,1.5 0 0 0 0.209,-2.131 c -0.637,-0.692 -1.3,-1.338 -1.966,-2 L 3.9131134,11.848 c -0.037,-0.037 -0.074,-0.083 -0.148,-0.166 0.12,-0.1 0.24,-0.2 0.351,-0.3 q 4.318,-4.315 8.6279996,-8.626 a -1.585,1.585 0 0 0 0.314,-1.989 -1.537,1.537 0 0 0 -2.27,-0.438 c -0.508,0.452 -0.9779996,0.941 -1.4579996,1.421 -0.729,0.72 -1.449,1.44 -2.169,2.169 l -2.353,2.348 -2.381,2.381 c -0.692,0.692 -1.393,1.375 -2.05799998,2.085 a -1.512,1.512 0 0 0 0,1.975 c 0.535,0.572 1.09999998,1.126 1.65199998,1.679 0.784,0.794 1.578,1.578 2.362,2.362 0.72,0.72 1.449,1.44 2.169,2.169 l 2.353,2.358 1.6889996,1.691 a -2.133,2.133 0 0 0 0.877,0.471 c 0.175,-0.012 0.332,-0.012 0.501,-0.012 z" /></svg></button>',
+    nextArrow:
+      '<button type = "button" class = "slick-next fac-full-width-slick-banners__next-arrow" style="display: inline-flex;"><svg class="fac-full-width-slick-banners__next-arrow__svg" width="13.287" height="23.436" version="1.1" viewBox="0 0 13.287 23.436" xmlns="http://www.w3.org/2000/svg"><path fill="#E41021" transform="translate(.018 -.033)" d="M1.3,23.459a4.172,4.172,0,0,1-.757-.388A1.5,1.5,0,0,1,.334,20.94c.637-.692,1.3-1.338,1.966-2l7.059-7.059c.037-.037.074-.083.148-.166-.12-.1-.24-.2-.351-.3Q4.838,7.1.528,2.789A1.585,1.585,0,0,1,.214.8,1.537,1.537,0,0,1,2.484.362c.508.452.978.941,1.458,1.421.729.72,1.449,1.44,2.169,2.169L8.464,6.3l2.381,2.381c.692.692,1.393,1.375,2.058,2.085a1.512,1.512,0,0,1,0,1.975c-.535.572-1.1,1.126-1.652,1.679-.784.794-1.578,1.578-2.362,2.362-.72.72-1.449,1.44-2.169,2.169L4.367,21.309,2.678,23a2.133,2.133,0,0,1-.877.471C1.626,23.459,1.469,23.459,1.3,23.459Z" data-name="Path 5181"/></svg></button>',
+    dots: true,
+    dotsClass: "fac-full-width-slick-banners__dots-container",
+  });
   $(".fac-first-shelf ul").slick({
     waitForAnimate: false,
     infinite: true,

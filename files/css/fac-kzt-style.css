@@ -94,24 +94,14 @@ input:focus {
     justify-content: center;
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     box-sizing: border-box;
     gap: 5px;
 }
 
-.pgt-media__img--lg {
-    height: 38px;
-    max-width: 55%;
-}
-
-.pgt-media__img--sm {
-    height: 38px;
-    max-width: 40%;
-}
-
-.pgt-media__img--md {
-    height: 38px;
-    max-width: 45%;
+.pgt-media__img {
+    height: 30px;
+    width: auto;
 }
 
 .subscribe--news {
@@ -172,12 +162,6 @@ input:focus {
 @media (max-width: 399px) {
     .box__mult-content__media {
         gap: 10px;
-    }
-    .pgt-media__img--sm,
-    .pgt-media__img--md,
-    .pgt-media__img--lg {
-        height: 38px;
-        max-width: 100%;
     }
 }
 
@@ -242,12 +226,14 @@ input:focus {
 }
 
 .fac-header__top-bar {
-    width: 100%;
     background-color: #e41021;
     color: #ffffff;
     padding: 10px;
+    width: 100%;
+}
+
+.fac-header__top-bar .slick-slide {
     text-align: center;
-    min-height: 26px;
 }
 
 @media (min-width: 1024px) {
@@ -273,6 +259,11 @@ input:focus {
     display: none;
 }
 
+@media (max-width: 1023px) {
+    .fac-header__main-content-desktop {
+        z-index: 1001;
+    }
+}
 
 /*-------Caixa de busca-------*/
 
@@ -561,6 +552,7 @@ input.fulltext-search-box {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 1001;
     }
     .ui-autocomplete {
         width: calc(100% - 20px) !important;
@@ -614,14 +606,9 @@ input.fulltext-search-box {
     min-height: 46px;
     gap: 10px;
     width: 100%;
-}
-
-@media (min-width: 1024px) {
-    .fac-menu-bar {
-        position: fixed;
-        top: 96px;
-        z-index: 1000;
-    }
+    -webkit-box-shadow: 0px 10px 15px -15px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 0px 10px 15px -15px rgba(0,0,0,.75);
+    box-shadow: 0px 10px 15px -15px rgb(0 0 0 / 75%);
 }
 
 .fac-menu-bar * {
@@ -975,12 +962,14 @@ a:active {
 .fac-menu-bar__desktop-nav__sub-menu {
     box-sizing: border-box;
     position: absolute;
-    left: 0;
+    left: 100px;
     background: #ffffff;
-    width: 100%;
+    width: 70%;
     padding: 20px;
     border-bottom: 2px solid #dddddd;
     display: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .fac-menu-bar__desktop-nav__sub-menu__item {
@@ -1043,6 +1032,7 @@ a:active {
         background: #ffffff;
         height: 60px;
         box-sizing: border-box;
+        z-index: 1001;
     }
     .fac-menu-bar__desktop-nav {
         display: none;
@@ -1061,6 +1051,11 @@ a:active {
     .fac-menu-bar__responsive-dropdown-menu__main-btn__text {
         display: none;
     }
+}
+
+.fac-menu-bar__responsive-dropdown-menu__main-btn__text {
+    color: #E41021;
+    font-weight: 600;
 }
 
 @media (max-width: 1499px) {
@@ -1414,7 +1409,7 @@ a.fac-product__actions__content__btn {
 
 .shelf-title {
     border-bottom: 2px solid #CCCCCC;
-    padding: 8px 0;
+    padding: 8px 0 8px 10px;
     margin: 0 0 10px;
     color: #E41021;
     font-size: 20px;
@@ -1424,7 +1419,7 @@ a.fac-product__actions__content__btn {
 
 .fac-video-and-banners-single-row-group {
     display: flex;
-    height: 338px;
+    height: 300px;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -1436,6 +1431,40 @@ a.fac-product__actions__content__btn {
     gap: 20px;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 20px;
+}
+
+.fac-video-and-banners-single-row-group .box-banner:last-child img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 874px) {
+    .fac-video-and-banners-single-row-group .box-banner:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 873px) {
+    .fac-video-and-banners-single-row-group {
+        height: 448px;
+    }
+
+    .fac-video-and-banners-single-row-group .box-banner:not(:last-child) {
+        display: none;
+    }
+}
+
+@media (max-width: 1499px) {
+    .fac-mult-banner-single-row .box-banner:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 899px) {
+    .fac-mult-banner-single-row .box-banner:not(:first-child) {
+        display: none;
+    }     
 }
 
 .fac-video-and-banners-single-row-group img {
@@ -1446,6 +1475,7 @@ a.fac-product__actions__content__btn {
     display: flex;
     gap: 20px;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .fac-mult-banner-single-row .box-banner img {
@@ -1456,6 +1486,12 @@ a.fac-product__actions__content__btn {
 
 @media (max-width: 1023px) {
     .fac-hidden-on-all-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fac-hidden-on-all-desktop {
         display: none;
     }
 }
