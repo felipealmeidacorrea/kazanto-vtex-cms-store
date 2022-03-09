@@ -1206,7 +1206,7 @@ a:active {
 
 .flag {
     position: absolute;
-    z-index: 99;
+    z-index: 10;
     background-color: #e41021;
     padding: 3px 10px;
     border-top-right-radius: 7px;
@@ -1494,4 +1494,176 @@ a.fac-product__actions__content__btn {
     .fac-hidden-on-all-desktop {
         display: none;
     }
+}
+
+.bread-crumb {
+    font-size: 14px;
+    margin: 15px 0;
+    padding: 0 0 0 20px;
+}
+
+.bread-crumb ul {
+    display: flex;
+    gap: 5px;
+}
+
+.bread-crumb li {
+    font-weight: 500;
+    color: #CCCCCC;
+}
+
+.bread-crumb li::after {
+    content: " >";
+}
+
+.bread-crumb li.last {
+    color: #666;
+}
+
+.fac-kzt-general-product-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.fac-kzt-general-product-list__nav {
+    margin-right: 10px;
+    max-width: 350px;
+}
+
+.fac-kzt-general-product-list__nav .navigation-tabs {
+    border-radius: 5px;
+    padding: 1px 10px 20px;
+    background-color: #FFFFFF;
+}
+
+.fac-kzt-general-product-list__nav .menu-navegue {
+    display: none;
+}
+
+.fac-kzt-general-product-list__nav .search-multiple-navigator {
+    display: none;
+}
+
+.fac-kzt-general-product-list__nav .search-single-navigator {
+    display: flex;
+    flex-flow: column;
+    color: #666;
+}
+
+.fac-kzt-general-product-list__nav .search-single-navigator h3 {
+    display: none;
+}
+
+.fac-kzt-general-product-list__nav .search-single-navigator h3, .fac-kzt-general-product-list__nav .search-single-navigator h4, .fac-kzt-general-product-list__nav .search-single-navigator h5 {
+    font-weight: 600;
+    margin: 20px 0 10px;
+    color: #E41021;
+}
+
+.fac-kzt-general-product-list__nav .search-single-navigator ul li {
+    margin: 10px 0 0;
+    font-size: 13px;
+}
+
+.fac-kzt-general-product-list__products {
+    width: 80%;
+    padding: 7px 0 0;
+}
+
+.fac-kzt-general-product-list__products .searchResultsTime {
+    margin: 0 0 20px;
+}
+
+.fac-kzt-general-product-list__products .resultado-busca-numero {
+    padding: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.fac-kzt-general-product-list__products .searchResultsTime * {
+    color: #E41021;
+    font-weight: 500;
+}
+
+.fac-kzt-general-product-list__products .resultado-busca-termo {
+    display: none;
+}
+
+.fac-kzt-general-product-list__products .resultado-busca-tempo {
+    display: none;
+}
+
+.fac-kzt-general-product-list__products .sub {
+    margin: 0 0 20px;
+}
+
+.fac-kzt-general-product-list__products .resultado-busca-filtro {
+    display: flex;
+    gap: 0;
+}
+
+.orderBy {
+    padding: 5px;
+    background: #FFFFFF;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.orderBy select, .filterBy select {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.filterBy {
+    padding: 5px;
+    background: #FFFFFF;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.compare {
+    display: none;
+}
+
+.pager {
+    display: none;
+}
+
+.fac-kzt-general-product-list .fac-kzt-general-shelf ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    vertical-align: middle;
+}
+
+.fac-kzt-general-product-list__products .fac-product {
+    margin: 0;
+}
+
+
+
+
+
+
+
+.main div:nth-of-type(3) {
+    display: none;
+}
+
+.main .searchResultsTime:nth-of-type(2) {
+    display: none;
+}
+
+.bread-crumb li.last::after {
+    content: " ";
+}
+
+.shelf ul li img+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
 }
