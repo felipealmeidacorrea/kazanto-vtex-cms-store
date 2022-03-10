@@ -1498,7 +1498,7 @@ a.fac-product__actions__content__btn {
 .bread-crumb {
     font-size: 14px;
     margin: 15px 0;
-    padding: 0 0 0 20px;
+    padding-left: 10px;
 }
 
 .bread-crumb ul {
@@ -1522,7 +1522,7 @@ a.fac-product__actions__content__btn {
 .fac-kzt-general-product-list {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .fac-kzt-general-product-list__nav {
@@ -1666,3 +1666,103 @@ a.fac-product__actions__content__btn {
     right: 0;
     opacity: 0;
 }
+
+.fac-kzt-general-product-list__nav .navigation .search-single-navigator h3 {
+    display: initial;
+}
+
+.fac-kzt-general-product-list__nav .navigation .search-single-navigator ul {
+    margin-bottom: 20px;
+}
+
+.fac-kzt-general-product-list__nav .navigation {
+    border-radius: 5px;
+    padding: 10px 10px 5px;
+    background-color: #FFFFFF;
+}
+
+.resultado-busca .bread-crumb li::after {
+    content: " ";
+}
+
+.resultado-busca .bread-crumb li.last::after {
+    content: " ";
+}
+
+.resultado-busca .bread-crumb li.last::before {
+    content: "> ";
+}
+
+body#category-page main {
+    margin: 0 10px;
+}
+
+@media (min-width: 1800px) {
+    .fac-kzt-general-product-list__nav .search-single-navigator ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 799px) {
+    .fac-kzt-general-product-list__nav {
+        display: none;
+    }
+
+    .fac-kzt-general-product-list .fac-kzt-general-shelf ul {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .fac-kzt-general-product-list__products {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 699px) {
+    .fac-kzt-general-product-list .fac-kzt-general-shelf ul {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 594px) {
+    .fac-kzt-general-product-list .fac-kzt-general-shelf ul {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
+@media (max-width: 444px) {
+    .fac-kzt-general-product-list .fac-product .fac-product__content__info__head h4 a {
+        font-size: 17px;
+    }
+
+    .fac-kzt-general-product-list .fac-product .fac-product__content__info__price__from,
+    .fac-kzt-general-product-list .fac-product .fac-product__content__info__price__installment {
+        font-size: 13px;
+    }
+
+    .fac-kzt-general-product-list .fac-product .fac-product__content__info__price__sale-price {
+        font-size: 18px;
+    }
+
+    .fac-kzt-general-product-list .fac-product__actions__content__btn span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 584px) {
+    .fac-kzt-general-product-list__products .resultado-busca-filtro {
+        flex-flow: column;
+    }
+
+    .fac-kzt-general-product-list__products .orderBy {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .fac-kzt-general-product-list__products .filterBy {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+

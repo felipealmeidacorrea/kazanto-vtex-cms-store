@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:metaTags />
+    <link rel="shortcut icon" href="/arquivos/favicon.png" />
+    <vtex:template id="fac-kzt-styles" />
+    <vtex:template id="fac-kzt-font-family" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header class="fac-header">
+        <vtex:template id="fac-kzt-header" />
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer class="fac-footer">
+        <vtex:template id="fac-kzt-footer" />
+    </footer>
+
+    <vtex:template id="fac-kzt-scripts" />
+</body>
+
+</html>
