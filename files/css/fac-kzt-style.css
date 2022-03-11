@@ -1446,7 +1446,7 @@ a.fac-product__actions__content__btn {
 
 @media (max-width: 873px) {
     .fac-video-and-banners-single-row-group {
-        height: 448px;
+        height: auto;
     }
 
     .fac-video-and-banners-single-row-group .box-banner:not(:last-child) {
