@@ -1460,8 +1460,28 @@ a.fac-product__actions__content__btn {
     }
 }
 
+@media (max-width: 1499px) {
+    .fac-mult-banner-single-row--general-product-list .box-banner:last-child {
+        display: none;
+    }
+}
+
+.fac-mult-banner-single-row--general-product-list
+
+@media (max-width: 899px) {
+    .fac-mult-banner-single-row--general-product-list .box-banner:not(:first-child) {
+        display: none;
+    }     
+}
+
 @media (max-width: 899px) {
     .fac-mult-banner-single-row .box-banner:not(:first-child) {
+        display: none;
+    }     
+}
+
+@media (max-width: 899px) {
+    .fac-mult-banner-single-row--general-product-list .box-banner:not(:first-child) {
         display: none;
     }     
 }
@@ -1477,7 +1497,21 @@ a.fac-product__actions__content__btn {
     padding-top: 20px;
 }
 
+.fac-mult-banner-single-row--general-product-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+
 .fac-mult-banner-single-row .box-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.fac-mult-banner-single-row--general-product-list .box-banner img {
     width: 100%;
     height: auto;
     border-radius: 5px;
