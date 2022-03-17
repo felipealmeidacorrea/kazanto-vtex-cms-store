@@ -82,3 +82,35 @@
         margin-top: 0px;
       }
   }
+
+  /*tabela de descrição de produtos*/
+  table.fac-info-table {
+    background-color: #EEEEEE;
+    width: fit-content;
+    text-align: left;
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: 1.56em 0;
+  }
+  table.fac-info-table td, table.fac-info-table th {
+    padding: 5px 10px;
+  }
+  table.fac-info-table tbody td {
+    font-size: 13px;
+  }
+  table.fac-info-table tr:nth-child(even) {
+    background: #FFFFFF;
+  }
+  table.fac-info-table tfoot td {
+    font-size: 14px;
+  }
+  table.fac-info-table tfoot .links {
+    text-align: right;
+  }
+  table.fac-info-table tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
