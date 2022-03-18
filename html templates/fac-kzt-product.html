@@ -1,164 +1,186 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-	xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
 
 <head>
-	<title>
-		<vtex.cmc:productPageTitle />
-	</title>
-	<vtex:metaTags />
-	<vtex:template id="fac-kzt-styles" />
+    <title>
+        <vtex.cmc:productPageTitle />
+    </title>
+    <vtex:metaTags />
+    <vtex:template id="fac-kzt-styles" />
     <vtex:template id="fac-kzt-font-family" />
-	<vtex:template id="fac-kzt-scripts" />
-	<link rel="shortcut icon" href="/arquivos/favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <vtex:template id="fac-kzt-scripts" />
+    <link rel="shortcut icon" href="/arquivos/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <vtex.cmc:menudiferenciais />
 
 <body id="product-page">
-		<header class="fac-header">
-			<vtex:template id="fac-kzt-header" />
-	  	</header>
+    <header class="fac-header">
+        <vtex:template id="fac-kzt-header" />
+    </header>
 
-		<main>
-            <vtex.cmc:breadCrumb />
+    <main>
+        <vtex.cmc:breadCrumb />
 
-			<div class="section-product">
-				<div class="shell">
-					<div class="section__inner">
-						<aside class="section__aside">
+        <div class="section-product">
+            <div class="shell">
+                <div class="section__inner">
+                    <aside class="section__aside">
 
-							<header class="section__head hidden-sm hidden-md hidden-lg">
-								<div class="product-large"></div><!-- /.product-large -->
-							</header><!-- /.section__head -->
-							<div class="product__aside">
-								<!-- zoom -->
-								<vtex.cmc:ProductImage zoom="on" />
-								<!-- <vtex.cmc:ProductImage/> -->
-							</div><!-- /.product__aside -->
-						</aside><!-- /.section__aside -->
-
-
-
-						<div class="section__content">
-							<div class="product-large">
-
-								<!-- Corpo produto -->
-
-								<div class="product__body">
-									<div class="col__sumary">
-										<div class="product__head">
-											<h2>
-												<vtex.cmc:productName />
-											</h2>
-											<h3 style="font-size: 15px">
-											    <vtex.cmc:productReference/>
-											</h3>
-										</div>
-
-										<div class="mz-block-giftlist">
-											<!-- Giftlist -->
-                                            <vtex.cmc:GiftListInsertSkuV2 />
-											<!-- Giftlist -->
-										</div>
-										<vtex.cmc:productDescriptionShort />
-
-										<div class="seletor-sku">
-											<vtex.cmc:skuSelection />
-
-											<vtex.cmc:BuyButton />
-										</div>
+                        <header class="section__head hidden-sm hidden-md hidden-lg">
+                            <div class="product-large"></div>
+                            <!-- /.product-large -->
+                        </header>
+                        <!-- /.section__head -->
+                        <div class="product__aside">
+                            <!-- zoom -->
+                            <vtex.cmc:ProductImage zoom="on" />
+                            <!-- <vtex.cmc:ProductImage/> -->
+                        </div>
+                        <!-- /.product__aside -->
+                    </aside>
+                    <!-- /.section__aside -->
 
 
-										<div class="product__price">
-											<vtex.cmc:skuPrice />
-										</div><!-- /.product__price -->
 
-										<div class="qtd-btn">
+                    <div class="section__content">
+                        <div class="product-large">
 
-											<div class="quatity__prod">
+                            <!-- Corpo produto -->
 
-												<ul class="list-count">
-													<li class="minus"><a href="javascript:void(0);"
-															class="qty-less">-</a>
-													</li>
-													<li class="result"><input type="number/" value="1" class="qty-field"
-															min="1" max="99999" /></li>
-													<li class="plus"><a href="javascript:void(0);"
-															class="qty-more">+</a>
-													</li>
-												</ul>
-											</div>
+                            <div class="product__body">
+                                <div class="col__sumary">
+                                    <div class="product__head">
+                                        <h2>
+                                            <vtex.cmc:productName />
+                                        </h2>
+                                        <h3 style="font-size: 15px">
+                                            <vtex.cmc:productReference/>
+                                        </h3>
+                                    </div>
 
-											<div class="product__actions">
-												<a href="javascript:void(0);" class="btn btn--large">ADICIONAR AO CARRINHO</a>
-											</div><!-- /.product__actions -->
-										</div>
+                                    <div class="mz-block-giftlist">
+                                        <!-- Giftlist -->
+                                        <vtex.cmc:GiftListInsertSkuV2 />
+                                        <!-- Giftlist -->
+                                    </div>
+                                    <vtex.cmc:productDescriptionShort />
 
-										<div class="shipping_time">
-											<vtex.cmc:shippingValue />
-										</div>
+                                    <div class="seletor-sku">
+                                        <vtex.cmc:skuSelection />
 
-									</div>
+                                        <vtex.cmc:BuyButton />
+                                    </div>
 
 
-								</div><!-- /.product__body -->
-							</div><!-- /.product-large -->
-						</div><!-- /.section__content -->
-					</div><!-- /.section__inner -->
-				</div><!-- /.shell -->
-			</div><!-- /.section-product -->
+                                    <div class="product__price">
+                                        <vtex.cmc:skuPrice />
+                                    </div>
+                                    <!-- /.product__price -->
 
-			<section class="infos-product">
-							<h3 class="d_active tab_drawer_heading" rel="tab1">Descrição Geral</h3>
-							<div id="tab1" class="tab_content">
-								<vtex.cmc:ProductDescription />
-							</div>
-			</section>
+                                    <div class="qtd-btn">
 
-			<section class="section section-slider-view-together">
-				<div class="shell">
-					<header class="section__head">
-						<h2>
-							Compre<br />Junto
-						</h2>
-					</header><!-- /.section__head -->
-					<div class="slider-products-check">
-						<div class="slider__clip">
-							<div class="slider__slides vitrine">
-								<vtex:contentPlaceHolder id="Mostrar Junto" />
-							</div><!-- /.slider__slides -->
-							<div class="slider__arrows"></div><!-- /.slider__arrows -->
-						</div><!-- /.slider__clip -->
-					</div><!-- /.slider -->
-				</div><!-- /.shell -->
-			</section><!-- /.section -->
+                                        <div class="quatity__prod">
 
-			<section class="section section-slider-check">
-				<div class="shell">
-					<header class="section__head">
-						<h2>
-							Quem Comprou<br />Também Viu
-						</h2>
-					</header><!-- /.section__head -->
-					<div class="slider-products-check">
-						<div class="slider__clip">
-							<div class="slider__slides vitrine">
-								<vtex:contentPlaceHolder id="Vitrines Produtos em Destaque" />
-							</div><!-- /.slider__slides -->
-							<div class="slider__arrows"></div><!-- /.slider__arrows -->
-						</div><!-- /.slider__clip -->
-					</div><!-- /.slider -->
-				</div><!-- /.shell -->
-			</section><!-- /.section -->
-		</main>
-		
-		<footer class="fac-footer">
-			<vtex:template id="fac-kzt-footer" />
-		</footer>
-	<script src="/arquivos/jquery.zoom.min.js"></script>
-	<script src="/arquivos/scripts-products-kz.js"></script>
+                                            <ul class="list-count">
+                                                <li class="minus"><a href="javascript:void(0);" class="qty-less">-</a>
+                                                </li>
+                                                <li class="result"><input type="number/" value="1" class="qty-field" min="1" max="99999" /></li>
+                                                <li class="plus"><a href="javascript:void(0);" class="qty-more">+</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product__actions">
+                                            <a href="javascript:void(0);" class="btn btn--large">ADICIONAR AO CARRINHO</a>
+                                        </div>
+                                        <!-- /.product__actions -->
+                                    </div>
+
+                                    <div class="shipping_time">
+                                        <vtex.cmc:shippingValue />
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!-- /.product__body -->
+                        </div>
+                        <!-- /.product-large -->
+                    </div>
+                    <!-- /.section__content -->
+                </div>
+                <!-- /.section__inner -->
+            </div>
+            <!-- /.shell -->
+        </div>
+        <!-- /.section-product -->
+
+        <section class="infos-product">
+            <h3 class="d_active tab_drawer_heading" rel="tab1">Descrição Geral</h3>
+            <div id="tab1" class="tab_content">
+                <vtex.cmc:ProductDescription />
+            </div>
+        </section>
+
+        <section class="section section-slider-view-together">
+            <div class="shell">
+                <header class="section__head">
+                    <h2>
+                        Compre<br />Junto
+                    </h2>
+                </header>
+                <!-- /.section__head -->
+                <div class="slider-products-check">
+                    <div class="slider__clip">
+                        <div class="slider__slides vitrine">
+                            <vtex:contentPlaceHolder id="Mostrar Junto" />
+                        </div>
+                        <!-- /.slider__slides -->
+                        <div class="slider__arrows"></div>
+                        <!-- /.slider__arrows -->
+                    </div>
+                    <!-- /.slider__clip -->
+                </div>
+                <!-- /.slider -->
+            </div>
+            <!-- /.shell -->
+        </section>
+        <!-- /.section -->
+
+        <section class="section section-slider-check">
+            <div class="shell">
+                <header class="section__head">
+                    <h2>
+                        Quem Comprou<br />Também Viu
+                    </h2>
+                </header>
+                <!-- /.section__head -->
+                <div class="slider-products-check">
+                    <div class="slider__clip">
+                        <div class="slider__slides vitrine">
+                            <vtex:contentPlaceHolder id="Vitrines Produtos em Destaque" />
+                        </div>
+                        <!-- /.slider__slides -->
+                        <div class="slider__arrows"></div>
+                        <!-- /.slider__arrows -->
+                    </div>
+                    <!-- /.slider__clip -->
+                </div>
+                <!-- /.slider -->
+            </div>
+            <!-- /.shell -->
+        </section>
+        <!-- /.section -->
+    </main>
+
+    <footer class="fac-footer">
+        <vtex:template id="fac-kzt-footer" />
+    </footer>
+    <script src="/arquivos/jquery.zoom.min.js"></script>
+    <script src="/arquivos/scripts-products-kz.js"></script>
 </body>
 
 </html>

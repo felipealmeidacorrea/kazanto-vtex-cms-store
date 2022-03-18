@@ -3788,6 +3788,7 @@ img {
 
 
 /*tela de exibição do zoom*/
+
 .zoomWrapper {
     position: relative;
     border: 1px solid #E41021;
@@ -3815,7 +3816,9 @@ img {
     filter: alpha(opacity=60);
 }
 
+
 /*tela de navegação do zoom*/
+
 .zoomWrapperImage {
     display: block;
     position: relative;
@@ -3840,13 +3843,16 @@ img {
     display: block;
 }
 
+
 /*tamanho da imagem para o zoom*/
+
 .zoomWrapperImage img {
-  max-width: 1000px !important;
+    max-width: 1000px !important;
 }
 
 
 /*tabela de descrição do produto*/
+
 table.fac-info-table {
     background-color: #EEEEEE;
     width: fit-content;
@@ -3854,26 +3860,33 @@ table.fac-info-table {
     border-collapse: collapse;
     max-width: 100%;
     margin: 1.56em 0;
-  }
-  table.fac-info-table td, table.fac-info-table th {
+}
+
+table.fac-info-table td,
+table.fac-info-table th {
     padding: 5px 10px;
-  }
-  table.fac-info-table tbody td {
+}
+
+table.fac-info-table tbody td {
     font-size: 13px;
-  }
-  table.fac-info-table tr:nth-child(even) {
+}
+
+table.fac-info-table tr:nth-child(even) {
     background: #FFFFFF;
-  }
-  table.fac-info-table tfoot td {
+}
+
+table.fac-info-table tfoot td {
     font-size: 14px;
-  }
-  table.fac-info-table tfoot .links {
+}
+
+table.fac-info-table tfoot .links {
     text-align: right;
-  }
-  table.fac-info-table tfoot .links a{
+}
+
+table.fac-info-table tfoot .links a {
     display: inline-block;
     background: #1C6EA4;
     color: #FFFFFF;
     padding: 2px 8px;
     border-radius: 5px;
-  }
+}
