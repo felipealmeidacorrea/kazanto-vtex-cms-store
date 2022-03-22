@@ -1,116 +1,125 @@
 .diferenciais {
-    background-color: #e41021;
+  background-color: #e41021;
 }
 
 .header .mini-cart span.mini-cart-qty-admake {
-    right: -9px;
+  right: -9px;
 }
 
 .fac-menu-mobile {
-    background-color: white;
-    position: relative;
-    margin: 0 0 15px;
-  }
-  
-  .fac-menu-mobile .slider__slides {
-    padding-left: 34px;
-  }
-  
-  .fac-menu-mobile > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-overflow-scrolling: touch;
-    justify-content: space-between;
-    overflow-x: auto;
-    padding: 16px 0;
-    background-color: white;
-    scrollbar-color: #e41021 #e5e5e5;
-    scrollbar-width: thin;
-  }
-  
-  .fac-menu-mobile > div::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  .fac-menu-mobile > div::-webkit-scrollbar-track {
-    background: #e5e5e5;
-    border-radius: 100px;
-  }
-  
-  .fac-menu-mobile > div::-webkit-scrollbar-thumb {
-    background: #e41021;
-    border-radius: 100px;
-  }
-  
-  .fac-menu-mobile > div .box-banner {
-    min-width: 114px;
-  }
-  
-  .fac-menu-mobile > div .box-banner:not(:last-child) {
-    margin-right: 20px;
-  }
+  background-color: white;
+  position: relative;
+  margin: 0 0 15px;
+}
 
-  /* Aplicado ao principal .section header.section__head h2 {
-    color: #e41021;
-    font-weight: 600;
-  }*/
+.fac-menu-mobile .slider__slides {
+  padding-left: 34px;
+}
 
-  @media (max-width: 1023px) {
+.fac-menu-mobile > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-overflow-scrolling: touch;
+  justify-content: space-between;
+  overflow-x: auto;
+  padding: 16px 0;
+  background-color: white;
+  scrollbar-color: #e41021 #e5e5e5;
+  scrollbar-width: thin;
+}
 
-      .slider-intro-mobile .slider__dots {
-        margin-bottom: -35px;
-      }
+.fac-menu-mobile > div::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
-      .slider-intro-mobile .slick-dots button {
-        height: 5px;
-      }
-    
-      .section,
-      .section--sales {
-        padding: 0px 0px;
-      }
+.fac-menu-mobile > div::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  border-radius: 100px;
+}
 
-      .section.section--sales--featured {
-        margin-top: 15px;
-      }
+.fac-menu-mobile > div::-webkit-scrollbar-thumb {
+  background: #e41021;
+  border-radius: 100px;
+}
 
-      .section.section--sales--vistos {
-        margin-top: 0px;
-      }
-  }
+.fac-menu-mobile > div .box-banner {
+  min-width: 114px;
+}
 
-  /*tabela de descrição de produtos*/
-  table.fac-info-table {
-    background-color: #EEEEEE;
-    width: fit-content;
-    text-align: left;
-    border-collapse: collapse;
-    max-width: 100%;
-    margin: 1.56em 0;
-  }
-  table.fac-info-table td, table.fac-info-table th {
-    padding: 5px 10px;
-  }
-  table.fac-info-table tbody td {
-    font-size: 13px;
-  }
-  table.fac-info-table tr:nth-child(even) {
-    background: #FFFFFF;
-  }
-  table.fac-info-table tfoot td {
-    font-size: 14px;
-  }
-  table.fac-info-table tfoot .links {
-    text-align: right;
-  }
-  table.fac-info-table tfoot .links a{
-    display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
-    padding: 2px 8px;
-    border-radius: 5px;
-  }
+.fac-menu-mobile > div .box-banner:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Aplicado ao principal .section header.section__head h2 {
+  color: #e41021;
+  font-weight: 600;
+}*/
+
+@media (max-width: 1023px) {
+
+    .slider-intro-mobile .slider__dots {
+      margin-bottom: -35px;
+    }
+
+    .slider-intro-mobile .slick-dots button {
+      height: 5px;
+    }
+  
+    .section,
+    .section--sales {
+      padding: 0px 0px;
+    }
+
+    .section.section--sales--featured {
+      margin-top: 15px;
+    }
+
+    .section.section--sales--vistos {
+      margin-top: 0px;
+    }
+}
+
+/*tabela de descriÃ§Ã£o de produtos*/
+table.fac-info-table {
+  background-color: #EEEEEE;
+  width: fit-content;
+  text-align: left;
+  border-collapse: collapse;
+  max-width: 100%;
+  margin: 1.56em 0;
+}
+table.fac-info-table td, table.fac-info-table th {
+  padding: 5px 10px;
+}
+table.fac-info-table tbody td {
+  font-size: 13px;
+}
+table.fac-info-table tr:nth-child(even) {
+  background: #FFFFFF;
+}
+table.fac-info-table tfoot td {
+  font-size: 14px;
+}
+table.fac-info-table tfoot .links {
+  text-align: right;
+}
+table.fac-info-table tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.colection-flag {
+  background: red;
+  width: fit-content;
+  padding: 0 10px;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
