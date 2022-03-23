@@ -1,12 +1,3 @@
-*,
-*:before,
-*:after {
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #f5f6f8;
   font-family: "Montserrat", sans-serif;
@@ -1322,6 +1313,11 @@ a:active {
   font-size: 13px;
 }
 
+label.skuBestInstallmentValue {
+  font-weight: 600 !important;
+  color: #058F49 !important;
+}
+
 .fac-product .fac-product__actions {
   text-align: center;
   /* transition: 0.3s;
@@ -1976,11 +1972,13 @@ body#category-page main {
 }
 
 .fac-product-main__images #include {
-  max-width: 500px;
+  max-width: 450px;
   position: relative;
-  max-height: 500px;
+  max-height: 450px;
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  height: 450px;
 }
 
 .fac-product-main__images #include figure {
@@ -1998,7 +1996,8 @@ body#category-page main {
   display: flex;
   list-style: none;
   max-width: 500px;
-  /* max-height: 100px; */
+  gap: 5px;
+  margin-top: 10px;
 }
 
 .fac-product-main__images ul.thumbs li {
@@ -2651,10 +2650,6 @@ table.group.Dados-Tecnicos tbody tr td {
   max-width: initial;
 }
 
-.giftlist-insertsku-popup .glis-popup-link {
-  padding-left: 24px;
-}
-
 .freight-values {
   margin-top: 20px;
 }
@@ -2675,13 +2670,6 @@ table.group.Dados-Tecnicos tbody tr td {
 
 .freight-values tbody tr {
   height: 50px;
-}
-
-@media (max-width: 1119px) {
-  .fac-product-main__images .apresentacao div#show {
-    display: inline-block;
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -3330,11 +3318,13 @@ input#notifymeButtonOK {
 }
 
 section.fac-product-infos {
-  background: #fff;
+  background: #FFFFFF;
   margin: 10px auto 0;
   padding: 20px;
-  max-width: 975px;
+  width: 1024px;
+  max-width: 100%;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 h3.fac-product-infos__head {
@@ -3700,8 +3690,9 @@ img {
 
 .produto .product__head h3 {
   color: #cccccc;
-  margin: 5px;
-  font-size: 15px;
+  margin: 5px 0;
+  font-size: 14px !important;
+  font-weight: 500;
 }
 
 .produto .mz-block-giftlist {
@@ -3712,7 +3703,7 @@ img {
   border-radius: 5px;
   background: #f5f6f8;
   color: #e41021;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .produto .glis-link.must-login {
@@ -3753,12 +3744,20 @@ table.fac-info-table tfoot .links a {
   border-radius: 5px;
 }
 
+.fac-product-main__images #include #image {
+  position: relative;
+  top: 0px;
+}
+
 .zoomPad {
   position: relative;
-  float: left;
-  z-index: 99;
-  cursor: zoom-in;
+  cursor: all-scroll;
 }
+
+.zoomPad #image-main {
+  border-radius: 5px;
+}
+
 .zoomPreload {
   -moz-opacity: 0.8;
   opacity: 0.8;
@@ -3774,24 +3773,20 @@ table.fac-info-table tfoot .links a {
   background-image: url(/arquivos/ajax-loader.gif);
   background-repeat: no-repeat;
   background-position: center center;
-  z-index: 110;
-  width: 100%;
-  height: 100%;
+  z-index: 10;
+  width: 90%;
+  height: 90%;
   position: absolute;
-  top: 0;
-  left: 0;
 }
+
+/*caixa de navegação móvel do zoom*/
 .zoomPup {
   overflow: hidden;
   background-color: #fff;
   -moz-opacity: 0.6;
   opacity: 0.6;
   filter: alpha(opacity=60);
-  z-index: 120;
   position: absolute;
-  border: 1px solid #ccc;
-  z-index: 101;
-  cursor: zoom-in;
 }
 .zoomOverlay {
   position: absolute;
@@ -3805,52 +3800,32 @@ table.fac-info-table tfoot .links a {
   z-index: 101;
 }
 .zoomWindow {
-  position: absolute;
+  position: absolute !important; 
   left: 0 !important;
-  top: 40px;
   background: #fff;
-  z-index: 6000;
   height: auto;
-  z-index: 10000;
-  z-index: 110;
+  z-index: 0 !important;
+  -webkit-box-shadow: -3px 3px 9px 0px rgb(50 50 50 / 75%);
+  box-shadow: -3px 3px 9px 0px rgb(50 50 50 / 75%);
+  border-radius: 5px;
 }
 .zoomWrapper {
   position: relative;
-  border: 1px solid #999;
-  z-index: 110;
-  width: 487px !important;
-  height: 487px !important;
-}
-.zoomWrapperTitle {
-  display: block;
-  background: #999;
-  color: #fff;
-  height: 18px;
-  line-height: 18px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  font-size: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 120;
-  -moz-opacity: 0.6;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  width: 450px !important;
+  height: 450px !important;
 }
 .zoomWrapperImage {
   display: block;
   position: relative;
   overflow: hidden;
-  z-index: 110;
-  height: 485px !important;
+  height: 450px !important;
+  border-radius: 5px;
 }
 .zoomWrapperImage img {
   border: 0;
   display: block;
   position: absolute;
-  z-index: 101;
+  max-width: none;
 }
 .zoomIframe {
   z-index: -1;
@@ -3861,6 +3836,17 @@ table.fac-info-table tfoot .links a {
   display: block;
 }
 
-.zoomWrapperImage img {
-    max-width: none;
+/*alterando arquivo da maeztra*/
+.mz-product {
+  margin-right: 0 !important;
+  margin-top: 10px !important;
+}
+
+.mz-product .qd-sss-wishlist-button {
+  margin-right: 0 !important;
+  height: 26px !important;
+}
+
+.mz-product span {
+  display: none !important;
 }
