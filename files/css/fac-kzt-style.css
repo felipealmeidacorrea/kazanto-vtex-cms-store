@@ -301,7 +301,7 @@ input.fulltext-search-box {
   background-position: center;
 }
 
-/*Caixa de sugestões*/
+/*Caixa de sugestÃµes*/
 
 .ui-autocomplete {
   background: #ffffff;
@@ -328,7 +328,7 @@ input.fulltext-search-box {
 }
 
 .ui-menu-item:first-child::before {
-  content: "Sugestões";
+  content: "SugestÃµes";
   position: absolute;
   top: 13px;
   text-align: center;
@@ -371,7 +371,7 @@ input.fulltext-search-box {
   border-bottom-right-radius: 5px;
 }
 
-/*Fim da caixa de sugestões*/
+/*Fim da caixa de sugestÃµes*/
 
 /*Fim da caixa de busca*/
 
@@ -3711,7 +3711,7 @@ img {
   font-weight: 600;
 }
 
-/*tabela de descrição de produtos*/
+/*tabela de descriÃ§Ã£o de produtos*/
 table.fac-info-table {
   background-color: #eeeeee;
   width: fit-content;
@@ -3779,7 +3779,7 @@ table.fac-info-table tfoot .links a {
   position: absolute;
 }
 
-/*caixa de navegação móvel do zoom*/
+/*caixa de navegaÃ§Ã£o mÃ³vel do zoom*/
 .zoomPup {
   overflow: hidden;
   background-color: #fff;
