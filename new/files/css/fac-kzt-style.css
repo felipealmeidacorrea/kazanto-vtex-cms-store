@@ -336,7 +336,7 @@ input.fulltext-search-box {
 }
 
 .ui-menu-item:first-child::before {
-    content: "SugestÃµes";
+    content: "Sugestões";
     position: absolute;
     top: 13px;
     text-align: center;
@@ -431,6 +431,11 @@ input.fulltext-search-box {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+}
+
+.fac-header__main-content__menu-desktop__login-item,
+.fac-header__main-content__menu-desktop__gift-list-item {
+  cursor: default !important;
 }
 
 .fac-header__main-content__menu-desktop__login-item:hover .fac-header__main-content__menu-desktop__item__login-box {
@@ -721,6 +726,7 @@ hr {
     width: 100%;
     justify-content: space-between;
     padding: 15px 25px 15px 25px;
+    cursor: pointer;
 }
 
 .sidenavRow:hover {
