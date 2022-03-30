@@ -3802,3 +3802,23 @@ table.fac-info-table tfoot .links a {
     border-bottom-right-radius: 5px;
     margin-bottom: 5px;
 }
+
+.teste-banners-one {
+    display: flex;
+    overflow: hidden;
+    width: max-content;
+}
+.teste-banners-two {
+    display: flex;
+    overflow: hidden;
+    width: max-content;
+}
+
+.teste-banners-one.slick-initialized.slick-slider.slick-dotted,
+.teste-banners-two.slick-initialized.slick-slider.slick-dotted {
+    width: auto;
+}
+
+.slick-slider {
+    display: block !important;
+}
