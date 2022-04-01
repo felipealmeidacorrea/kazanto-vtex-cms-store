@@ -1,0 +1,71 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+#set($evaluationRate = $product.EvaluationRate)
+
+<div class="fac-product" data-sku="$idSku" data-id="$id">
+	<div class="fac-product__content">
+		<div class="fac-product__content__image qd-sss-wishlist-shelf">
+			<div id="flagArea" class="fac-product__content__image__flag-area">
+				$product.HightLight
+			</div>
+			<input type="hidden" class="qd_productId" value="$id" />
+			<input type="hidden" class="qd_productUrl" value="$uri" />
+			<input type="hidden" class="qd_productName" value="$product.Name" />
+			<a href="#" data-id="$id" class="qd-sss-wishlist-delete-button" style="display:none">
+				<svg class="qd-sss-wishlist-delete-button__svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 20 20">
+					<path class="qd-sss-wishlist-delete-button__svg__path"
+						d="M14.75 1A5.24 5.24 0 0 0 10 4 5.24 5.24 0 0 0 0 6.25C0 11.75 10 19 10 19s10-7.25 10-12.75A5.25 5.25 0 0 0 14.75 1z" />
+				</svg>
+			</a>
+			<!-- Delete button -->
+			<!-- add button -->
+			<a id="$id" href="javascript:void(0);" class="btn-like js-btn-like qd-sss-wishlist-button">
+				<svg class="qd-sss-wishlist-button__svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 20 20">
+					<path class="qd-sss-wishlist-button__svg__path"
+						d="M14.75 1A5.24 5.24 0 0 0 10 4 5.24 5.24 0 0 0 0 6.25C0 11.75 10 19 10 19s10-7.25 10-12.75A5.25 5.25 0 0 0 14.75 1z" />
+				</svg>
+			</a>
+			<figure>
+				<a class="js--lazyload has--lazyload" title="$escapedName" href="$uri" data-noscript="">
+					<noscript>$product.GetImageTag(30)</noscript>
+					<!-- $product.GetImageTag(300,300,'foto2') -->
+				</a>
+			</figure>
+		</div><!-- /.product__image -->
+
+		<div class="fac-product__content__info">
+			<div class="fac-product__content__info__head">
+				<h4><a title="$escapedName" href="$uri">$product.Name</a></h4>
+			</div><!-- /.product__head -->
+			#if ($product.IsInStock)
+			<div id="infoPrice" class="fac-product__content__info__price">
+				#if ($product.HasBestPrice)
+				<span class="fac-product__content__info__price__from"><p class="fac-product__content__info__price__from__txt">De:</p><p id="valorDe" class="fac-product__content__info__price__from__price">$product.ListPrice</p><p class="fac-product__content__info__price__from__txt">Por:</p></span>
+				#end
+				<span id="valorPor" class="fac-product__content__info__price__sale-price">$product.BestPrice</span>
+				<em class="fac-product__content__info__price__installment">
+					#if ($product.NumbersOfInstallment > 1)
+					ou ${product.NumbersOfInstallment}x de $product.InstallmentValue
+					#else
+					<em>à vista</em>
+					#end
+				</em>
+			</div><!-- /.product__price -->
+			<div style="display: none;">$product.IsInStock</div>
+			<div class="fac-product__actions">
+				<div class="fac-product__actions__content">
+					<a href="$uri" class="fac-product__actions__content__btn">
+						<span>COMPRAR</span>
+					</a>
+				</div><!-- /.product__actions-inner -->
+			</div><!-- /.product__actions -->
+			#else
+			<div class="fac-product__actions__out-stok">
+				<p class="fac-product__actions__out-stok__txt">Produto Esgotado</p>
+			</div>
+			#end
+		</div><!-- /.product__content -->
+	</div><!-- /.product__inner -->
+</div><!-- /.product -->
