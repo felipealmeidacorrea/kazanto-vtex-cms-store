@@ -3822,3 +3822,16 @@ table.fac-info-table tfoot .links a {
 .slick-slider {
     display: block !important;
 }
+
+
+/* teste com infinty scroll trabalhar o arquivo de infinity e adicionar a classe necessária */
+
+.qd-is-loading {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center
+}
+
+.qd-is-loading img {
+    max-height: 70px
+}
