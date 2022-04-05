@@ -1,51 +1,47 @@
 <!DOCTYPE html>
-<html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
->
-  <head>
-    <title><vtex.cmc:searchTitle /></title>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title>
+        <vtex.cmc:searchTitle />
+    </title>
     <link rel="shortcut icon" href="/arquivos/favicon.png" />
     <vtex:metaTags />
     <vtex:template id="fac-kzt-styles" />
     <vtex:template id="fac-kzt-font-family" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
+</head>
 
-  <body id="category-page">
+<body id="category-page">
     <header class="fac-header">
-      <vtex:template id="fac-kzt-header" />
+        <vtex:template id="fac-kzt-header" />
     </header>
 
     <main>
-          <vtex.cmc:breadCrumb />
+        <vtex.cmc:breadCrumb />
 
-          <div class="fac-mult-banner-single-row--general-product-list">
+        <div class="fac-mult-banner-single-row--general-product-list">
             <vtex:contentPlaceHolder id="responsive three banner group" />
         </div>
 
         <div class="fac-kzt-general-product-list">
-          <aside class="fac-kzt-general-product-list__nav">
-            <vtex.cmc:searchNavigator />
-          </aside>
+            <aside class="fac-kzt-general-product-list__nav">
+                <vtex.cmc:searchNavigator />
+            </aside>
 
-          <div class="fac-kzt-general-product-list__products">
-                <vtex.cmc:searchResult
-                  layout="2f03c7d8-36c5-4577-bc7a-1ddf4330e11b"
-                  itemCount="24"
-                  columnCount="24"
-                />
-          </div>
+            <div class="fac-kzt-general-product-list__products">
+                <vtex.cmc:searchResult layout="2f03c7d8-36c5-4577-bc7a-1ddf4330e11b" itemCount="36" columnCount="36" />
+            </div>
         </div>
     </main>
 
     <footer class="fac-footer">
-      <vtex:template id="fac-kzt-footer" />
+        <vtex:template id="fac-kzt-footer" />
     </footer>
-    
+
     <vtex:template id="fac-kzt-scripts" />
-  </body>
-  <script src="/arquivos/infinityScroll.min.js?v=2"></script>
-  <script src="/arquivos/more-products-category.js"></script>
+</body>
+<script src="/arquivos/infinityScroll.min.js?v=2"></script>
+<script src="/arquivos/more-products-category.js"></script>
+
 </html>

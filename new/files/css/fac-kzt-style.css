@@ -435,7 +435,7 @@ input.fulltext-search-box {
 
 .fac-header__main-content__menu-desktop__login-item,
 .fac-header__main-content__menu-desktop__gift-list-item {
-  cursor: default !important;
+    cursor: default !important;
 }
 
 .fac-header__main-content__menu-desktop__login-item:hover .fac-header__main-content__menu-desktop__item__login-box {
@@ -1235,13 +1235,13 @@ a:active {
     /* gap: 20px; */
 }
 
-.shelf figure a {
+.vitrine figure a {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.shelf img {
+.vitrine img {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -1691,7 +1691,7 @@ a.fac-product__actions__content__btn {
     content: " ";
 }
 
-.shelf ul li img+img {
+.vitrine ul li img+img {
     position: absolute;
     top: 0;
     left: 0;
@@ -3790,7 +3790,7 @@ table.fac-info-table tfoot .links a {
 
 .fac-product__content__image__flag-area {
     position: absolute;
-    z-index: 100;
+    z-index: 1;
 }
 
 .flag {
@@ -3808,6 +3808,7 @@ table.fac-info-table tfoot .links a {
     overflow: hidden;
     width: max-content;
 }
+
 .teste-banners-two {
     display: flex;
     overflow: hidden;
@@ -3826,6 +3827,10 @@ table.fac-info-table tfoot .links a {
 
 /* teste com infinty scroll trabalhar o arquivo de infinity e adicionar a classe necessária */
 
+.fac-kzt-general-shelf .vitrine {
+    margin-bottom: 20px;
+}
+
 .qd-is-loading {
     margin-top: 40px;
     width: 100%;
@@ -3833,5 +3838,6 @@ table.fac-info-table tfoot .links a {
 }
 
 .qd-is-loading img {
-    max-height: 70px
+    height: 50px;
+    width: 50px;
 }
