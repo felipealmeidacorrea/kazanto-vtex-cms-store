@@ -1235,13 +1235,13 @@ a:active {
     /* gap: 20px; */
 }
 
-.vitrine figure a {
+.shelf figure a {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.vitrine img {
+.shelf img {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -1603,8 +1603,8 @@ a.fac-product__actions__content__btn {
 }
 
 .fac-kzt-general-product-list__products {
-    width: 80%;
     padding: 7px 0 0;
+    flex-grow: 1;
 }
 
 .fac-kzt-general-product-list__products .searchResultsTime {
@@ -1691,7 +1691,7 @@ a.fac-product__actions__content__btn {
     content: " ";
 }
 
-.vitrine ul li img+img {
+.shelf ul li img+img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1756,6 +1756,12 @@ body#category-page main {
 @media (max-width: 594px) {
     .fac-kzt-general-product-list .fac-kzt-general-shelf ul {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
+@media (min-width: 480px) and (max-width: 550px) {
+.fac-kzt-general-product-list .fac-kzt-general-shelf ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     }
 }
 
@@ -3827,7 +3833,7 @@ table.fac-info-table tfoot .links a {
 
 /* teste com infinty scroll trabalhar o arquivo de infinity e adicionar a classe necessária */
 
-.fac-kzt-general-shelf .vitrine {
+.fac-kzt-general-shelf .shelf {
     margin-bottom: 20px;
 }
 
