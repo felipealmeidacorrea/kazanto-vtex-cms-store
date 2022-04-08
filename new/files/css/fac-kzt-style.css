@@ -1176,9 +1176,10 @@ a:active {
     background: #e41021;
     border-radius: 5px;
     cursor: pointer;
+    width: 25px;
+    font-size: 0;
     position: relative;
     bottom: 10px;
-    width: 25px;
 }
 
 .fac-full-width-slick-banners__dots-container .slick-active button {
@@ -1562,7 +1563,7 @@ a.fac-product__actions__content__btn {
 
 .fac-kzt-general-product-list__nav {
     margin-right: 10px;
-    max-width: 350px;
+    width: 290px;
 }
 
 .fac-kzt-general-product-list__nav .navigation-tabs {
@@ -3846,4 +3847,41 @@ table.fac-info-table tfoot .links a {
 .qd-is-loading img {
     height: 50px;
     width: 50px;
+}
+
+.mz-backdrop {
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.qd-cart-show .mz-backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fac-product__actions__out-stok {
+    width: 100%;
+    margin-top: 88px;
+    margin-bottom: 20px;
+}
+
+.fac-product__actions__out-stok__txt {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 6px 20px;
+    color: #F5F6F8;
+    background: #CCC;
 }

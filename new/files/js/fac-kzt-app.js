@@ -376,6 +376,7 @@ function openDepCozinha() {
     document.getElementById(
         "sub-container-content"
     ).innerHTML = `<a href="/cozinha/cozinha"><div class="sidenavContentHeader">Cozinha</div></a>
+    <a href="/cozinha/cozinha/aparelho-de-jantar"><div class="sidenavContent">Aparelho de Jantar</div></a>
     <a href="/cozinha/cozinha/porta-condimentos"><div class="sidenavContent">Porta-condimentos</div></a>
     <a href="/cozinha/cozinha/potes-e-porta-mantimentos"><div class="sidenavContent">Potes e porta-mantimentos</div></a>
     <a href="/cozinha/cozinha/marmitas"><div class="sidenavContent">Marmitas</div></a>
