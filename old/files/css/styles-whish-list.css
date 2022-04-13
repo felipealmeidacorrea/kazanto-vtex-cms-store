@@ -1,0 +1,1964 @@
+/* DESKTOP-GUOJE28 - 24/03/2021 09:44:37 GMT */
+
+ï»¿.breadcrumbs {
+    margin-top: 45px
+}
+
+.breadcrumbs ul {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    list-style: none;
+    font-size: 12px
+}
+
+.breadcrumbs li {
+    position: relative;
+    font-weight: normal;
+    color: gray;
+    font-size: 14px
+}
+
+.breadcrumbs li+li {
+    margin-left: 23px
+}
+
+.breadcrumbs li+li:before {
+    content: ""
+}
+
+.breadcrumbs li+li:before {
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    -ms-transform: translateY(-50%) rotate(45deg);
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -moz-transform: translateY(-50%) rotate(45deg);
+    -o-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg)
+}
+
+section.banner-info-list {
+    text-align: center
+}
+
+section.section-lists {
+    margin-bottom: 80px
+}
+
+.section-lists .section__inner {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    padding-top: 80px
+}
+
+@media(max-width: 800px) {
+    .section-lists .section__inner {
+        display: flex;
+        flex-direction: column
+    }
+}
+
+.section__boxes__login__left, .section__boxes__login__right {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5%
+}
+
+.section__boxes__login__left ul, .section__boxes__login__right ul {
+    list-style: none;
+    margin: 0px
+}
+
+.types-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.title--type--person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.title--type--person h2 {
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 19px;
+    color: #666;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400
+}
+
+.title--type--person h2 span {
+    color: #e61821;
+    font-family: "hind_maduraimedium";
+    font-size: 30px
+}
+
+.title--type--person img {
+    margin-right: 10px
+}
+
+.title--type--person p {
+    text-transform: uppercase;
+    color: #e50013;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px
+}
+
+.title--type--person p span {
+    display: block;
+    color: #e61821;
+    font-size: 26px
+}
+
+.box-info-lists>h3 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #666;
+    font-family: "Montserrat", sans-serif
+}
+
+.box-info-lists ul li {
+    font-size: 14px;
+    color: #666;
+    font-weight: 100
+}
+
+.box__info__gift>h2 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #666;
+    font-family: "Montserrat", sans-serif
+}
+
+@media(max-width: 1023px) {
+    .section__boxes__login__left ul.nav.nav-list.bs-docs-sidenav {
+        position: inherit;
+        opacity: 100;
+        visibility: visible;
+        height: 100%;
+        margin-bottom: 40px
+    }
+}
+
+.section__boxes__login__left ul.nav.nav-list.bs-docs-sidenav li:nth-child(1) {
+    display: none
+}
+
+.section__boxes__login__left ul.nav.nav-list.bs-docs-sidenav li:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 20px
+}
+
+.section__boxes__login__left ul.nav.nav-list.bs-docs-sidenav li:nth-child(2) a {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    background: #e61821;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px
+}
+
+.section__boxes__login__left ul.nav.nav-list.bs-docs-sidenav li:nth-child(3) a {
+    height: 45px;
+    width: 100%;
+    border: 2px solid #666;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px
+}
+
+.slider__lists__featured ul.slider_list_featured {
+    list-style: none
+}
+
+.giftlist.giftlist-search h2.glsearch-title, .giftlist.giftlist-search li.glsearch-type, .giftlist.giftlist-search li.glsearch-id, .giftlist.giftlist-search li.glsearch-surname, .giftlist.giftlist-search li.glsearch-eventlocation, .giftlist.giftlist-search li.glsearch-eventcity.optional {
+    display: none
+}
+
+.giftlist.giftlist-search li.glsearch-name span, .giftlist.giftlist-search li.glsearch-eventdate.optional span {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    color: gray
+}
+
+.giftlist.giftlist-search li.glsearch-name {
+    margin-bottom: 20px
+}
+
+.giftlist.giftlist-search li.glsearch-name input {
+    width: 80%;
+    border: 0px;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 7px 10px
+}
+
+.giftlist.giftlist-search li.glsearch-eventdate {
+    position: relative;
+    width: 60%
+}
+
+.giftlist.giftlist-search li.glsearch-eventdate:after {
+    content: "";
+    background: url(/arquivos/lista1-calendar.png);
+    width: 20px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 5px
+}
+
+.giftlist.giftlist-search li.glsearch-eventdate input {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 7px 10px
+}
+
+.giftlist.giftlist-search li.glsearch-find {
+    text-align: center;
+    margin-top: 60px
+}
+
+.giftlist.giftlist-search input#giftlistsearchfind {
+    background: #e61821;
+    border: 0px;
+    height: 45px;
+    width: 100%;
+    margin: 0 auto 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.giftlisterror {
+    border: 1px solid red !important
+}
+
+.therms-area .giftlisterror {
+    padding: 5px
+}
+
+section.lists__featured {
+    margin: 100px 0
+}
+
+section.lists__featured header.section__head {
+    margin-bottom: 50px
+}
+
+section.lists__featured header.section__head h2 {
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 14px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400
+}
+
+section.lists__featured header.section__head h2 span {
+    color: #e61821;
+    font-family: "hind_maduraimedium";
+    font-size: 30px
+}
+
+.slider__lists__featured ul.slider_list_featured li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.slider__lists__featured ul.slider_list_featured li .imagem_lista_presente {
+    flex: 0 0 600px;
+    max-width: 600px
+}
+
+.slider__lists__featured ul.slider_list_featured li .texto_lista_presente {
+    flex: 0 1 100%;
+    padding-left: 30px;
+    max-width: 100%
+}
+
+.slider__lists__featured ul.slider_list_featured li .texto_lista_presente h2 {
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 14px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+
+.slider__lists__featured ul.slider_list_featured li .texto_lista_presente h2 span {
+    color: #e61821;
+    font-family: "hind_maduraimedium";
+    font-size: 30px;
+    display: block
+}
+
+.slider__lists__featured ul.slider_list_featured li .texto_lista_presente p {
+    font-size: 15px;
+    color: gray
+}
+
+.slider__lists__featured ul.slider_list_featured li .texto_lista_presente a {
+    background: #666;
+    width: 100%;
+    display: block;
+    max-width: 205px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 42px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    height: 42px;
+    text-decoration: none
+}
+
+section.section-benefits {
+    margin-bottom: 100px
+}
+
+.section-benefits header.section__head {
+    margin-bottom: 60px
+}
+
+.section-benefits header.section__head h2 {
+    font-family: "Roboto", sans-serif;
+    color: #e61821;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px
+}
+
+.section-benefits header.section__head h2 span {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #e50013
+}
+
+.section-benefits .section__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -35px
+}
+
+.item--benefits {
+    max-width: 25%;
+    -ms-flex: 0 1 25%;
+    flex: 0 1 25%;
+    padding: 0 35px;
+    text-align: center
+}
+
+.item--benefits .info__benefits {
+    border: 1px solid #e2e2e2;
+    padding: 0 25px;
+    min-height: 445px
+}
+
+.item--benefits .img__benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    margin-bottom: 40px
+}
+
+.item--benefits .info__benefits>h2 {
+    color: #e61821;
+    text-transform: uppercase;
+    font-size: 20px;
+    max-width: 180px;
+    line-height: 22px;
+    margin: 40px auto 15px
+}
+
+.item--benefits .info__benefits p {
+    color: #666;
+    font-size: 15px
+}
+
+.section__content__lists__create {
+    padding: 0 40px
+}
+
+body.edit .section__content__lists__create {
+    margin-top: 50px
+}
+
+.section__content__lists__create header.section__head {
+    text-align: center
+}
+
+.event, .members-box, .address-component, .therms-area, .action-area {
+    height: 0px;
+    visibility: hidden
+}
+
+.address-component .btn_step_list {
+    display: none
+}
+
+.event.active, .members-box.active, .address-component.active, .therms-area.active, .action-area.active {
+    height: auto;
+    visibility: visible
+}
+
+.event, .members-box {
+    text-align: center
+}
+
+#giftlistform button.btn_step_list {
+    background: #e61821;
+    border: 0px;
+    height: 45px;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 400px;
+    margin-top: 50px;
+    border-radius: 5px
+}
+
+.section__content__lists__create header.section__head h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin-top: 15px;
+    color: #666
+}
+
+.section__content__lists__create header.section__head p {
+    color: #e61821;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 19px
+}
+
+.steps__create__list {
+    margin: 45px 0
+}
+
+.steps__create__list ul.steps__list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    list-style: none
+}
+
+.steps__create__list ul.steps__list:before {
+    content: "";
+    height: 1px;
+    width: 75%;
+    position: absolute;
+    background: #999;
+    top: 25%;
+    left: 10.5%
+}
+
+.steps__create__list ul.steps__list li {
+    text-align: center;
+    background: #fff;
+    z-index: 9;
+    width: 75px
+}
+
+.steps__create__list ul.steps__list li a {
+    text-decoration: none
+}
+
+.steps__create__list ul.steps__list li a span {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 1px solid #e61821
+}
+
+.steps__create__list ul.steps__list li a.active span {
+    background: #e61821;
+    color: #fff
+}
+
+.steps__create__list ul.steps__list li p {
+    margin-top: 10px
+}
+
+.steps__create__list ul.steps__list li p a {
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    color: gray
+}
+
+#giftlistform .type_list {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    height: 0px;
+    visibility: hidden
+}
+
+#giftlistform .type_list.active {
+    height: auto;
+    visibility: visible
+}
+
+#giftlistform .type_list button.btn_step_list {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 40px)
+}
+
+.lists-create>h2, div#members-box>h2, .address.address-component>h2, .therms-area>h2, .lists-manager>h2, section.section-info-details-list .shell>h2, .event h2 {
+    display: none
+}
+
+#giftlistform .type_list .basic {
+    flex: 0 0 65%;
+    max-width: 100%
+}
+
+#giftlistform .type_list .image {
+    flex: 0 1 30%
+}
+
+ul.giftlistul, ul#gl-members {
+    list-style: none
+}
+
+#giftlistform .type_list .image label[for=giftlistimage] {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    display: block;
+    border: 1px solid #e2e2e2;
+    font-size: 0px;
+    background: url(/arquivos/mid-uploadimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px
+}
+
+label[for=giftlistimage]:after {
+    content: "Faça upload da imagem";
+    font-size: 24px;
+    position: absolute;
+    bottom: 30px;
+    width: 180px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c6c7c7;
+    font-style: italic;
+    line-height: 25px;
+    margin-left: -90px;
+    left: 50%;
+    text-align: center;
+    font-family: "Roboto", sans-serif
+}
+
+div#noimagewrapper {
+    max-width: 400px
+}
+
+#giftlistform .type_list .image input#giftlistimage {
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px
+}
+
+div#hasimagewrapper {
+    text-align: center
+}
+
+li#giftlistimageview label {
+    display: none
+}
+
+#giftlistform .type_list .image input#giftlistupload {
+    width: 100%;
+    border: 0px;
+    background: #666;
+    color: #fff;
+    text-transform: uppercase;
+    height: 45px;
+    -webkit-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    -moz-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    box-shadow: 0px 0px 16px -5px #1c1c1c
+}
+
+input#giftlistremoveimage {
+    width: 100%;
+    border: 0px;
+    background: #e50013;
+    color: #fff;
+    text-transform: uppercase;
+    height: 45px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    -moz-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    box-shadow: 0px 0px 16px -5px #1c1c1c
+}
+
+ul.giftlistul li {
+    margin-bottom: 20px
+}
+
+.basic ul.giftlistul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative
+}
+
+.basic ul.giftlistul span#giftlisturl-site {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000
+}
+
+li.giftlisturl:after {
+    content: "nome-lista (sem espaços, acentos e caracteres especiais)";
+    position: absolute;
+    bottom: -18px;
+    font-size: 11px;
+    right: 0px
+}
+
+p.eventdate-range:after {
+    content: "(A Kazanto não entrega em outros estados ou cidades fora de Manaus.)";
+    margin-left: 10px;
+    font-weight: bold
+}
+
+.basic ul.giftlistul li>label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 190px;
+    flex: 0 0 190px;
+    max-width: 190px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+ul.giftlistul {
+    position: relative
+}
+
+.basic ul.giftlistul li span#giftlistname-obr, .basic ul.giftlistul li span#giftlisturl-obr, li.giftlisteventdate span.obr, ul.giftlistul span.obr {
+    position: absolute;
+    color: red;
+    left: 180px
+}
+
+.basic ul.giftlistul li>select, .basic ul.giftlistul li>input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    max-width: 100%;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 15px
+}
+
+#giftlistform .type_list .image li.giftlistmessage {
+    display: none
+}
+
+span#visibility-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+span#visibility-wrapper input {
+    margin-right: 10px;
+    margin-left: 5px
+}
+
+div.event fieldset {
+    padding: 0 60px
+}
+
+p.eventdate-range {
+    text-align: center;
+    font-size: 15px
+}
+
+div.event ul.giftlistul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative
+}
+
+div.event ul.giftlistul li>label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 190px;
+    flex: 0 0 190px;
+    max-width: 190px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+div.event ul.giftlistul li>select, div.event ul.giftlistul li>input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    max-width: 600px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 15px
+}
+
+div.event ul.giftlistul li>#giftlisteventcity {
+    max-width: 400px
+}
+
+div.event ul.giftlistul li>#giftlisteventstate {
+    max-width: 185px
+}
+
+div#members-box fieldset {
+    padding: 0 60px
+}
+
+p.member-range {
+    text-align: center;
+    font-size: 15px
+}
+
+div#members-box ul.giftlistul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+div#members-box ul.giftlistul li:nth-child(4) {
+    display: flex !important
+}
+
+div#members-box ul.giftlistul li>label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 190px;
+    flex: 0 0 190px;
+    max-width: 190px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+div#members-box ul.giftlistul li>select, div#members-box ul.giftlistul li>input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    max-width: 600px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 15px
+}
+
+div#members-box span.giftlistmember-add {
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center
+}
+
+div#members-box a#giftlistmember-add {
+    background: #ccdeee;
+    color: #e61821;
+    font-weight: bold;
+    padding: 10px 35px;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px
+}
+
+.shipping-data.address-book h3.address-book-title, .shipping-data.address-book .address-form>h4 {
+    display: none
+}
+
+fieldset.address-data {
+    padding: 0 60px
+}
+
+fieldset.address-data p.ship-postal-code, .box-delivery>p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+a#dont-know-postal-code {
+    margin-left: 10px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+.box-delivery>p.ship-commercial {
+    padding-left: 190px
+}
+
+fieldset.address-data p.ship-postal-code>label, .box-delivery>p>label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 190px;
+    flex: 0 0 190px;
+    max-width: 190px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+.box-delivery>p.ship-commercial>label {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    max-width: initial
+}
+
+.box-delivery>p>select, fieldset.address-data p.ship-postal-code>input, .box-delivery>p>input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    max-width: 300px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 15px
+}
+
+.box-delivery>p>select#ship-state, .box-delivery>p>input#ship-state-alternate {
+    max-width: 150px
+}
+
+.address-form-new p.submit.btn-submit-wrapper {
+    padding-left: 190px;
+    margin: 20px 0 30px
+}
+
+.address-form-new button.submit.btn.btn-large.btn-success.save-address {
+    width: 100%;
+    border: 0px;
+    background: #e61821;
+    color: #fff;
+    text-transform: uppercase;
+    height: 45px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    -moz-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    box-shadow: 0px 0px 16px -5px #1c1c1c;
+    max-width: 300px
+}
+
+.address-book-body .address-item {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px
+}
+
+.address-item p.input {
+    display: flex;
+    align-items: center
+}
+
+.address-item p.input input {
+    margin-right: 10px
+}
+
+.therms-text {
+    border: 1px solid #e2e2e2;
+    margin: 0 120px;
+    padding: 20px;
+    color: #666;
+    font-weight: 100;
+    font-size: 15px
+}
+
+div#therms-accept {
+    margin: 10px 120px;
+    display: flex;
+    align-items: center
+}
+
+div#therms-accept label {
+    font-size: 15px;
+    color: #666;
+    font-weight: 100;
+    margin-left: 5px
+}
+
+.action-area {
+    margin: 40px 0
+}
+
+.action-area ul.form-action {
+    list-style: none;
+    display: flex;
+    justify-content: center
+}
+
+.action-area ul.form-action li.cancel {
+    display: none
+}
+
+.action-area ul.form-action li.save {
+    max-width: 300px;
+    width: 100%
+}
+
+.action-area ul.form-action li.save input#giftlistv2save {
+    width: 100%;
+    border: 0px;
+    background: #e50013;
+    color: #fff;
+    text-transform: uppercase;
+    height: 45px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    -moz-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    box-shadow: 0px 0px 16px -5px #1c1c1c
+}
+
+.lists-manager {
+    margin-bottom: 100px
+}
+
+.lists-manager>h2 {
+    margin-bottom: 0
+}
+
+.giftlist.giftlistmanager li.giftlist-action-create.can-create, .glmanager-type>h2 {
+    display: none !important
+}
+
+.glmanager-type {
+    margin-bottom: 30px
+}
+
+.giftlist-table thead.giftlist-header {
+    background: #e50013;
+    color: #fff
+}
+
+.giftlist-table thead.giftlist-header th {
+    font-weight: 100;
+    text-align: left;
+    padding: 7px 15px;
+    width: 16.6%;
+    border: 1px solid #f5f5f5
+}
+
+.giftlist-table tbody tr td {
+    text-align: center;
+    font-size: 15px;
+    width: 16.6%;
+    border: 1px solid #f5f5f5;
+    padding: 0 10px
+}
+
+.giftlist-table ul.glmanager-actions {
+    list-style: none;
+    margin-top: 20px
+}
+
+.giftlist-table ul.glmanager-actions li {
+    margin-bottom: 5px
+}
+
+div#TB_overlay {
+    background: #000000a1;
+    cursor: pointer
+}
+
+.giftlist-table ul.glmanager-actions li.action-buy {
+    display: none
+}
+
+.giftlist-table ul.glmanager-actions li a {
+    display: inline-block;
+    background: #ccdeee;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2px 0;
+    text-decoration: none;
+    border: 2px solid #e61821;
+    background: #e61821
+}
+
+.giftlist-table ul.glmanager-actions li a:hover {
+    background: #fff;
+    color: #666
+}
+
+.giftlist-table ul.glmanager-actions li.action-share a:after {
+    content: "Compartilhar"
+}
+
+.manage section.banner-info-list {
+    margin-bottom: 50px
+}
+
+div#refer-a-friend-form-gift-list {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+div#refer-a-friend-form-gift-list div#div-title, legend#legYourData {
+    display: none
+}
+
+fieldset#fldYourData>div, div#grp-amigo-indicar>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+fieldset#fldYourData label, div#grp-amigo-indicar label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    max-width: 60px;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+div#refer-a-friend-form-gift-list input, div#refer-a-friend-form-gift-list fieldset#fldMessage textarea {
+    border: 0px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 15px
+}
+
+div#refer-a-friend-form-gift-list>p {
+    display: flex
+}
+
+.giftlist.giftlist-search th.giftlist-header-codigo, .giftlist.giftlist-search td.giftlist-body-codigo {
+    display: none
+}
+
+a#TB_closeWindowButton {
+    font-size: 0px
+}
+
+a#TB_closeWindowButton:after {
+    content: "Ã¢Å“â€“";
+    font-style: initial;
+    color: #fff;
+    font-size: 32px;
+    position: absolute;
+    right: 15px;
+    top: 0
+}
+
+input#btnAdicionarAmigos {
+    display: none
+}
+
+input#btnEnviar {
+    border: 2px solid #e61821;
+    background: #e61821;
+    color: #fff;
+    height: 35px
+}
+
+legend#legFriendsData {
+    padding: 15px 0;
+    font-weight: bold
+}
+
+#refer-a-friend-form-gift-list input#btnFechar {
+    display: none
+}
+
+#refer-a-friend-form-gift-list input#btnReferMoreFriends {
+    border: 2px solid #e61821;
+    background: #e61821;
+    color: #fff;
+    height: 35px
+}
+
+.section-info-details-list .details-list {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 450px;
+    margin-top: 60px
+}
+
+.section-info-details-list .details-list .giftlist.giftlistinfo {
+    padding-left: 460px
+}
+
+.section-info-details-list .details-list .giftlistinfo-image {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.section-info-details-list .details-list .giftlistinfo-image img {
+    max-height: 400px
+}
+
+.details-list .giftlist.giftlistinfo>h3.giftlistinfo-title {
+    display: none
+}
+
+.details-list .giftlist.giftlistinfo span.giftlistinfo-description {
+    font-size: 25px;
+    color: #e61821;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%
+}
+
+ul.giftlist-save-error {
+    list-style: none
+}
+
+.details-list .giftlist.giftlistinfo ul.list-action {
+    display: flex;
+    justify-content: space-between;
+    list-style: none
+}
+
+.details-list .giftlist.giftlistinfo ul.list-action li a {
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+.details-list .giftlist.giftlistinfo .giftlistinfo-actions {
+    width: 90%;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px;
+    margin-bottom: 30px
+}
+
+ul.list-members, ul.member {
+    list-style: none
+}
+
+ul.member {
+    padding-left: 40px;
+    position: relative
+}
+
+ul.member li {
+    font-size: 15px;
+    font-weight: 100;
+    color: #666
+}
+
+.giftlistinfo-event, .giftlistinfo-event ul {
+    font-size: 15px;
+    font-weight: 100;
+    color: #666;
+    list-style: none;
+    display: flex;
+    padding-left: 40px
+}
+
+.giftlistinfo-event ul {
+    padding-left: 10px
+}
+
+ul.member li.title {
+    display: none
+}
+
+ul.list-members ul.member:before {
+    content: "";
+    background: url(/arquivos/mid-login.png);
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15.5px
+}
+
+.giftlistinfo-link {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.giftlistinfo-link span.link-title {
+    position: relative;
+    font-size: 15px;
+    font-weight: 100;
+    color: #666;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 230px;
+    flex: 0 0 230px;
+    max-width: 230px;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 30px
+}
+
+.giftlistinfo-link span.link-title:before {
+    content: "";
+    background: url(/arquivos/mid-compartilhar.png);
+    width: 23px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    left: 0
+}
+
+.giftlistinfo-link input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    max-width: 100%;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 15px
+}
+
+.section-buy-product-list .section__inner {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.section-buy-product-list .section__aside {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 12px 30px 0 0
+}
+
+.section-buy-product-list .section__content {
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+    padding: 0 0 0 50px
+}
+
+.section-buy-product-list .section__aside>h5 {
+    text-transform: uppercase;
+    color: #e50013;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.search-single-navigator h3>a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #e61821;
+    margin-bottom: 15px;
+    font-weight: bold
+}
+
+.search-single-navigator ul {
+    list-style: none
+}
+
+.search-single-navigator ul li>a {
+    color: #2e2e2e;
+    font-size: 15px;
+    font-weight: initial
+}
+
+.giftlist-insertsku-wrapper .glis-sku-listtolist, .giftlist-insertsku-wrapper .ajax-content-loader, span.resultado-busca-tempo, fieldset.filterBy, p.compare {
+    display: none
+}
+
+p.searchResultsTime {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #e61821
+}
+
+span.resultado-busca-numero {
+    display: inline-block;
+    text-transform: uppercase;
+    background: #e61821;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-bottom: -1px
+}
+
+.resultado-busca-filtro fieldset.orderBy {
+    border: 0px;
+    position: absolute;
+    right: 0;
+    top: -5px
+}
+
+.orderBy label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: initial;
+    color: #666
+}
+
+fieldset.orderBy select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: 38px;
+    padding: 0 15px;
+    max-width: 195px;
+    font-size: 14px;
+    color: gray;
+    border: 1px solid #ccc
+}
+
+.vitrine .pager.top {
+    display: none
+}
+
+ul.pages {
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 260px;
+    height: 51px;
+    line-height: 49px;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin: 29px auto;
+    color: #959595;
+    padding: 0 45px;
+    position: relative;
+    list-style: none;
+    align-items: center
+}
+
+ul.pages li.first, ul.pages li.last, .giftlist-print-wrapper {
+    display: none !important
+}
+
+ul.pages li.previous {
+    position: absolute;
+    left: 0;
+    align-items: center
+}
+
+ul.pages li.previous, ul.pages li.next {
+    font-size: 0
+}
+
+ul.pages li.page-number.pgCurrent {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    background: #e61821;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    font-weight: 600
+}
+
+ul.pages li.page-number+li.page-number {
+    margin-left: 10px
+}
+
+ul.pages li.next {
+    position: absolute;
+    right: 0;
+    align-items: center
+}
+
+ul.pages li.first, ul.pages li.last {
+    display: none !important
+}
+
+ul.pages li.previous:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    z-index: 6;
+    margin-top: 1px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-right: 2px solid #e61821;
+    border-top: 2px solid #e61821;
+    -ms-transform: translate(-50%, -50%) rotate(-135deg);
+    transform: translate(-50%, -50%) rotate(-135deg)
+}
+
+ul.pages li.next:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 6;
+    margin-top: 1px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-right: 2px solid #e61821;
+    border-top: 2px solid #e61821;
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
+.main .searchResultsTime:last-child, .main>p.searchResultsTime:nth-child(4) {
+    display: none !important
+}
+
+.prateleira.vitrine>ul {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.prateleira.vitrine>ul>li {
+    max-width: 33.333%;
+    -ms-flex: 0 1 33.333%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 33.333%;
+    -moz-box-flex: 0;
+    flex: 0 1 33.333%;
+    padding: 0 25px;
+    list-style: none
+}
+
+.qty__whish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ccdeee;
+    padding: 10px 0px;
+    border: 1px solid #e61821
+}
+
+.itens__whish, .itens__buy__wish {
+    display: flex;
+    align-items: center;
+    padding: 0 10px
+}
+
+.itens__whish p, .itens__buy__wish p {
+    margin: 0px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 100
+}
+
+p.gift-list-wished, p.gift-list-purchased {
+    height: 38px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 11px
+}
+
+.itens_buy_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f5f5f5;
+    align-items: center;
+    border-radius: 5px
+}
+
+ul.insert-sku-checklist {
+    display: none
+}
+
+.product-insertsku .insert-sku-quantity {
+    display: none
+}
+
+li.is-checklist-item.from-list {
+    display: flex;
+    align-items: center
+}
+
+.send-to-cart-wrapper {
+    text-align: center;
+    padding: 40px 0 60px
+}
+
+li.is-checklist-item .insert-sku-checkbox {
+    margin-right: 10px
+}
+
+.product-insertsku {
+    position: absolute;
+    top: 10px
+}
+
+.product-insertsku span.insert-sku-name {
+    display: none
+}
+
+.send-to-cart-wrapper .button-send-to-cart {
+    display: inline-block;
+    background: #e61821;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    border-radius: 5px;
+    text-decoration: none
+}
+
+.buy-button-normal {
+    margin-top: 10px
+}
+
+.buy-button-normal>a>span.buy-sku-name {
+    display: none
+}
+
+.buy-button-normal>a>span.buy-all.buy-giftlist {
+    display: inline-block;
+    width: 100%;
+    background: #e61821;
+    color: #fff;
+    padding: 3px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    text-align: center
+}
+
+@media(max-width: 1024px) {
+    .section-info-details-list .details-list .giftlist.giftlistinfo {
+        padding-left: 0px;
+        width: 100%;
+        padding-top: 480px;
+        margin-bottom: 50px
+    }
+    .details-list .giftlist.giftlistinfo ul.list-action {
+        display: none
+    }
+    .section-info-details-list .details-list .giftlist.giftlistinfo ul.member, .section-info-details-list .details-list .giftlist.giftlistinfo .giftlistinfo-event {
+        padding-left: 0
+    }
+    #giftlistform .type_list {
+        display: block
+    }
+    #giftlistform .type_list .basic {
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+    #giftlistform .type_list .image {
+        flex: 0 1 100%
+    }
+    #giftlistform .type_list .image label[for=giftlistimage] {
+        width: 100%
+    }
+    div#noimagewrapper {
+        max-width: 100%
+    }
+    .prateleira.vitrine>ul>li {
+        max-width: 50%;
+        -ms-flex: 0 1 50%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 50%;
+        -moz-box-flex: 0;
+        flex: 0 1 50%;
+        padding: 0 25px;
+        list-style: none
+    }
+    .send-to-cart-wrapper .button-send-to-cart {
+        font-size: 14px
+    }
+}
+
+@media(max-width: 768px) {
+    .prateleira.vitrine>ul>li {
+        max-width: 100%;
+        -ms-flex: 0 1 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 100%;
+        -moz-box-flex: 0;
+        flex: 0 1 100%;
+        padding: 0 25px;
+        list-style: none
+    }
+    .slider__lists__featured ul.slider_list_featured li {
+        justify-content: center;
+        flex-wrap: wrap
+    }
+    .slider__lists__featured ul.slider_list_featured li .imagem_lista_presente {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px
+    }
+    .slider__lists__featured ul.slider_list_featured li .texto_lista_presente {
+        padding-left: 0;
+        max-width: 100%
+    }
+}
+
+.section__lists__products {
+    display: inline-block;
+    width: 100%
+}
+
+.giftlistproductsv2-gridwrapper {
+    font-size: 15px;
+    color: #666;
+    font-weight: 100
+}
+
+div#giftliststatistics {
+    display: none !important
+}
+
+table.giftlistproductsv2 thead {
+    background: #e50013;
+    color: #fff
+}
+
+table.giftlistproductsv2 thead th {
+    font-weight: 100;
+    text-align: left;
+    padding: 7px 15px
+}
+
+input.giftlistsku-input-wishedamt {
+    border: 1px solid #c2d8eb;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px
+}
+
+button#giftlistremovecheckedskus {
+    height: 45px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    background: #e50013;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    -moz-box-shadow: 0px 0px 16px -5px #1c1c1c;
+    box-shadow: 0px 0px 16px -5px #1c1c1c;
+    text-decoration: none;
+    border: 0px;
+    margin-bottom: 50px;
+    cursor: pointer
+}
+
+.product {
+    padding-bottom: 0px !important
+}
+
+#giftlistformwrapper #errormessage {
+    background: #e61821;
+    border-radius: 4px;
+    padding: 10px 17px;
+    color: #fff;
+    text-align: center;
+    margin: 15px 60px 40px
+}
+
+@media(max-width: 780px) {
+    .section__content__lists__create {
+        padding: 0px
+    }
+    .section__boxes__login__left {
+        padding-right: 0px
+    }
+    .inner__form__list .basic {
+        float: right;
+        width: 100%
+    }
+    .section__boxes__login__left, .section__boxes__login__right {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+    .types-lists {
+        display: inline-block
+    }
+    .box-info-lists {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    .item--benefits {
+        max-width: 100%;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        margin-bottom: 20px
+    }
+    .inner__form__list {
+        display: inline-block;
+        width: 100%;
+        padding: 0px
+    }
+    .basic ul.giftlistul li {
+        display: inline-block;
+        width: 100%;
+        text-align: left
+    }
+    .inner__form__list .image {
+        float: left;
+        width: 100%
+    }
+    .inner__form__list .image label[for=giftlistimage] {
+        width: 100%
+    }
+    div#members-box fieldset {
+        padding: 0px
+    }
+    div#members-box ul.giftlistul li {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        position: relative
+    }
+    div.event fieldset {
+        padding: 0px
+    }
+    div.event ul.giftlistul li {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        position: relative
+    }
+    .basic ul.giftlistul li span#giftlistname-obr, .basic ul.giftlistul li span#giftlisturl-obr, div#members-box ul.giftlistul li span.obr, div.event ul.giftlistul li span.obr {
+        position: absolute;
+        color: red;
+        right: 15px;
+        top: 0
+    }
+    .basic ul.giftlistul li>label, div#members-box ul.giftlistul li>label, div.event ul.giftlistul li>label {
+        padding-right: 0px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        text-align: left
+    }
+    .basic ul.giftlistul li>select, .basic ul.giftlistul li>input, div#members-box ul.giftlistul li>select, div#members-box ul.giftlistul li>input, div.event ul.giftlistul li>input {
+        display: inline-block;
+        width: 100%
+    }
+    div.event ul.giftlistul li>#giftlisteventcity {
+        width: 75%
+    }
+    .therms-text {
+        margin: 0px
+    }
+    div#therms-accept {
+        margin: 10px 0px;
+        display: flex;
+        align-items: center
+    }
+    .glmanager-type.giftlisttype-4 {
+        overflow-x: auto
+    }
+    .giftlist-table ul.glmanager-actions li.action-share a {
+        min-width: 125px
+    }
+    .section-buy-product-list .section__inner {
+        display: inline-block;
+        width: 100%
+    }
+    .resultado-busca-filtro {
+        display: none
+    }
+    .section-buy-product-list .section__aside {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px;
+        margin-bottom: 50px
+    }
+    .section-buy-product-list .section__content {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0px
+    }
+    .prateleira.vitrine>ul>li {
+        max-width: 100%;
+        -ms-flex: 0 1 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 100%;
+        -moz-box-flex: 0;
+        flex: 0 1 100%;
+        padding: 0 25px;
+        list-style: none
+    }
+    .prateleira.vitrine>ul>li .product {
+        max-width: 100%
+    }
+    .product .product__image {
+        max-height: 265px
+    }
+    .product .product__image figure img {
+        max-height: 100%
+    }
+    table.giftlist-table th.giftlist-header-member, table.giftlist-table th.giftlist-header-desired, table.giftlist-table td.giftlist-body-member, table.giftlist-table td.giftlist-body-desired {
+        display: none
+    }
+}

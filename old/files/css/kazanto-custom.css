@@ -129,3 +129,12 @@ table.fac-info-table tfoot .links a {
     border-bottom-right-radius: 5px;
     margin-bottom: 5px;
 }
+
+.ko-grid-pageLinks {
+    display: flex !important;
+    justify-content: center;
+    gap: 10px;
+    color: #E41021;
+    font-weight: 800;
+    font-size: 18px;
+}
