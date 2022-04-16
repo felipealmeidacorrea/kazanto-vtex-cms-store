@@ -3881,14 +3881,11 @@ body.qd-cart-show .mz-backdrop {
     background: #CCC;
 }
 
-/* slick banner don't show till loaded */
-.fac-full-width-slick-banners__one,
-.fac-full-width-slick-banners__two {
+
+.teste-banners-one {
     display: none;
 }
 
-.fac-full-width-slick-banners__one.slick-initialized,
-.fac-full-width-slick-banners__two.slick-initialized {
+.teste-banners-one.slick-initialized {
     display: block;
 }
-/* enf of slick banner don't show till loaded */

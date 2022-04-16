@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:metaTags />
+    <link rel="shortcut icon" href="/arquivos/favicon.png" />
+    <vtex:template id="fac-kzt-styles-testing" />
+    <vtex:template id="fac-kzt-font-family" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header class="fac-header">
+        <vtex:template id="fac-kzt-header" />
+    </header>
+
+    <main>
+        <div class="fac-full-width-slick-banners fac-hidden-on-all-mobile">
+            <div class="teste-banners-one">
+                <vtex:contentPlaceHolder id="Home Main Banners Desktop" />
+            </div>
+        </div>
+        <div class="fac-full-width-slick-banners fac-hidden-on-all-desktop">
+            <div class="teste-banners-two">
+                <vtex:contentPlaceHolder id="Home Main Banners Mobile" />
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-first-shelf-testing">
+                <h2 class="shelf-title">COZINHA</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 1" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-special-shelf-one">
+                <h2 class="shelf-title">PÁSCOA</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Special Shelf 1" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-second-shelf">
+                <h2 class="shelf-title">DECORAÇÃO</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 2" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-video-and-banners-single-row-group">
+                <vtex:contentPlaceHolder id="home video 1" />
+                <vtex:contentPlaceHolder id="'home video 1' banners" />
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-third-shelf">
+                <h2 class="shelf-title">ORGANIZAÇÃO</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 3" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-fourth-shelf">
+                <h2 class="shelf-title">UTILIDADES E ACESSÓRIOS</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 4" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-mult-banner-single-row">
+                <vtex:contentPlaceHolder id="home's responsive three banner group 1" />
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-fifth-shelf">
+                <h2 class="shelf-title">PAPELARIA</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 5" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-sixth-shelf">
+                <h2 class="shelf-title">INFANTIL E BEBÊS</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 6" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-video-and-banners-single-row-group">
+                <vtex:contentPlaceHolder id="home video 2" />
+                <vtex:contentPlaceHolder id="'home video 2' banners" />
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-seventh-shelf">
+                <h2 class="shelf-title">CAFÉ E CHÁ</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 7" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-eighth-shelf">
+                <h2 class="shelf-title">INCENSOS, VELAS E AROMATIZANTES</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 8" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-mult-banner-single-row">
+                <vtex:contentPlaceHolder id="home's responsive three banner group 2" />
+            </div>
+        </div>
+
+        <div class="fac-shell">
+            <div class="fac-ninth-shelf">
+                <h2 class="shelf-title">OFERTAS</h2>
+                <div class="fac-slides">
+                    <vtex:contentPlaceHolder id="Shelf 9" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fac-footer">
+        <vtex:template id="fac-kzt-footer" />
+    </footer>
+
+    <vtex:template id="fac-kzt-scripts" />
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function(a) {
+                    const infoPrice = document.getElementById("infoPrice");
+                    const temPromocao = infoPrice.querySelector("#valorDe");
+
+                    if (temPromocao !== null) {
+                    var valorDe = document.getElementById("valorDe").innerText.replace('R$ ', '');
+                    var valorPor = document.getElementById("valorPor").innerText.replace('R$ ', '');
+                    var valorIntDe = Number.parseFloat(valorDe.replace(',', '.'));
+                    var valorIntPor = Number.parseFloat(valorPor.replace(',', '.'));
+                    var desconto = Math.round( ((valorIntDe-valorIntPor)/valorIntDe)*100  );
+                    var recebeP = document.getElementById("flagArea");
+                    recebeP.innerHTML = '<p id="recebeFlag" class="flag">-' + (desconto) +  '%</p>';
+                    }
+              });
+        </script>
+        
+        <div class="mz-backdrop"></div>
+        
+</body>
+
+</html>
