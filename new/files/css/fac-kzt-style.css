@@ -229,6 +229,12 @@ input:focus {
     z-index: 99;
 }
 
+@media (max-width: 1024px) {
+    .fac-header {
+        background-color: #FFFFFF;
+    }
+}
+
 .fac-header__top-bar {
     background-color: #e41021;
     color: #ffffff;
@@ -1761,8 +1767,8 @@ body#category-page main {
 }
 
 @media (min-width: 480px) and (max-width: 550px) {
-.fac-kzt-general-product-list .fac-kzt-general-shelf ul {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    .fac-kzt-general-product-list .fac-kzt-general-shelf ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     }
 }
 
@@ -3827,6 +3833,7 @@ table.fac-info-table tfoot .links a {
     width: auto;
 }
 
+
 /* teste com infinty scroll trabalhar o arquivo de infinity e adicionar a classe necessária */
 
 .fac-kzt-general-shelf .shelf {
@@ -3855,7 +3862,7 @@ table.fac-info-table tfoot .links a {
     width: 100%;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     visibility: hidden;
 }
@@ -3881,8 +3888,11 @@ body.qd-cart-show .mz-backdrop {
     background: #CCC;
 }
 
+
 /* slick banner don't show till loaded */
-.fac-full-width-slick-banners__one,
+
+
+/* .fac-full-width-slick-banners__one,
 .fac-full-width-slick-banners__two {
     display: none;
 }
@@ -3890,5 +3900,59 @@ body.qd-cart-show .mz-backdrop {
 .fac-full-width-slick-banners__one.slick-initialized,
 .fac-full-width-slick-banners__two.slick-initialized {
     display: block;
-}
+} */
+
+
 /* enf of slick banner don't show till loaded */
+
+.fac-full-width-slick-banners__one .box-banner:not(:first-child),
+.fac-full-width-slick-banners__two .box-banner:not(:first-child) {
+    display: none;
+}
+
+.fac-full-width-slick-banners__one,
+.fac-full-width-slick-banners__two,
+.fac-full-width-slick-banners__one .box-banner,
+.fac-full-width-slick-banners__two .box-banner,
+.fac-full-width-slick-banners__one .box-banner a,
+.fac-full-width-slick-banners__two .box-banner a {
+    width: 100%;
+    height: fit-content;
+}
+
+.fac-full-width-slick-banners__one .box-banner a img,
+.fac-full-width-slick-banners__two .box-banner a img {
+    width: 100%;
+    height: auto;
+}
+
+.fac-full-width-slick-banners__one .box-banner:first-child,
+.fac-full-width-slick-banners__two .box-banner:first-child {
+    color: grey;
+    display: inline-block;
+    -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 1.5s infinite;
+    font-size: 1px;
+}
+
+@keyframes shimmer {
+    100% {
+        -webkit-mask-position: left
+    }
+}
+
+.fac-full-width-slick-banners__one.slick-initialized .box-banner:not(:first-child),
+.fac-full-width-slick-banners__two.slick-initialized .box-banner:not(:first-child) {
+    display: block;
+}
+
+.fac-full-width-slick-banners__one.slick-initialized .box-banner:first-child,
+.fac-full-width-slick-banners__two.slick-initialized .box-banner:first-child {
+    color: grey;
+    display: inline-block;
+    -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 0s infinite;
+    font-size: 1px;
+}

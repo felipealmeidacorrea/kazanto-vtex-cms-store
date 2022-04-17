@@ -1160,8 +1160,8 @@ a:active {
     gap: 5px;
     justify-content: center;
     height: 10px;
-    position: relative;
-    bottom: 10px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
@@ -1761,8 +1761,8 @@ body#category-page main {
 }
 
 @media (min-width: 480px) and (max-width: 550px) {
-.fac-kzt-general-product-list .fac-kzt-general-shelf ul {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    .fac-kzt-general-product-list .fac-kzt-general-shelf ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     }
 }
 
@@ -3827,6 +3827,7 @@ table.fac-info-table tfoot .links a {
     width: auto;
 }
 
+
 /* teste com infinty scroll trabalhar o arquivo de infinity e adicionar a classe necessária */
 
 .fac-kzt-general-shelf .shelf {
@@ -3855,7 +3856,7 @@ table.fac-info-table tfoot .links a {
     width: 100%;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     visibility: hidden;
 }
@@ -3882,10 +3883,62 @@ body.qd-cart-show .mz-backdrop {
 }
 
 
-.teste-banners-one {
+/* .teste-banners-one {
     display: none;
 }
 
 .teste-banners-one.slick-initialized {
     display: block;
+} */
+
+.teste-banners-one .box-banner:not(:first-child),
+.teste-banners-two .box-banner:not(:first-child) {
+    display: none;
+}
+
+.teste-banners-one,
+.teste-banners-two,
+.teste-banners-one .box-banner,
+.teste-banners-two .box-banner,
+.teste-banners-one .box-banner a,
+.teste-banners-two .box-banner a {
+    width: 100%;
+    height: fit-content;
+}
+
+.teste-banners-one .box-banner a img,
+.teste-banners-two .box-banner a img {
+    width: 100%;
+    height: auto;
+}
+
+.teste-banners-one .box-banner:first-child,
+.teste-banners-two .box-banner:first-child {
+    color: grey;
+    display: inline-block;
+    -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 1.5s infinite;
+    font-size: 1px;
+}
+
+@keyframes shimmer {
+    100% {
+        -webkit-mask-position: left
+    }
+}
+
+.teste-banners-one.slick-initialized .box-banner:not(:first-child),
+.teste-banners-two.slick-initialized .box-banner:not(:first-child) {
+    display: block;
+}
+
+.teste-banners-one.slick-initialized .box-banner:first-child,
+.teste-banners-two.slick-initialized .box-banner:first-child {
+    color: grey;
+    display: inline-block;
+    -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 0s infinite;
+    font-size: 1px;
 }

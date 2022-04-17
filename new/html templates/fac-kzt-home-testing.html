@@ -148,26 +148,26 @@
     </footer>
 
     <vtex:template id="fac-kzt-scripts" />
-    
+
     <script>
         document.addEventListener("DOMContentLoaded", function(a) {
-                    const infoPrice = document.getElementById("infoPrice");
-                    const temPromocao = infoPrice.querySelector("#valorDe");
+            const infoPrice = document.getElementById("infoPrice");
+            const temPromocao = infoPrice.querySelector("#valorDe");
 
-                    if (temPromocao !== null) {
-                    var valorDe = document.getElementById("valorDe").innerText.replace('R$ ', '');
-                    var valorPor = document.getElementById("valorPor").innerText.replace('R$ ', '');
-                    var valorIntDe = Number.parseFloat(valorDe.replace(',', '.'));
-                    var valorIntPor = Number.parseFloat(valorPor.replace(',', '.'));
-                    var desconto = Math.round( ((valorIntDe-valorIntPor)/valorIntDe)*100  );
-                    var recebeP = document.getElementById("flagArea");
-                    recebeP.innerHTML = '<p id="recebeFlag" class="flag">-' + (desconto) +  '%</p>';
-                    }
-              });
-        </script>
-        
-        <div class="mz-backdrop"></div>
-        
+            if (temPromocao !== null) {
+                var valorDe = document.getElementById("valorDe").innerText.replace('R$ ', '');
+                var valorPor = document.getElementById("valorPor").innerText.replace('R$ ', '');
+                var valorIntDe = Number.parseFloat(valorDe.replace(',', '.'));
+                var valorIntPor = Number.parseFloat(valorPor.replace(',', '.'));
+                var desconto = Math.round(((valorIntDe - valorIntPor) / valorIntDe) * 100);
+                var recebeP = document.getElementById("flagArea");
+                recebeP.innerHTML = '<p id="recebeFlag" class="flag">-' + (desconto) + '%</p>';
+            }
+        });
+    </script>
+
+    <div class="mz-backdrop"></div>
+
 </body>
 
 </html>
