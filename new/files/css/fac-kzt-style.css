@@ -3905,6 +3905,9 @@ body.qd-cart-show .mz-backdrop {
 
 /* enf of slick banner don't show till loaded */
 
+
+/* applying Shimmer Effect and avoiding waterfall bug on slick banners */
+
 .fac-full-width-slick-banners__one .box-banner:not(:first-child),
 .fac-full-width-slick-banners__two .box-banner:not(:first-child) {
     display: none;
@@ -3956,3 +3959,6 @@ body.qd-cart-show .mz-backdrop {
     animation: shimmer 0s infinite;
     font-size: 1px;
 }
+
+
+/* end of applying Shimmer Effect and avoiding waterfall bug on slick banners */
