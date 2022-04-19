@@ -3923,7 +3923,6 @@ body.qd-cart-show .mz-backdrop {
     animation: shimmer 0s infinite;
     font-size: 1px;
 }
-
 .fac-info-table tbody td:last-child {
     word-break: break-word;
     max-width: 100%;
