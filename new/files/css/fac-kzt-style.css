@@ -1925,25 +1925,6 @@ body#category-page main {
     margin: 0 auto;
 }
 
-.fac-product-main .section__content .product__body {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: unset;
-    align-items: flex-start;
-}
-
-.fac-product-main .section__content .product__body .col__sumary {
-    max-width: 550px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 550px;
-}
-
 .section__content .product__head h2 {
     font-size: 25px;
     font-weight: 600;
@@ -1980,14 +1961,14 @@ body#category-page main {
     max-width: 340px;
 }
 
-.fac-product-main .fac-product-main__images {
+.fac-product-main__images {
     width: 50%;
     background: #ffffff;
     border-radius: 5px;
     padding: 10px;
 }
 
-.fac-product-main .section__content {
+.section__content {
     width: 50%;
     background: #ffffff;
     padding: 10px;
@@ -2667,31 +2648,6 @@ table.group.Dados-Tecnicos tbody tr td {
     }
 }
 
-@media (max-width: 1280px) {
-    .fac-product-main .section__content .product__body .col__sumary {
-        max-width: 290px;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 290px;
-        flex: 0 0 290px;
-    }
-    .fac-product-main .section__content .product__body .col__buy_prod {
-        margin-left: 15px;
-    }
-}
-
-@media (max-width: 1023px) {
-    .fac-product-main {
-        display: inline-block;
-        width: 100%;
-    }
-    .fac-product-main__images .apresentacao {
-        text-align: center;
-    }
-    .fac-product-main__images ul.thumbs li {
-        padding: 0px;
-    }
-}
-
 @media (max-width: 768px) {
     .product__image img {
         width: 150px;
@@ -2720,6 +2676,14 @@ table.group.Dados-Tecnicos tbody tr td {
         display: block;
         width: 100%;
     }
+    
+    .fac-product-main {
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        max-width: 100%;
+    }
+
     .fac-product-main__images ul.thumbs li {
         max-width: none !important;
         max-height: none !important;
@@ -2754,17 +2718,8 @@ table.group.Dados-Tecnicos tbody tr td {
     .fac-product-main button.slick-next.slick-arrow:before {
         transform: rotate(45deg);
     }
-    .fac-product-main {
-        padding-bottom: 6px;
-        margin-top: 0px;
-    }
     .fac-product-main .section__content .product__body .product__head {
         max-width: 100%;
-    }
-    .fac-product-main {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto;
     }
     .fac-product-main__images .product__head {
         padding: 28px 50px;
@@ -2794,11 +2749,16 @@ table.group.Dados-Tecnicos tbody tr td {
         padding: 0px 10px;
     }
     .fac-product-main__images {
-        margin-bottom: 30px;
+        width: 100% !important;
+        box-sizing: border-box;
     }
     .fac-product-main__images .desc_product {
         padding: 30px 15px;
         text-align: center;
+    }
+    .section__content {
+        width: 100%;
+        box-sizing: border-box;
     }
     .desc_product .productDescription {
         color: #404040;
@@ -3962,4 +3922,9 @@ body.qd-cart-show .mz-backdrop {
     background-repeat: no-repeat;
     animation: shimmer 0s infinite;
     font-size: 1px;
+}
+
+.fac-info-table tbody td:last-child {
+    word-break: break-word;
+    max-width: 100%;
 }
