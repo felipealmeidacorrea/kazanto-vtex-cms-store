@@ -229,7 +229,7 @@ input:focus {
     z-index: 99;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .fac-header {
         background-color: #FFFFFF;
     }
@@ -1415,6 +1415,14 @@ a.fac-product__actions__content__btn {
 .fac-shell {
     max-width: 100%;
     margin: 0 10px 30px;
+}
+
+.produto .fac-shell {
+    margin: 0 10px 10px;
+}
+
+.produto iframe {
+    max-width: 100%;
 }
 
 .shelf-title {
@@ -3346,7 +3354,6 @@ ul.tabs li.active {
     font-size: 15px;
     color: #3b0409;
     line-height: 1.5em;
-    padding: 0 20px;
 }
 
 .tab_container {
@@ -3706,7 +3713,7 @@ table.fac-info-table tfoot .links a {
     font-size: 12px;
     font-family: Tahoma;
     text-decoration: none;
-    border: 1px solid #ccc;
+    border: none;
     background-color: #fff;
     padding: 8px;
     text-align: center;
