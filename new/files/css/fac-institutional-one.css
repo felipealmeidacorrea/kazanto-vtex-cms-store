@@ -99,7 +99,7 @@
     width: 30%;
 }
 
-.fac-jobs-box {
+a.fac-jobs-box {
     padding: 10px;
     border-radius: 5px;
     background: #E41021;
@@ -136,19 +136,15 @@
         flex-flow: column;
         gap: 10px;
     }
-
     .fac-institutional-box--2col {
         width: 100%;
     }
-    
     .fac-shell .fac-institutional-shell--adm {
         flex-direction: column-reverse;
     }
-    
     .fac-institutional-shell--benefits .fac-institutional-box--4col {
         width: 100%;
     }
-    
     .fac-jobs-box {
         width: 100%;
         text-align: center;
