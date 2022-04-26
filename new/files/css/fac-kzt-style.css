@@ -3948,3 +3948,10 @@ p.flag.frete-gratis {
         -webkit-mask-position: left
     }
 }
+
+/* adding pix custom payment img */
+
+.pg-pix-direto span {
+    background-image: url(https://io.vtex.com.br/checkout-ui/v6.60.1/img/payment-pix-logo.svg);
+    background-repeat: no-repeat;
+}
