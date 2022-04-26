@@ -2676,14 +2676,12 @@ table.group.Dados-Tecnicos tbody tr td {
         display: block;
         width: 100%;
     }
-    
     .fac-product-main {
         display: flex;
         flex-flow: column;
         gap: 10px;
         max-width: 100%;
     }
-
     .fac-product-main__images ul.thumbs li {
         max-width: none !important;
         max-height: none !important;
@@ -3872,6 +3870,9 @@ body.qd-cart-show .mz-backdrop {
 
 /* enf of slick banner don't show till loaded */
 
+
+/* applying Shimmer Effect and avoiding waterfall bug on slick banners */
+
 .fac-full-width-slick-banners__one .box-banner:not(:first-child),
 .fac-full-width-slick-banners__two .box-banner:not(:first-child) {
     display: none;
@@ -3923,6 +3924,10 @@ body.qd-cart-show .mz-backdrop {
     animation: shimmer 0s infinite;
     font-size: 1px;
 }
+
+
+/* end of applying Shimmer Effect and avoiding waterfall bug on slick banners */
+
 .fac-info-table tbody td:last-child {
     word-break: break-word;
     max-width: 100%;
