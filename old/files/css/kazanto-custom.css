@@ -138,3 +138,31 @@ table.fac-info-table tfoot .links a {
     font-weight: 800;
     font-size: 18px;
 }
+
+/* quick solution for featured link */
+
+.link-main .links-texto:nth-child(1) a {
+    color: #FFFFFF;
+}
+
+.link-main .links-texto:nth-child(1) {
+    background: #E41021;
+}
+
+@media (max-width: 800px) {
+    .link-main .links-texto:nth-child(1) a {
+        color: #FFFFFF;
+    }
+
+    .link-main .links-texto:nth-child(1) {
+        background: #E41021;
+    }
+
+    .link-main .links-texto a {
+        color: #E41021;
+    }
+
+    .link-main .links-texto {
+        background: #FFFFFF;
+    }
+}
