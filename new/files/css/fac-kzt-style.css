@@ -3950,6 +3950,15 @@ p.flag.frete-gratis {
 }
 
 /* quick solution for featured link */
+
+.link-main .links-texto:nth-child(1) a {
+    color: #FFFFFF;
+}
+
+.link-main .links-texto:nth-child(1) {
+    background: #E41021;
+}
+
 @media (max-width: 800px) {
     .link-main .links-texto:nth-child(1) a {
         color: #FFFFFF;
