@@ -3948,3 +3948,22 @@ p.flag.frete-gratis {
         -webkit-mask-position: left
     }
 }
+
+/* quick solution for featured link */
+@media (max-width: 800px) {
+    .link-main .links-texto:nth-child(1) a {
+        color: #FFFFFF;
+    }
+
+    .link-main .links-texto:nth-child(1) {
+        background: #E41021;
+    }
+
+    .link-main .links-texto a {
+        color: #E41021;
+    }
+
+    .link-main .links-texto {
+        background: #FFFFFF;
+    }
+}
